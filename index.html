@@ -1,0 +1,1078 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<script src="./support.js" onerror="window.__dcFail=1"></script>
+<script>(function(){function f(){var b=document.body;if(!b)return;if(window.__dcFail||/\{\{\s*[\w.$]+\s*\}\}/.test(b.innerText||'')){b.innerHTML='<div style="max-width:560px;margin:15vh auto;padding:28px;font-family:system-ui,sans-serif;background:#FFFFFF;border:1px solid #DCE6F5;border-radius:20px;color:#001F19;line-height:1.55;"><h1 style="font-size:24px;margin:0 0 8px;">La cápsula no pudo cargar</h1><p style="margin:0 0 6px;font-size:16px;">Recarga la página. Si sigue igual, ábrela en Chrome o Edge actualizados y revisa tu conexión.</p><p style="margin:0;font-size:15px;color:#34405A;">Si estás en clase, avísale a tu docente.</p></div>';b.style.background='#F6F9FD';}}window.addEventListener('load',function(){setTimeout(f,5000);});})();</script>
+</head>
+<body>
+<x-dc>
+<helmet>
+  <link rel="stylesheet" href="ds/crack-the-code-design-system-7d289831-1c23-4574-a592-107238cbba6e/tokens/colors.css">
+  <link rel="stylesheet" href="ds/crack-the-code-design-system-7d289831-1c23-4574-a592-107238cbba6e/tokens/typography.css">
+  <link rel="stylesheet" href="ds/crack-the-code-design-system-7d289831-1c23-4574-a592-107238cbba6e/tokens/spacing.css">
+  <link rel="stylesheet" href="ds/crack-the-code-design-system-7d289831-1c23-4574-a592-107238cbba6e/tokens/effects.css">
+  <link rel="stylesheet" href="ds/crack-the-code-design-system-7d289831-1c23-4574-a592-107238cbba6e/tokens/base.css">
+  <link rel="stylesheet" href="ds/crack-the-code-design-system-7d289831-1c23-4574-a592-107238cbba6e/styles.css">
+  <script src="ds/crack-the-code-design-system-7d289831-1c23-4574-a592-107238cbba6e/_ds_bundle.js"></script>
+  <script src="./image-slot.js"></script>
+  <style>
+    @keyframes aura{0%,100%{box-shadow:0 0 0 0 rgba(86,145,255,0)}50%{box-shadow:0 0 0 7px rgba(86,145,255,.24)}}
+    [data-tap]{animation:aura 2.4s ease-in-out infinite;}
+    button{transition:transform .12s ease-out,background-color .15s ease-out,box-shadow .15s ease-out;}
+    button:active{transform:scale(.97);}
+    @media (prefers-reduced-motion:reduce){[data-tap]{animation:none;}}
+    body{margin:0;background:#F2F6FC;text-wrap:pretty;-webkit-font-smoothing:antialiased;font-family:"NT Bau",system-ui,sans-serif;color:#001F19;}
+    a{color:#1F4FB0;}a:hover{color:#001F19;}
+    button{font-family:inherit;}
+    @keyframes onair{0%,100%{opacity:1}50%{opacity:.35}}
+    @keyframes float{0%,100%{transform:translateY(0)}50%{transform:translateY(-8px)}}
+    button{transition:transform .12s ease-out,background-color .15s ease-out,box-shadow .15s ease-out;}
+    button:active{transform:scale(.97);}
+    @keyframes ctcpulse{0%{box-shadow:0 0 0 0 rgba(107,227,215,.75)}70%{box-shadow:0 0 0 10px rgba(107,227,215,0)}100%{box-shadow:0 0 0 0 rgba(107,227,215,0)}}
+    a:focus-visible{outline:3px solid #2F6FE0;outline-offset:2px;}
+    @media (prefers-reduced-motion:reduce){*{animation:none !important;}}
+    button:focus-visible,input:focus-visible,textarea:focus-visible{outline:3px solid #2F6FE0;outline-offset:2px;}
+    input::placeholder,textarea::placeholder{color:#6E7D96;}
+  @keyframes proIn{from{opacity:0;transform:translateY(12px)}to{opacity:1;transform:none}}@keyframes popIn{from{opacity:0;transform:scale(.92) translateY(10px)}to{opacity:1;transform:none}}@keyframes scrim{from{opacity:0}to{opacity:1}}@keyframes slideIn{from{opacity:0;transform:translateX(28px)}to{opacity:1;transform:none}}@keyframes grow{from{transform:scaleY(0)}to{transform:scaleY(1)}}@keyframes eq{0%,100%{transform:scaleY(.25)}50%{transform:scaleY(1)}}@keyframes stamp{0%{opacity:0;transform:scale(1.7) rotate(-14deg)}100%{opacity:1;transform:scale(1) rotate(-8deg)}}@keyframes routeIn{from{opacity:0;transform:translateY(10px)}to{opacity:1;transform:none}}@keyframes routePulse{0%{box-shadow:0 0 0 0 rgba(86,145,255,.7)}70%{box-shadow:0 0 0 12px rgba(86,145,255,0)}100%{box-shadow:0 0 0 0 rgba(86,145,255,0)}}@keyframes routeFill{from{transform:scaleX(0)}to{transform:scaleX(1)}}@keyframes proIn{from{opacity:0;transform:translateY(12px)}to{opacity:1;transform:none}}@keyframes slideIn{from{opacity:0;transform:translateX(28px)}to{opacity:1;transform:none}}@keyframes eq{0%,100%{transform:scaleY(.25)}50%{transform:scaleY(1)}}</style>
+</helmet>
+
+<div style="max-width:1100px;margin:0 auto;padding:clamp(8px,2vw,16px);box-sizing:border-box;display:flex;flex-direction:column;gap:18px;">
+
+  <a href="#contenido" style="position:absolute;left:-9999px;top:8px;z-index:70;background:#001F19;color:#FFFFFF;padding:10px 14px;border-radius:10px;font-weight:700;text-decoration:none;" style-focus="left:16px;">Saltar al contenido</a>
+  <div data-menu="1" style="background:#2F6FE0;color:#FFFFFF;border:1px solid #1F4FB0;border-radius:22px;padding:8px 14px 6px;display:flex;flex-direction:column;gap:4px;">
+    <div style="display:flex;justify-content:space-between;align-items:center;gap:10px;flex-wrap:wrap;">
+      <span style="display:inline-flex;align-items:center;gap:8px;font-size:13px;font-weight:700;letter-spacing:.12em;text-transform:uppercase;"><span style="width:8px;height:8px;border-radius:50%;background:#6BE3D7;animation:onair 1.6s ease-in-out infinite;"></span>Menú · Episodio 2</span>
+      <div style="display:flex;align-items:center;gap:8px;flex-wrap:wrap;">
+        <span style="font-size:14px;font-weight:700;color:#FFFFFF;">{{ status }}</span>
+        <div role="group" aria-label="Zoom" style="display:flex;align-items:center;border:1px solid #DCE6F5;border-radius:999px;overflow:hidden;background:#FFFFFF;">
+          <button type="button" onClick="{{ zoomOut }}" aria-label="Hacer más pequeño" style="border:0;background:#FFFFFF;color:#001F19;font-weight:700;font-size:17px;width:34px;height:32px;cursor:pointer;">−</button>
+          <button type="button" onClick="{{ zoomReset }}" aria-label="Tamaño normal" style="border:0;border-left:1px solid #DCE6F5;border-right:1px solid #DCE6F5;background:#FFFFFF;color:#001F19;font-weight:700;font-size:13px;min-width:58px;height:32px;cursor:pointer;">🔍 {{ zoomTxt }}</button>
+          <button type="button" onClick="{{ zoomIn }}" aria-label="Hacer más grande" style="border:0;background:#FFFFFF;color:#001F19;font-weight:700;font-size:17px;width:34px;height:32px;cursor:pointer;">+</button>
+        </div>
+        <button type="button" onClick="{{ toggleMute }}" aria-pressed="{{ mute }}" style="border:1px solid #DCE6F5;background:#FFFFFF;color:#001F19;font-weight:700;font-size:13px;height:32px;padding:0 12px;border-radius:999px;cursor:pointer;">{{ muteLabel }}</button>
+        <button type="button" onClick="{{ toggleFull }}" aria-pressed="{{ full }}" aria-label="{{ fullAria }}" style="border:1px solid #DCE6F5;background:#FFFFFF;color:#001F19;font-weight:700;font-size:13px;height:32px;padding:0 12px;border-radius:999px;cursor:pointer;white-space:nowrap;">{{ fullLabel }}</button>
+      </div>
+    </div>
+    <div style="overflow-x:auto;padding:2px;">
+      <div style="position:relative;display:flex;justify-content:space-between;min-width:600px;">
+        <div style="position:absolute;left:42px;right:42px;top:16px;height:5px;border-radius:6px;background:#5691FF;"></div>
+        <div style="position:absolute;left:42px;top:16px;height:5px;border-radius:6px;background:#6BE3D7;width:{{ line }};transition:width .25s ease-out;"></div>
+        <sc-for list="{{ idx }}" as="it" hint-placeholder-count="6">
+          <button type="button" onClick="{{ it.go }}" style="position:relative;z-index:1;display:flex;flex-direction:column;align-items:center;gap:3px;border:0;background:transparent;cursor:pointer;padding:0;width:84px;color:#FFFFFF;">
+            <sc-if value="{{ it.on }}"><span style="width:38px;height:38px;border-radius:50%;background:#001F19;color:#FFFFFF;border:3px solid #FFFFFF;box-shadow:0 0 0 2px #001F19;box-sizing:border-box;display:flex;align-items:center;justify-content:center;font-size:16px;">{{ it.e }}</span></sc-if>
+            <sc-if value="{{ it.done }}"><span style="width:38px;height:38px;border-radius:50%;background:#6BE3D7;color:#001F19;border:3px solid #FFFFFF;box-sizing:border-box;display:flex;align-items:center;justify-content:center;font-size:15px;font-weight:700;">✓</span></sc-if>
+            <sc-if value="{{ it.todo }}"><span style="width:38px;height:38px;border-radius:50%;background:#FFFFFF;border:3px solid #DCE6F5;box-sizing:border-box;display:flex;align-items:center;justify-content:center;font-size:16px;">{{ it.e }}</span></sc-if>
+            <b style="font-size:13px;white-space:nowrap;">{{ it.t }}</b>
+          </button>
+        </sc-for>
+      </div>
+    </div>
+  </div>
+
+  <div id="contenido" tabindex="-1" style="height:0;margin-top:-18px;outline:none;"></div>
+  <sc-if value="{{ s0 }}" hint-placeholder-val="{{ true }}">
+    <section data-screen-label="01 Episodio" style="border-radius:24px;overflow:hidden;background:#001F19;color:#FFFFFF;display:flex;flex-direction:column;">
+      <div style="background:radial-gradient(60% 90% at 100% 0%,rgba(47,111,224,.55),transparent 60%),radial-gradient(60% 90% at 0% 100%,rgba(107,227,215,.30),transparent 62%),#001F19;padding:clamp(24px,4.6vw,48px);display:grid;grid-template-columns:repeat(auto-fit,minmax(min(100%,320px),1fr));gap:28px;align-items:center;">
+        <div style="display:flex;flex-direction:column;gap:14px;">
+          <div style="display:flex;gap:8px;flex-wrap:wrap;">
+            <span style="display:inline-flex;align-items:center;gap:8px;background:#6BE3D7;color:#001F19;font-weight:700;font-size:13px;letter-spacing:.12em;text-transform:uppercase;padding:7px 12px;border-radius:8px;"><span style="width:8px;height:8px;border-radius:50%;background:#001F19;animation:onair 1.6s ease-in-out infinite;"></span>Al aire</span>
+            
+          </div>
+          <span style="font-size:14px;font-weight:700;letter-spacing:.14em;text-transform:uppercase;color:#6BE3D7;">Fuera del Feed · Temporada 1 · Episodio 2</span>
+          <h1 style="font-family:'Roca One Light',serif;font-weight:300;font-size:clamp(40px,6.4vw,66px);line-height:1;letter-spacing:-.01em;margin:0;">La historia y su nombre</h1>
+          <p style="margin:0;font-size:18px;line-height:1.55;">De 3 finalistas sale 1 historia. La investigas, la defiendes ante el consejo y la dejas lista en una ficha.</p>
+          <div style="display:flex;flex-wrap:wrap;gap:8px;font-size:15px;font-weight:700;">
+            <span style="background:rgba(255,255,255,.12);border-radius:999px;padding:7px 12px;">1 historia elegida</span>
+            <span style="background:rgba(255,255,255,.12);border-radius:999px;padding:7px 12px;">1 dato verificado</span>
+            <span style="background:rgba(255,255,255,.12);border-radius:999px;padding:7px 12px;">Tu ficha lista</span>
+          </div>
+        </div>
+        <div style="position:relative;">
+          <div style="position:relative;width:100%;aspect-ratio:4/3;overflow:hidden;-webkit-mask-image:radial-gradient(ellipse 72% 70% at 55% 50%,#000 55%,transparent 100%);mask-image:radial-gradient(ellipse 72% 70% at 55% 50%,#000 55%,transparent 100%);">
+          <image-slot alt="Una idea bajo el reflector" id="e2-portada" src="assets/e2/01-portada.jpg" shape="rect" placeholder="Imagen 1 · Una idea bajo el reflector"></image-slot><span aria-hidden="true" style="position:absolute;inset:0;pointer-events:none;background-image:url(assets/grano.png);background-size:180px;opacity:.12;mix-blend-mode:overlay;"></span>
+        </div>
+          <div style="position:absolute;left:0;top:10%;display:flex;align-items:center;gap:10px;background:#FFFFFF;color:#001F19;border-radius:14px;padding:8px 14px 8px 8px;box-shadow:0 12px 28px rgba(0,0,0,.28);animation:float 6s ease-in-out infinite;max-width:75%;"><span style="width:34px;height:34px;flex:none;border-radius:50%;background:#6BE3D7;display:flex;align-items:center;justify-content:center;font-weight:700;font-size:13px;">FF</span><span style="display:flex;flex-direction:column;"><b style="font-size:13px;">@fueradelfeed</b><span style="font-size:13px;color:#4F5F7A;">Nuevo episodio · ahora</span></span></div>
+          <div style="position:absolute;right:4%;bottom:10%;background:#2F6FE0;color:#FFFFFF;border-radius:999px;padding:9px 14px;font-weight:700;font-size:13px;box-shadow:0 12px 28px rgba(0,0,0,.28);animation:float 7s ease-in-out -2.5s infinite;">3 finalistas · 1 se queda</div>
+        </div>
+      </div>
+      <div style="display:flex;align-items:center;gap:12px;padding:14px 20px;border-top:1px solid rgba(255,255,255,.12);flex-wrap:wrap;">
+        <span style="width:40px;height:40px;border-radius:50%;background:#6BE3D7;color:#001F19;display:flex;align-items:center;justify-content:center;font-weight:700;">FF</span>
+        <div style="flex:1;min-width:180px;display:flex;flex-direction:column;"><b style="font-size:15px;">@fueradelfeed</b><span style="font-size:14px;color:#B6E2FF;">Hoy eliges tu historia y creas tu personaje</span></div>
+        <button data-tap="1" type="button" onClick="{{ next }}" style="border:0;background:#6BE3D7;color:#001F19;font-weight:700;font-size:15px;padding:12px 20px;border-radius:999px;cursor:pointer;">Entrar a la transmisión →</button>
+      </div>
+      <div style="background:#FFFFFF;color:#001F19;padding:clamp(20px,3.6vw,32px);display:grid;grid-template-columns:repeat(auto-fit,minmax(min(100%,300px),1fr));gap:20px;align-items:center;">
+        <div style="display:flex;flex-direction:column;gap:8px;">
+          <h2 style="font-family:'Roca One Light',serif;font-weight:300;font-size:clamp(26px,3.6vw,34px);line-height:1.1;margin:0;">¿Esto o esto?</h2>
+          <span style="font-size:16px;line-height:1.55;">Elige rápido, sin pensarlo mucho. Después cuéntale a quien tengas al lado por qué, en una frase.</span>
+        </div>
+        <div style="display:flex;flex-direction:column;gap:12px;">
+          <div data-anim="eo" style="position:relative;display:grid;grid-template-columns:1fr 1fr;gap:12px;">
+            <sc-for list="{{ eoOpts }}" as="o" hint-placeholder-count="2">
+              <sc-if value="{{ o.idle }}"><button type="button" onClick="{{ o.pick }}" style="min-height:120px;border-radius:18px;padding:18px 14px;font-family:'Roca One Light',serif;font-size:clamp(22px,3vw,28px);line-height:1.15;cursor:pointer;border:1px solid #D3DEEF;background:#F2F6FC;color:#001F19;">{{ o.t }}</button></sc-if>
+              <sc-if value="{{ o.on }}"><button type="button" data-eo="on" onClick="{{ o.pick }}" style="min-height:120px;border-radius:18px;padding:18px 14px;font-family:'Roca One Light',serif;font-size:clamp(22px,3vw,28px);line-height:1.15;cursor:pointer;border:0;background:#2F6FE0;color:#FFFFFF;box-shadow:0 12px 28px rgba(47,111,224,.35);">{{ o.t }}</button></sc-if>
+              <sc-if value="{{ o.dim }}"><button type="button" onClick="{{ o.pick }}" style="min-height:120px;border-radius:18px;padding:18px 14px;font-family:'Roca One Light',serif;font-size:clamp(22px,3vw,28px);line-height:1.15;cursor:pointer;border:1px solid #DCE6F5;background:#FFFFFF;color:#6E7D96;">{{ o.t }}</button></sc-if>
+            </sc-for>
+            <span aria-hidden="true" style="position:absolute;left:50%;top:50%;transform:translate(-50%,-50%);width:40px;height:40px;border-radius:50%;background:#001F19;color:#6BE3D7;display:flex;align-items:center;justify-content:center;font-weight:700;font-size:15px;border:4px solid #FFFFFF;pointer-events:none;">o</span>
+          </div>
+          <div style="display:flex;justify-content:space-between;align-items:center;gap:10px;flex-wrap:wrap;min-height:46px;">
+            <span style="font-size:15px;line-height:1.45;color:#34405A;">{{ eoMsg }}</span>
+            <sc-if value="{{ eoPicked }}"><button type="button" onClick="{{ eoNext }}" style="border:0;background:#001F19;color:#FFFFFF;font-weight:700;font-size:15px;padding:11px 18px;border-radius:999px;cursor:pointer;">Otra →</button></sc-if>
+          </div>
+        </div>
+      </div>
+    </section>
+  </sc-if>
+
+  <sc-if value="{{ s1 }}">
+    <section data-screen-label="02 Transmisión" style="border-radius:24px;overflow:hidden;background:#FFFFFF;border:1px solid #DCE6F5;display:flex;flex-direction:column;">
+      <div style="display:flex;align-items:center;gap:10px;padding:14px 20px;border-bottom:1px solid #EAF0F8;flex-wrap:wrap;">
+        <span style="width:42px;height:42px;border-radius:50%;padding:2px;background:linear-gradient(135deg,#6BE3D7,#2F6FE0);box-sizing:border-box;display:flex;"><span style="flex:1;border-radius:50%;background:#001F19;border:2px solid #FFFFFF;display:flex;align-items:center;justify-content:center;font-size:16px;">🎙️</span></span>
+        <div style="flex:1;display:flex;flex-direction:column;"><b style="font-size:15px;">La Editora</b><span style="font-size:14px;color:#4F5F7A;">Transmisión 02 · su voz está creada con IA</span></div>
+      </div>
+      <div role="group" aria-label="Pasos de la transmisión" style="display:flex;gap:8px;flex-wrap:wrap;padding:12px 20px;border-bottom:1px solid #EAF0F8;">
+        <sc-for list="{{ tSteps }}" as="t" hint-placeholder-count="2">
+          <sc-if value="{{ t.on }}"><button type="button" aria-current="step" onClick="{{ t.pick }}" style="flex:none;white-space:nowrap;display:flex;gap:8px;align-items:center;border:0;background:#2F6FE0;color:#FFFFFF;font-weight:700;font-size:14px;padding:6px 14px 6px 6px;border-radius:999px;cursor:pointer;"><b style="width:24px;height:24px;border-radius:50%;background:#FFFFFF;color:#1F4FB0;display:inline-flex;align-items:center;justify-content:center;font-size:13px;">{{ t.n }}</b>{{ t.t }}</button></sc-if>
+          <sc-if value="{{ t.off }}"><button type="button" onClick="{{ t.pick }}" style="flex:none;white-space:nowrap;text-align:left;display:flex;gap:8px;align-items:center;border:1px solid #DCE6F5;background:#FFFFFF;color:#001F19;font-weight:700;font-size:14px;padding:5px 14px 5px 5px;border-radius:999px;cursor:pointer;"><b style="width:24px;height:24px;border-radius:50%;background:#EAF2FF;color:#1F4FB0;display:inline-flex;align-items:center;justify-content:center;font-size:13px;">{{ t.mark }}</b>{{ t.t }}</button></sc-if>
+        </sc-for>
+      </div>
+      <div style="display:grid;grid-template-columns:repeat(auto-fit,minmax(min(100%,340px),1fr));">
+        <div style="background:radial-gradient(70% 100% at 100% 0%,rgba(47,111,224,.5),transparent 60%),#001F19;color:#FFFFFF;padding:clamp(22px,4vw,36px);display:flex;flex-direction:column;gap:16px;">
+          <div style="position:relative;width:100%;aspect-ratio:16/9;overflow:hidden;-webkit-mask-image:linear-gradient(180deg,#000 65%,transparent 100%);mask-image:linear-gradient(180deg,#000 65%,transparent 100%);">
+            <image-slot alt="Tres tarjetas, solo una se queda" id="e2-transmision" src="assets/e2/02-transmision.jpg" shape="rect" placeholder="Imagen 2 · Tres tarjetas, solo una se queda"></image-slot><span aria-hidden="true" style="position:absolute;inset:0;pointer-events:none;background-image:url(assets/grano.png);background-size:180px;opacity:.12;mix-blend-mode:overlay;"></span>
+          </div>
+          <p style="font-family:'Roca One Light',serif;font-size:clamp(22px,3.2vw,30px);line-height:1.22;margin:0;">"Tienes 3 finalistas. Hoy solo una sobrevive."</p>
+          <p style="margin:0;font-size:16px;line-height:1.6;">No basta con que te guste. Tu historia tiene que aguantar preguntas difíciles. Si las aguanta, tiene luz verde.</p>
+        </div>
+        <div style="padding:clamp(20px,3.6vw,32px);display:flex;flex-direction:column;gap:14px;">
+          <sc-if value="{{ ts0 }}" hint-placeholder-val="{{ true }}">
+          <div style="display:flex;flex-direction:column;gap:6px;"><b style="font-size:13px;letter-spacing:.12em;text-transform:uppercase;color:#1F4FB0;">Tu misión</b><span style="font-family:'Roca One Light',serif;font-size:clamp(20px,2.4vw,24px);line-height:1.25;">Elegir 1 historia, investigarla y dejarla lista en tu ficha.</span></div>
+          <div style="display:flex;justify-content:flex-end;"><button data-tap="1" type="button" onClick="{{ tNext }}" style="border:0;background:#2F6FE0;color:#FFFFFF;font-weight:700;font-size:15px;padding:12px 20px;border-radius:999px;cursor:pointer;">Siguiente: antes de empezar →</button></div>
+          </sc-if>
+          <sc-if value="{{ ts1 }}">
+          <div style="display:flex;flex-direction:column;gap:8px;">
+            <span style="font-size:13px;font-weight:700;letter-spacing:.12em;text-transform:uppercase;">Antes de empezar</span>
+            <div style="display:flex;gap:10px;align-items:flex-start;font-size:15px;line-height:1.5;"><b style="width:26px;height:26px;flex:none;border-radius:50%;background:#2F6FE0;color:#FFFFFF;display:inline-flex;align-items:center;justify-content:center;font-size:14px;">1</b><span>Ten a mano tus 3 finalistas de <b>Mi bitácora</b>.</span></div>
+            <div style="display:flex;gap:10px;align-items:flex-start;font-size:15px;line-height:1.5;"><b style="width:26px;height:26px;flex:none;border-radius:50%;background:#2F6FE0;color:#FFFFFF;display:inline-flex;align-items:center;justify-content:center;font-size:14px;">2</b><span>Deja abierto ChatGPT o Gemini.</span></div>
+          </div>
+          <p style="margin:0;border-top:1px solid #EAF0F8;padding-top:14px;font-size:15px;line-height:1.5;"><b>Manifiesto: La historia es de quien la vive.</b> Hoy lo vas a necesitar frente al consejo.</p>
+          <div style="display:flex;justify-content:flex-end;"><button data-tap="1" type="button" onClick="{{ next }}" style="border:0;background:#2F6FE0;color:#FFFFFF;font-weight:700;font-size:15px;padding:12px 20px;border-radius:999px;cursor:pointer;">Ver el caso de Valentina →</button></div>
+          </sc-if>
+        </div>
+      </div>
+    </section>
+  </sc-if>
+
+  <sc-if value="{{ s2 }}">
+    <section data-screen-label="03 Bitácora de Valentina" style="display:flex;flex-wrap:wrap;gap:14px;align-items:flex-start;">
+      <div style="flex:1.6 1 520px;min-width:0;border-radius:24px;overflow:hidden;background:#FFFFFF;border:1px solid #DCE6F5;display:flex;flex-direction:column;">
+        <div style="display:flex;align-items:center;gap:10px;padding:14px 20px;border-bottom:1px solid #EAF0F8;">
+          <span style="width:42px;height:42px;border-radius:50%;padding:2px;background:linear-gradient(135deg,#6BE3D7,#2F6FE0);box-sizing:border-box;display:flex;"><span style="flex:1;border-radius:50%;background:#CFE3FF;border:2px solid #FFFFFF;display:flex;align-items:center;justify-content:center;font-weight:700;">V</span></span>
+          <div style="display:flex;flex-direction:column;"><b style="font-size:15px;">Valentina · 15 años</b><span style="font-size:14px;color:#4F5F7A;">Bitácora · Episodio 2 · Voces del andén</span></div>
+        </div>
+        <div style="padding:clamp(20px,3.6vw,32px);display:flex;flex-direction:column;gap:16px;">
+          <h2 style="font-family:'Roca One Light',serif;font-weight:300;font-size:clamp(26px,4vw,36px);line-height:1.1;margin:0;">Una idea enorme frente al consejo</h2>
+          <div style="display:flex;flex-direction:column;border-left:4px solid #DCE6F5;margin-left:10px;padding-left:22px;">
+            <div style="position:relative;padding:4px 0 16px;"><span style="position:absolute;left:-34px;top:6px;width:20px;height:20px;border-radius:50%;background:#C93B31;border:3px solid #FFFFFF;"></span><b style="font-size:14px;letter-spacing:.1em;text-transform:uppercase;color:#A42F27;">Su error</b><div style="font-size:16px;line-height:1.55;">Llevó al consejo una idea enorme: "la pobreza".</div><sc-if value="{{ vAsk }}" hint-placeholder-val="{{ true }}"><div style="margin-top:10px;"><div style="display:flex;flex-direction:column;gap:8px;"><b style="font-size:15px;">¿Crees que aguantó frente al consejo?</b><div style="display:flex;flex-wrap:wrap;gap:8px;"><sc-for list="{{ vOpts }}" as="o" hint-placeholder-count="3"><button data-tap="1" type="button" onClick="{{ o.pick }}" style="flex:0 0 auto;max-width:100%;white-space:nowrap;border:1px solid #D3DEEF;background:#FFFFFF;color:#001F19;font-weight:700;font-size:15px;padding:9px 14px;border-radius:999px;cursor:pointer;text-align:left;">{{ o.t }}</button></sc-for></div></div></div></sc-if><sc-if value="{{ vShown }}"><div style="margin-top:10px;background:#FDECEA;border-radius:12px;padding:10px 14px;font-size:15px;line-height:1.5;"><b>No duró 90 segundos.</b> {{ vFb }}</div><button type="button" onClick="{{ goConsejo }}" style="margin-top:8px;margin-top:8px;border:0;background:#FDECEA;color:#001F19;font-weight:700;font-size:14px;padding:7px 12px;border-radius:999px;cursor:pointer;">Lo vives en: Consejo editorial →</button></sc-if></div>
+            <div style="position:relative;padding:4px 0 16px;"><span style="position:absolute;left:-34px;top:6px;width:20px;height:20px;border-radius:50%;background:#6BE3D7;border:3px solid #FFFFFF;"></span><b style="font-size:14px;letter-spacing:.1em;text-transform:uppercase;color:#0E7A6B;">Su paso</b><div style="font-size:16px;line-height:1.55;">Pasó sus 3 finalistas por 5 preguntas y se quedó con la que ganó.</div><button type="button" onClick="{{ goFiltro }}" style="margin-top:8px;border:0;background:#DDF7F3;color:#001F19;font-weight:700;font-size:14px;padding:7px 12px;border-radius:999px;cursor:pointer;">Lo harás en: Filtro de la historia →</button></div>
+            <sc-if value="{{ vShown }}"><div style="position:relative;padding:4px 0 0;"><span style="position:absolute;left:-34px;top:6px;width:20px;height:20px;border-radius:50%;background:#2F6FE0;border:3px solid #FFFFFF;"></span><b style="font-size:14px;letter-spacing:.1em;text-transform:uppercase;color:#1F4FB0;">Lo que aprendió</b><div style="font-size:16px;line-height:1.55;">Un tema no se puede contar. Una persona, sí.</div></div></sc-if>
+          </div>
+          <sc-if value="{{ vShown }}">
+          <div style="display:flex;flex-direction:column;gap:8px;">
+            <span style="font-size:13px;font-weight:700;letter-spacing:.12em;text-transform:uppercase;">Cómo bajó su idea</span>
+            <div style="display:flex;flex-wrap:wrap;gap:8px;align-items:stretch;">
+              <div style="flex:1 1 150px;background:#F2F6FC;border-radius:12px;padding:12px 14px;display:flex;flex-direction:column;gap:4px;"><span style="font-size:13px;font-weight:700;letter-spacing:.1em;text-transform:uppercase;color:#A42F27;">1 · Tema</span><s style="font-size:15px;">La pobreza</s></div>
+              <span aria-hidden="true" style="align-self:center;font-size:20px;color:#2F6FE0;font-weight:700;">→</span>
+              <div style="flex:1 1 150px;background:#E1EEFF;border-radius:12px;padding:12px 14px;display:flex;flex-direction:column;gap:4px;"><span style="font-size:13px;font-weight:700;letter-spacing:.1em;text-transform:uppercase;color:#1F4FB0;">2 · Más cerca</span><span style="font-size:15px;">Los vendedores de la calle 45</span></div>
+              <span aria-hidden="true" style="align-self:center;font-size:20px;color:#2F6FE0;font-weight:700;">→</span>
+              <div style="flex:1.3 1 180px;background:#6BE3D7;border-radius:12px;padding:12px 14px;display:flex;flex-direction:column;gap:4px;"><span style="font-size:13px;font-weight:700;letter-spacing:.1em;text-transform:uppercase;color:#0E5A50;">3 · Historia</span><b style="font-size:15px;">Doña Rosa, 20 años vendiendo tintos en el paradero</b></div>
+            </div>
+          </div>
+          </sc-if>
+          <div style="background:radial-gradient(70% 120% at 100% 0%,rgba(47,111,224,.45),transparent 60%),#001F19;color:#FFFFFF;border-radius:16px;padding:16px 18px;display:flex;flex-direction:column;gap:8px;">
+            <span style="font-size:13px;font-weight:700;letter-spacing:.12em;text-transform:uppercase;color:#6BE3D7;">Antes de seguir, piénsalo</span>
+            <span style="font-size:16px;line-height:1.55;">Mira tus 3 finalistas. ¿Cuál todavía es un tema?</span>
+          </div>
+          <div style="display:flex;justify-content:flex-end;"><button data-tap="1" type="button" onClick="{{ next }}" style="border:0;background:#2F6FE0;color:#FFFFFF;font-weight:700;font-size:15px;padding:12px 20px;border-radius:999px;cursor:pointer;">Ir a las escenas →</button></div>
+        </div>
+      </div>
+      <aside style="flex:1 1 280px;min-width:0;display:flex;flex-direction:column;gap:14px;">
+        <div style="position:relative;width:100%;aspect-ratio:1/1;border-radius:22px;overflow:hidden;background:#EAF2FF;">
+          <image-slot alt="Valentina tacha su primera idea" id="e2-valentina" src="assets/e2/03-valentina.jpg" shape="rect" placeholder="Imagen 3 · Valentina tacha su primera idea"></image-slot><span aria-hidden="true" style="position:absolute;inset:0;pointer-events:none;background-image:url(assets/grano.png);background-size:180px;opacity:.12;mix-blend-mode:overlay;"></span><div style="position:absolute;left:12px;bottom:12px;display:flex;align-items:center;gap:8px;background:#FFFFFF;color:#001F19;border-radius:999px;padding:7px 12px;font-size:13px;font-weight:700;box-shadow:0 10px 24px rgba(0,31,25,.22);animation:float 6.5s ease-in-out infinite;"><span style="width:8px;height:8px;border-radius:50%;background:#2F6FE0;"></span>Nueva entrada · De tema a historia</div>
+        </div>
+      </aside>
+    </section>
+  </sc-if>
+
+  <sc-if value="{{ s3 }}">
+    <section data-screen-label="04 Escenas" style="border-radius:24px;background:#FFFFFF;border:1px solid #DCE6F5;overflow:hidden;display:flex;flex-direction:column;">
+      <div style="display:flex;gap:6px;flex-wrap:wrap;padding:8px 14px;background:#C9DCFA;border-bottom:1px solid #B6D2FA;align-items:center;">
+        <span style="flex:none;font-size:13px;font-weight:700;letter-spacing:.1em;text-transform:uppercase;margin-right:4px;">Escenas</span>
+        <sc-for list="{{ scPills }}" as="p" hint-placeholder-count="7">
+          <sc-if value="{{ p.on }}"><button type="button" onClick="{{ p.go }}" aria-current="step" style="flex:none;border:0;font-size:13px;font-weight:700;padding:5px 10px;border-radius:999px;background:#2F6FE0;color:#FFFFFF;cursor:pointer;white-space:nowrap;">{{ p.e }} {{ p.short }}<sc-if value="{{ p.req }}"> · ● Obligatoria</sc-if><sc-if value="{{ p.rec }}"> · si te sobra tiempo</sc-if></button></sc-if>
+          <sc-if value="{{ p.done }}"><button type="button" onClick="{{ p.go }}" style="flex:none;border:0;font-size:13px;font-weight:700;padding:5px 10px;border-radius:999px;background:#DDF7F3;color:#001F19;cursor:pointer;white-space:nowrap;">✓ {{ p.short }}<sc-if value="{{ p.req }}"> · ● Obligatoria</sc-if></button></sc-if>
+          <sc-if value="{{ p.todo }}"><button type="button" onClick="{{ p.go }}" style="flex:none;font-size:13px;font-weight:700;padding:5px 10px;border-radius:999px;background:#FFFFFF;border:1px solid #DCE6F5;color:#001F19;cursor:pointer;white-space:nowrap;">{{ p.e }} {{ p.short }}<sc-if value="{{ p.req }}"> · ● Obligatoria</sc-if><sc-if value="{{ p.rec }}"> · si te sobra tiempo</sc-if></button></sc-if>
+        </sc-for>
+      </div>
+
+      <div data-anim="scene" style="padding:clamp(20px,3.6vw,36px);display:flex;flex-direction:column;gap:18px;">
+        <div style="display:flex;flex-wrap:wrap;gap:4px 12px;align-items:baseline;background:#E1EEFF;border-radius:14px;padding:10px 14px;">
+          <b style="font-size:13px;letter-spacing:.12em;text-transform:uppercase;color:#1F4FB0;">Haz las 6 actividades</b>
+          <span style="flex:1;min-width:220px;font-size:13px;line-height:1.5;color:#34405A;">Haz las marcadas <b style="color:#1F4FB0;">● Obligatoria</b>; las demás, si te sobra tiempo. Tu docente te guía; si estudias solo, sigue el mismo orden. Trabajas en <b>Borradores, en Mi bitácora</b>.</span>
+        </div>
+        <div style="display:grid;grid-template-columns:repeat(auto-fit,minmax(min(100%,300px),1fr));border-radius:20px;overflow:hidden;background:radial-gradient(70% 120% at 100% 0%,rgba(47,111,224,.55),transparent 60%),radial-gradient(60% 100% at 0% 100%,rgba(107,227,215,.25),transparent 62%),#001F19;color:#FFFFFF;">
+          <div style="padding:clamp(16px,2.8vw,26px);display:flex;flex-direction:column;gap:8px;justify-content:center;">
+            <div style="display:flex;gap:8px;flex-wrap:wrap;">
+              <span style="background:#6BE3D7;color:#001F19;font-weight:700;font-size:13px;letter-spacing:.1em;text-transform:uppercase;padding:6px 10px;border-radius:8px;"><sc-if value="{{ scNotPausa }}">{{ scE }} Escena {{ scN }} de {{ scTot }}</sc-if><sc-if value="{{ scIsPausa }}">☕ Pausa</sc-if></span>
+              <sc-if value="{{ scReq }}"><span style="background:#FFFFFF;color:#001F19;font-weight:700;font-size:13px;letter-spacing:.1em;text-transform:uppercase;padding:6px 10px;border-radius:8px;">● Obligatoria</span></sc-if>
+              <sc-if value="{{ scRec }}"><span style="white-space:nowrap;flex:none;border:1px solid rgba(255,255,255,.5);color:#FFFFFF;font-weight:700;font-size:13px;letter-spacing:.1em;text-transform:uppercase;padding:5px 10px;border-radius:8px;">Si te sobra tiempo</span></sc-if>
+              <sc-if value="{{ scTeam }}"><span style="background:rgba(255,255,255,.14);font-weight:700;font-size:13px;letter-spacing:.1em;text-transform:uppercase;padding:6px 10px;border-radius:8px;">En equipo o con IA</span></sc-if>
+            </div>
+            <h2 style="font-family:'Roca One Light',serif;font-weight:300;font-size:clamp(30px,4.6vw,44px);line-height:1.04;margin:0;">{{ scT }}</h2>
+            <span style="font-size:17px;line-height:1.45;color:#E3F0FF;">{{ scHook }}</span>
+            <span style="font-size:15px;color:#6BE3D7;">Necesitas: {{ scTool }}</span>
+            <sc-if value="{{ scAI }}"><div style="display:flex;gap:8px;flex-wrap:wrap;margin-top:6px;"><a href="https://chatgpt.com/" target="_blank" rel="noopener noreferrer" style="text-decoration:none;display:inline-flex;align-items:center;gap:6px;font-weight:700;font-size:15px;padding:10px 16px;border-radius:999px;background:#6BE3D7;color:#001F19;border:0;animation:ctcpulse 2.2s ease-out infinite;"><span style="width:22px;height:22px;flex:none;border-radius:50%;background:#FFFFFF;display:inline-flex;align-items:center;justify-content:center;"><img src="assets/logos/chatgpt.png" alt="" style="width:16px;height:16px;object-fit:contain;"></span>Abrir ChatGPT ↗</a><a href="https://gemini.google.com/" target="_blank" rel="noopener noreferrer" style="text-decoration:none;display:inline-flex;align-items:center;gap:6px;font-weight:700;font-size:15px;padding:10px 16px;border-radius:999px;background:#FFFFFF;color:#001F19;border:0;animation:ctcpulse 2.2s ease-out infinite;"><span style="width:22px;height:22px;flex:none;border-radius:50%;background:#FFFFFF;display:inline-flex;align-items:center;justify-content:center;"><img src="assets/logos/gemini.png" alt="" style="width:16px;height:16px;object-fit:contain;"></span>Abrir Gemini ↗</a></div></sc-if>
+          </div>
+          <div style="position:relative;min-height:170px;-webkit-mask-image:linear-gradient(90deg,transparent 0%,#000 30%);mask-image:linear-gradient(90deg,transparent 0%,#000 30%);">
+            <div style="position:absolute;inset:0;">
+              <sc-if value="{{ isFiltro }}"><image-slot alt="Filtro de la historia" id="e2-sc-filtro" src="assets/e2/04-filtro.jpg" shape="rect" placeholder="Imagen 4 · Filtro de la historia"></image-slot><span aria-hidden="true" style="position:absolute;inset:0;pointer-events:none;background-image:url(assets/grano.png);background-size:180px;opacity:.12;mix-blend-mode:overlay;"></span></sc-if>
+              <sc-if value="{{ isInv }}"><image-slot alt="Investigación con IA" id="e2-sc-inv" src="assets/e2/05-investigacion.jpg" shape="rect" placeholder="Imagen 5 · Investigación con IA"></image-slot><span aria-hidden="true" style="position:absolute;inset:0;pointer-events:none;background-image:url(assets/grano.png);background-size:180px;opacity:.12;mix-blend-mode:overlay;"></span></sc-if>
+              <sc-if value="{{ isPausa }}"><image-slot alt="Descanso" id="e2-sc-pausa" src="assets/e2/06-descanso.jpg" shape="rect" placeholder="Imagen 6 · Descanso"></image-slot><span aria-hidden="true" style="position:absolute;inset:0;pointer-events:none;background-image:url(assets/grano.png);background-size:180px;opacity:.12;mix-blend-mode:overlay;"></span></sc-if>
+              <sc-if value="{{ isConsejo }}"><image-slot alt="Consejo editorial" id="e2-sc-consejo" src="assets/e2/07-consejo.jpg" shape="rect" placeholder="Imagen 7 · Consejo editorial"></image-slot><span aria-hidden="true" style="position:absolute;inset:0;pointer-events:none;background-image:url(assets/grano.png);background-size:180px;opacity:.12;mix-blend-mode:overlay;"></span></sc-if>
+              
+              <sc-if value="{{ isFicha }}"><image-slot alt="Ficha de investigación" id="e2-sc-ficha" src="assets/e2/09-ficha.jpg" shape="rect" placeholder="Imagen 9 · Ficha de investigación"></image-slot><span aria-hidden="true" style="position:absolute;inset:0;pointer-events:none;background-image:url(assets/grano.png);background-size:180px;opacity:.12;mix-blend-mode:overlay;"></span></sc-if>
+              <sc-if value="{{ isRosa }}"><image-slot alt="Doña Rosa (avatar ilustrado)" id="e2-sc-rosa" src="assets/e2/10-dona-rosa.jpg" shape="rect" placeholder="Imagen 10 · Doña Rosa (avatar ilustrado)"></image-slot><span aria-hidden="true" style="position:absolute;inset:0;pointer-events:none;background-image:url(assets/grano.png);background-size:180px;opacity:.12;mix-blend-mode:overlay;"></span></sc-if>
+              <sc-if value="{{ isPro }}"><image-slot alt="Imagen · El nombre de tu podcast" id="e2-sc-pro" src="assets/e2/pro-nombre.jpg" shape="rect" placeholder="Imagen · El nombre de tu podcast" style="filter:saturate(.86) contrast(1.05);"></image-slot><span aria-hidden="true" style="position:absolute;inset:0;pointer-events:none;background-image:url(assets/grano.png);background-size:180px;opacity:.14;mix-blend-mode:overlay;"></span></sc-if>
+            </div>
+          </div>
+        </div>
+
+        <sc-if value="{{ hasSteps }}">
+          <div style="display:grid;grid-template-columns:repeat(auto-fit,minmax(min(100%,220px),1fr));gap:1px;background:#DCE6F5;border:1px solid #DCE6F5;border-radius:16px;overflow:hidden;">
+            <div style="background:#FFFFFF;padding:14px 16px;display:flex;gap:10px;align-items:flex-start;"><b style="flex:none;width:28px;height:28px;border-radius:50%;background:#6BE3D7;color:#001F19;display:inline-flex;align-items:center;justify-content:center;font-size:14px;">1</b><span style="display:flex;flex-direction:column;gap:2px;"><b style="font-size:15px;">Prueba</b><span style="font-size:15px;line-height:1.45;">{{ stP }}</span></span></div>
+            <div style="background:#FFFFFF;padding:14px 16px;display:flex;gap:10px;align-items:flex-start;"><b style="flex:none;width:28px;height:28px;border-radius:50%;background:#2F6FE0;color:#FFFFFF;display:inline-flex;align-items:center;justify-content:center;font-size:14px;">2</b><span style="display:flex;flex-direction:column;gap:2px;"><b style="font-size:15px;">Descubre</b><span style="font-size:15px;line-height:1.45;">{{ stD }}</span></span></div>
+            <div style="background:#FFFFFF;padding:14px 16px;display:flex;gap:10px;align-items:flex-start;"><b style="flex:none;width:28px;height:28px;border-radius:50%;background:#001F19;color:#6BE3D7;display:inline-flex;align-items:center;justify-content:center;font-size:14px;">3</b><span style="display:flex;flex-direction:column;gap:2px;"><b style="font-size:15px;">Crea</b><span style="font-size:15px;line-height:1.45;">{{ stA }}</span></span></div>
+          </div>
+        </sc-if>
+
+        <sc-if value="{{ isFiltro }}">
+          <span style="font-size:15px;line-height:1.5;">Ten a mano tus 3 finalistas de Mi bitácora (Idea 1, 2 y 3). En cada pregunta, marca ✓ en las ideas que pasan. El puntaje te orienta; la decisión es tuya.</span>
+          <div style="display:flex;flex-wrap:wrap;gap:10px;align-items:center;"><b style="font-size:15px;">Una historia tiene:</b><div style="display:flex;flex-wrap:wrap;gap:8px;align-items:center;"><span style="background:#6BE3D7;color:#001F19;font-weight:700;font-size:14px;padding:6px 12px;border-radius:999px;">Cara · quién</span><span style="background:#6BE3D7;color:#001F19;font-weight:700;font-size:14px;padding:6px 12px;border-radius:999px;">Lugar · dónde</span><span style="background:#6BE3D7;color:#001F19;font-weight:700;font-size:14px;padding:6px 12px;border-radius:999px;">Momento · cuándo</span></div></div>
+          <div style="background:#F2F6FC;border-radius:16px;padding:14px 16px;display:flex;flex-wrap:wrap;gap:10px;align-items:center;justify-content:space-between;">
+            <span style="display:flex;flex-direction:column;gap:2px;flex:1;min-width:220px;"><b style="font-size:13px;letter-spacing:.12em;text-transform:uppercase;color:#1F4FB0;">Tu predicción</b><span style="font-size:16px;line-height:1.45;font-weight:700;">{{ pQ }}</span></span>
+            <sc-if value="{{ pOpen }}" hint-placeholder-val="{{ true }}"><div style="display:flex;flex-wrap:wrap;gap:8px;"><sc-for list="{{ pOpts }}" as="o" hint-placeholder-count="3"><button data-tap="1" type="button" onClick="{{ o.pick }}" style="flex:0 0 auto;max-width:100%;white-space:nowrap;border:1px solid #D3DEEF;background:#FFFFFF;color:#001F19;font-weight:700;font-size:15px;padding:9px 14px;border-radius:999px;cursor:pointer;">{{ o.t }}</button></sc-for></div></sc-if>
+          </div>
+          <div style="border:1px solid #DCE6F5;border-radius:18px;overflow:hidden;">
+            <div style="display:grid;grid-template-columns:minmax(0,2fr) repeat(3,minmax(64px,1fr));gap:8px;padding:12px 16px;background:#001F19;color:#FFFFFF;font-size:13px;font-weight:700;letter-spacing:.08em;text-transform:uppercase;align-items:center;"><span>Pregunta</span><span style="text-align:center;">Idea 1</span><span style="text-align:center;">Idea 2</span><span style="text-align:center;">Idea 3</span></div>
+            <sc-for list="{{ filtro }}" as="fq" hint-placeholder-count="5">
+              <div style="display:grid;grid-template-columns:minmax(0,2fr) repeat(3,minmax(64px,1fr));gap:8px;padding:10px 16px;border-top:1px solid #EAF0F8;align-items:center;">
+                <span style="display:flex;flex-direction:column;"><b style="font-size:15px;">{{ fq.k }}</b><span style="font-size:15px;line-height:1.4;color:#34405A;">{{ fq.q }}</span></span>
+                <sc-for list="{{ fq.cells }}" as="cl" hint-placeholder-count="3">
+                  <div style="display:flex;justify-content:center;">
+                    <sc-if value="{{ cl.on }}"><button type="button" data-cell="{{ cl.ck }}" onClick="{{ cl.toggle }}" style="width:40px;height:40px;border:0;border-radius:10px;background:#6BE3D7;color:#001F19;font-weight:700;font-size:16px;cursor:pointer;">✓</button></sc-if>
+                    <sc-if value="{{ cl.off }}"><button type="button" onClick="{{ cl.toggle }}" style="width:40px;height:40px;border:1px solid #DCE6F5;border-radius:10px;background:#FFFFFF;cursor:pointer;"></button></sc-if>
+                  </div>
+                </sc-for>
+              </div>
+            </sc-for>
+            <div style="display:grid;grid-template-columns:minmax(0,2fr) repeat(3,minmax(64px,1fr));gap:8px;padding:12px 16px;border-top:1px solid #DCE6F5;background:#F6F9FD;font-weight:700;align-items:center;"><span>Total</span><sc-for list="{{ fBars }}" as="ft" hint-placeholder-count="3"><div style="display:flex;flex-direction:column;align-items:center;gap:6px;"><span style="font-family:'Roca One Light',serif;font-size:22px;white-space:nowrap;">{{ ft.crown }}{{ ft.v }}/5</span><div style="width:100%;max-width:80px;height:8px;border-radius:6px;background:#DCE6F5;overflow:hidden;"><div style="height:100%;width:{{ ft.w }};background:#6BE3D7;transition:width .35s cubic-bezier(.2,.7,.2,1);"></div></div></div></sc-for></div>
+            <div style="padding:12px 16px;background:#001F19;color:#FFFFFF;font-size:15px;font-weight:700;">{{ fWinner }}</div>
+          </div>
+          <div style="border:1px solid #DCE6F5;border-radius:20px;padding:16px;display:flex;flex-direction:column;gap:12px;">
+            <div style="display:flex;flex-direction:column;gap:4px;"><b style="font-size:17px;">Tu decisión editorial</b><span style="font-size:15px;line-height:1.5;color:#34405A;">Puedes elegir una idea con menos ✓ si tienes una buena razón.</span></div>
+            <div style="display:flex;gap:8px;flex-wrap:wrap;">
+              <sc-for list="{{ picks }}" as="p" hint-placeholder-count="3">
+                <sc-if value="{{ p.on }}"><button type="button" onClick="{{ p.pick }}" aria-pressed="true" style="border:0;background:#001F19;color:#FFFFFF;font-weight:700;font-size:15px;padding:10px 16px;border-radius:999px;cursor:pointer;flex:none;white-space:nowrap;">{{ p.t }}</button></sc-if>
+                <sc-if value="{{ p.off }}"><button type="button" onClick="{{ p.pick }}" aria-pressed="false" style="border:1px solid #D3DEEF;background:#FFFFFF;color:#001F19;font-weight:700;font-size:15px;padding:10px 16px;border-radius:999px;cursor:pointer;flex:none;white-space:nowrap;">{{ p.t }}</button></sc-if>
+              </sc-for>
+            </div>
+            <div style="background:#FFF3EA;border:2px solid #F47B20;border-radius:18px;padding:14px 18px;display:flex;align-items:center;gap:16px;flex-wrap:wrap;">
+  <img src="assets/boton-bitacora.png" alt="Botón Bitácora del Campus CTC" style="height:54px;width:auto;flex:none;border-radius:12px;background:#FFFFFF;">
+  <div style="flex:1;min-width:220px;display:flex;flex-direction:column;gap:4px;">
+    <b style="font-size:13px;letter-spacing:.12em;text-transform:uppercase;color:#9A4310;">Es momento de abrir tu bitácora</b>
+    <span style="font-size:15px;line-height:1.55;color:#001F19;">Ingresa al <b>Campus CTC</b> y toca el botón <b>Bitácora</b>. Escribe la historia que elegiste y, en una línea, por qué la elegiste.</span>
+  </div>
+</div>
+            <sc-if value="{{ pickDiff }}"><span style="font-size:15px;line-height:1.5;color:#1F4FB0;font-weight:700;">Elegiste distinto al puntaje. Vale, si tu razón lo explica: la llevarás al consejo.</span></sc-if>
+          </div>
+        </sc-if>
+
+        <sc-if value="{{ isInv }}">
+          <div style="display:grid;grid-template-columns:repeat(auto-fit,minmax(min(100%,320px),1fr));gap:14px;align-items:start;">
+            <div style="border:1px solid #DCE6F5;border-radius:18px;overflow:hidden;">
+              <div style="padding:10px 16px;background:#F2F6FC;font-size:14px;font-weight:700;display:flex;align-items:center;gap:8px;"><span style="width:24px;height:24px;border-radius:50%;background:#CFE3FF;display:inline-flex;align-items:center;justify-content:center;font-size:13px;">V</span>El prompt de Valentina</div>
+              <div style="padding:16px;"><div style="background:#001F19;color:#FFFFFF;border-radius:16px 16px 4px 16px;padding:12px 16px;font-size:15px;line-height:1.6;"><b style="color:#6BE3D7;">R</b> Actúa como investigadora de un medio independiente. <b style="color:#6BE3D7;">T</b> Dame contexto, 3 datos y 3 preguntas para investigar. <b style="color:#6BE3D7;">C</b> Mi historia es una vendedora de tintos en un paradero de Chapinero. <b style="color:#6BE3D7;">F</b> Tres listas cortas: Contexto, Datos, Preguntas.</div></div>
+              <div style="background:#DDF7F3;padding:12px 16px;font-size:15px;line-height:1.5;"><b>Tú:</b> cambia solo la C por tu historia.</div>
+            </div>
+            <div style="background:#F2F6FC;border-radius:18px;padding:16px;display:flex;flex-direction:column;gap:10px;">
+              <div style="display:flex;justify-content:space-between;align-items:center;gap:10px;flex-wrap:wrap;"><span style="font-size:13px;font-weight:700;letter-spacing:.12em;text-transform:uppercase;">La IA respondió esto. ¿Qué es cada frase?</span><span style="font-size:13px;font-weight:700;background:#FFFFFF;color:#1F4FB0;padding:5px 10px;border-radius:999px;">{{ invN }} de 4</span></div>
+              <sc-if value="{{ invPlaying }}">
+                <div data-anim="invcard" style="background:#FFFFFF;border-radius:16px;padding:18px;box-shadow:0 10px 26px rgba(0,31,25,.10);font-size:17px;line-height:1.5;min-height:72px;display:flex;align-items:center;">"{{ invT }}"</div>
+                <span style="font-size:14px;line-height:1.45;color:#34405A;">Toca la caja donde va.</span>
+                <div style="display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:8px;">
+                  <button type="button" data-bin="0" onClick="{{ invPick0 }}" style="text-align:left;border:1px solid #D3DEEF;border-top:5px solid #6BE3D7;background:#FFFFFF;border-radius:14px;padding:12px 14px;cursor:pointer;color:#001F19;display:flex;flex-direction:column;gap:4px;min-height:80px;"><span style="display:flex;justify-content:space-between;gap:6px;align-items:baseline;"><b style="font-size:16px;">Dato</b><b style="font-size:14px;color:#4F5F7A;">{{ binN0 }}</b></span><span style="font-size:14px;line-height:1.4;color:#4F5F7A;">Se puede comprobar</span></button>
+                  <button type="button" data-bin="1" onClick="{{ invPick1 }}" style="text-align:left;border:1px solid #D3DEEF;border-top:5px solid #5691FF;background:#FFFFFF;border-radius:14px;padding:12px 14px;cursor:pointer;color:#001F19;display:flex;flex-direction:column;gap:4px;min-height:80px;"><span style="display:flex;justify-content:space-between;gap:6px;align-items:baseline;"><b style="font-size:16px;">Opinión</b><b style="font-size:14px;color:#4F5F7A;">{{ binN1 }}</b></span><span style="font-size:14px;line-height:1.4;color:#4F5F7A;">Alguien lo piensa</span></button>
+                  <button type="button" data-bin="2" onClick="{{ invPick2 }}" style="text-align:left;border:1px solid #D3DEEF;border-top:5px solid #FF9C65;background:#FFFFFF;border-radius:14px;padding:12px 14px;cursor:pointer;color:#001F19;display:flex;flex-direction:column;gap:4px;min-height:80px;"><span style="display:flex;justify-content:space-between;gap:6px;align-items:baseline;"><b style="font-size:16px;">Pregunta</b><b style="font-size:14px;color:#4F5F7A;">{{ binN2 }}</b></span><span style="font-size:14px;line-height:1.4;color:#4F5F7A;">Todavía no se sabe</span></button>
+                </div>
+                <sc-if value="{{ hasInvFb }}"><span style="font-size:15px;line-height:1.5;color:#A42F27;font-weight:700;">{{ invFb }}</span></sc-if>
+              </sc-if>
+              <sc-if value="{{ invDone }}">
+                <div style="display:grid;grid-template-columns:repeat(auto-fit,minmax(min(100%,160px),1fr));gap:8px;">
+                  <div style="background:#FFFFFF;border-top:5px solid #6BE3D7;border-radius:14px;padding:12px 14px;display:flex;flex-direction:column;gap:6px;"><b style="font-size:15px;">Dato</b><sc-for list="{{ binL0 }}" as="it" hint-placeholder-count="1"><span style="font-size:14px;line-height:1.4;">{{ it }}</span></sc-for></div>
+                  <div style="background:#FFFFFF;border-top:5px solid #5691FF;border-radius:14px;padding:12px 14px;display:flex;flex-direction:column;gap:6px;"><b style="font-size:15px;">Opinión</b><sc-for list="{{ binL1 }}" as="it" hint-placeholder-count="1"><span style="font-size:14px;line-height:1.4;">{{ it }}</span></sc-for></div>
+                  <div style="background:#FFFFFF;border-top:5px solid #FF9C65;border-radius:14px;padding:12px 14px;display:flex;flex-direction:column;gap:6px;"><b style="font-size:15px;">Pregunta</b><sc-for list="{{ binL2 }}" as="it" hint-placeholder-count="1"><span style="font-size:14px;line-height:1.4;">{{ it }}</span></sc-for></div>
+                </div>
+                <button type="button" onClick="{{ invReset }}" style="align-self:flex-start;border:1px solid #D3DEEF;background:#FFFFFF;color:#001F19;font-weight:700;font-size:14px;padding:8px 14px;border-radius:999px;cursor:pointer;">↺ Otra vez</button>
+              </sc-if>
+              <span style="font-size:15px;line-height:1.5;color:#34405A;">Solo los datos se verifican. Las opiniones no van en tu ficha. Las preguntas, sí: son tu guía.</span>
+            </div>
+          </div>
+          <div style="border:1px solid #DCE6F5;border-radius:18px;padding:16px;display:flex;flex-direction:column;gap:10px;">
+            <span style="font-size:13px;font-weight:700;letter-spacing:.12em;text-transform:uppercase;">Marca cada dato en Borradores, en Mi bitácora</span>
+            <div style="display:grid;grid-template-columns:repeat(auto-fit,minmax(min(100%,200px),1fr));gap:8px;">
+              <div style="background:#6BE3D7;border-radius:12px;padding:12px 14px;display:flex;flex-direction:column;gap:2px;"><b style="font-size:15px;">Confirmado</b><span style="font-size:14px;line-height:1.45;">Lo encontraste en una fuente. Va a tu ficha con la fuente.</span></div>
+              <div style="background:#CFE3FF;border-radius:12px;padding:12px 14px;display:flex;flex-direction:column;gap:2px;"><b style="font-size:15px;">Pendiente</b><span style="font-size:14px;line-height:1.45;">Todavía lo buscas. No lo uses aún.</span></div>
+              <div style="background:#FFC9C2;border-radius:12px;padding:12px 14px;display:flex;flex-direction:column;gap:2px;"><b style="font-size:15px;">Solo IA</b><span style="font-size:14px;line-height:1.45;">Solo lo dijo la IA. No entra a tu ficha.</span></div>
+            </div>
+            <span style="font-size:15px;line-height:1.5;">Tu ficha necesita 1 dato confirmado. Un segundo dato es reto extra.</span>
+          </div>
+        </sc-if>
+
+        <sc-if value="{{ isPausa }}">
+          <div style="background:radial-gradient(70% 120% at 100% 0%,rgba(107,227,215,.35),transparent 60%),#001F19;color:#FFFFFF;border-radius:20px;padding:clamp(24px,4vw,40px);display:flex;flex-direction:column;gap:10px;">
+            <span style="font-family:'Roca One Light',serif;font-size:clamp(26px,4vw,36px);line-height:1.15;">Pausa de la redacción</span>
+            <span style="font-size:16px;line-height:1.6;">Lejos de la pantalla. A la vuelta: el Consejo editorial. Ve pensando cómo contarías tu historia en 90 segundos.</span>
+          </div>
+        </sc-if>
+
+        <sc-if value="{{ isConsejo }}">
+          <div style="display:flex;gap:6px;background:#F2F6FC;border-radius:999px;padding:4px;align-self:flex-start;flex-wrap:wrap;">
+            <sc-if value="{{ modeTeam }}"><button type="button" onClick="{{ setTeam }}" style="border:0;background:#001F19;color:#FFFFFF;font-weight:700;font-size:15px;padding:9px 16px;border-radius:999px;cursor:pointer;">En equipo</button><button type="button" onClick="{{ setIA }}" style="border:0;background:transparent;color:#001F19;font-weight:700;font-size:15px;padding:9px 16px;border-radius:999px;cursor:pointer;">Solo, con IA</button></sc-if>
+            <sc-if value="{{ modeIA }}"><button type="button" onClick="{{ setTeam }}" style="border:0;background:transparent;color:#001F19;font-weight:700;font-size:15px;padding:9px 16px;border-radius:999px;cursor:pointer;">En equipo</button><button type="button" onClick="{{ setIA }}" style="border:0;background:#001F19;color:#FFFFFF;font-weight:700;font-size:15px;padding:9px 16px;border-radius:999px;cursor:pointer;">Solo, con IA</button></sc-if>
+          </div>
+          <sc-if value="{{ modeTeam }}"><span style="font-size:15px;line-height:1.5;">Equipos de 3. Cada uno presenta en 90 segundos. Los otros 2 se reparten los 4 roles: cada uno hace 2 preguntas.</span></sc-if>
+          <sc-if value="{{ modeIA }}">
+            <div style="background:#F2F6FC;border-radius:16px;padding:14px 16px;display:flex;flex-direction:column;gap:6px;"><b style="font-size:13px;letter-spacing:.12em;text-transform:uppercase;color:#1F4FB0;">Copia este prompt</b><span style="font-size:15px;line-height:1.55;">"Actúa como el consejo editorial de un medio independiente con 4 roles: la Editora, una abogada de derechos, una audiencia escéptica y un productor de presupuesto. Te presento mi historia tal como la contaría en 90 segundos. Cada rol me hace 1 pregunta difícil, una a la vez. Al final, dame luz verde o un ajuste concreto."</span></div>
+          </sc-if>
+          <span style="font-size:13px;font-weight:700;letter-spacing:.12em;text-transform:uppercase;">Los 4 roles · toca una tarjeta</span>
+          <div style="display:grid;grid-template-columns:repeat(auto-fit,minmax(200px,1fr));gap:10px;">
+            <sc-for list="{{ roles }}" as="rl" hint-placeholder-count="4">
+              <sc-if value="{{ rl.closed }}"><button type="button" data-role="{{ rl.ri }}" onClick="{{ rl.flip }}" style="text-align:left;border:0;background:#001F19;color:#FFFFFF;border-radius:16px;padding:18px;cursor:pointer;display:flex;flex-direction:column;gap:8px;min-height:150px;"><span style="font-size:28px;">{{ rl.e }}</span><b style="font-size:17px;">{{ rl.t }}</b><span style="font-size:15px;color:#B6E2FF;">{{ rl.d }}</span></button></sc-if>
+              <sc-if value="{{ rl.open }}"><button type="button" data-role="{{ rl.ri }}" onClick="{{ rl.flip }}" style="text-align:left;border:2px solid #2F6FE0;background:#FFFFFF;color:#001F19;border-radius:16px;padding:16px;cursor:pointer;display:flex;flex-direction:column;gap:8px;min-height:150px;"><span style="font-size:13px;font-weight:700;letter-spacing:.12em;text-transform:uppercase;color:#1F4FB0;">{{ rl.t }} pregunta</span><span style="font-family:'Roca One Light',serif;font-size:20px;line-height:1.25;">{{ rl.q }}</span></button></sc-if>
+            </sc-for>
+          </div>
+          <div style="display:grid;grid-template-columns:repeat(auto-fit,minmax(min(100%,300px),1fr));gap:14px;align-items:start;">
+            <div style="background:radial-gradient(70% 120% at 100% 0%,rgba(47,111,224,.5),transparent 60%),#001F19;color:#FFFFFF;border-radius:18px;padding:18px;display:flex;flex-direction:column;gap:12px;align-items:flex-start;">
+              <span style="font-size:13px;font-weight:700;letter-spacing:.12em;text-transform:uppercase;color:#6BE3D7;">Tu presentación</span>
+              <div style="width:150px;height:150px;border-radius:50%;background:conic-gradient(#6BE3D7 {{ tPct }}, rgba(255,255,255,.14) 0);display:flex;align-items:center;justify-content:center;"><div style="width:128px;height:128px;border-radius:50%;background:#001F19;display:flex;align-items:center;justify-content:center;"><span style="font-family:'Roca One Light',serif;font-size:42px;line-height:1;">{{ timerTxt }}</span></div></div>
+              <div style="display:flex;gap:8px;flex-wrap:wrap;">
+                <button type="button" onClick="{{ timerToggle }}" style="border:0;background:#6BE3D7;color:#001F19;font-weight:700;font-size:15px;padding:10px 16px;border-radius:999px;cursor:pointer;">{{ timerLabel }}</button>
+                <button type="button" onClick="{{ timerReset }}" style="border:1px solid rgba(255,255,255,.3);background:transparent;color:#FFFFFF;font-weight:700;font-size:15px;padding:10px 16px;border-radius:999px;cursor:pointer;">↺</button>
+              </div>
+              <span style="font-size:15px;line-height:1.5;color:#E3F0FF;">Quién es · dónde está · qué le pasa · por qué importa.</span>
+            </div>
+            <div style="display:flex;flex-direction:column;gap:8px;">
+              <span style="font-size:13px;font-weight:700;letter-spacing:.12em;text-transform:uppercase;">Así le fue a Valentina</span>
+              <div style="display:flex;gap:10px;align-items:flex-start;"><span style="width:32px;height:32px;flex:none;border-radius:50%;background:#CFE3FF;display:flex;align-items:center;justify-content:center;font-weight:700;font-size:14px;">V</span><div style="background:#F2F6FC;border-radius:14px 14px 14px 4px;padding:10px 12px;font-size:15px;line-height:1.5;"><b style="display:block;font-size:13px;color:#1F4FB0;">Valentina</b>Mi historia es sobre la pobreza en Bogotá.</div></div>
+              <div style="display:flex;gap:10px;align-items:flex-start;"><span style="width:32px;height:32px;flex:none;border-radius:50%;background:#001F19;display:flex;align-items:center;justify-content:center;font-size:15px;">🤨</span><div style="background:#001F19;color:#FFFFFF;border-radius:14px 14px 14px 4px;padding:10px 12px;font-size:15px;line-height:1.5;"><b style="display:block;font-size:13px;color:#6BE3D7;">Audiencia escéptica</b>¿De quién? No veo a nadie. ¿Por qué me quedaría escuchando?</div></div>
+              <div style="display:flex;gap:10px;align-items:flex-start;"><span style="width:32px;height:32px;flex:none;border-radius:50%;background:#CFE3FF;display:flex;align-items:center;justify-content:center;font-weight:700;font-size:14px;">V</span><div style="background:#F2F6FC;border-radius:14px 14px 14px 4px;padding:10px 12px;font-size:15px;line-height:1.5;"><b style="display:block;font-size:13px;color:#1F4FB0;">Valentina</b>Volví con Doña Rosa. Esa vez sí hubo luz verde.</div></div>
+            </div>
+          </div>
+          <div style="display:flex;flex-direction:column;gap:8px;">
+            <span style="font-size:13px;font-weight:700;letter-spacing:.12em;text-transform:uppercase;">¿Cómo saliste del consejo?</span>
+            <div style="display:grid;grid-template-columns:1fr 1fr;gap:10px;max-width:520px;">
+              <sc-if value="{{ vGreenOn }}"><button type="button" onClick="{{ vGreen }}" style="border:0;background:#6BE3D7;color:#001F19;font-weight:700;font-size:15px;padding:14px;border-radius:14px;cursor:pointer;">🟢 Luz verde</button></sc-if>
+              <sc-if value="{{ vGreenOff }}"><button type="button" onClick="{{ vGreen }}" style="border:1px solid #DCE6F5;background:#FFFFFF;color:#001F19;font-weight:700;font-size:15px;padding:14px;border-radius:14px;cursor:pointer;">🟢 Luz verde</button></sc-if>
+              <sc-if value="{{ vAdjOn }}"><button type="button" onClick="{{ vAdj }}" style="border:0;background:#CFE3FF;color:#001F19;font-weight:700;font-size:15px;padding:14px;border-radius:14px;cursor:pointer;">🟡 Con un ajuste</button></sc-if>
+              <sc-if value="{{ vAdjOff }}"><button type="button" onClick="{{ vAdj }}" style="border:1px solid #DCE6F5;background:#FFFFFF;color:#001F19;font-weight:700;font-size:15px;padding:14px;border-radius:14px;cursor:pointer;">🟡 Con un ajuste</button></sc-if>
+            </div>
+            <sc-if value="{{ hasVerdict }}"><div style="background:#F2F6FC;border-radius:12px;padding:12px 14px;font-size:15px;line-height:1.5;max-width:620px;display:flex;gap:14px;align-items:center;flex-wrap:wrap;"><span data-anim="stamp" style="flex:none;border:3px solid #001F19;color:#001F19;transform:rotate(-6deg);padding:5px 12px;border-radius:10px;font-weight:700;font-size:15px;letter-spacing:.1em;text-transform:uppercase;background:#FFFFFF;">{{ stampTxt }}</span><span style="flex:1;min-width:220px;">{{ verdictMsg }}</span></div></sc-if>
+            <sc-if value="{{ isAdj }}">
+              <div style="display:flex;flex-direction:column;gap:8px;max-width:620px;">
+                <div style="background:#FFF3EA;border:2px solid #F47B20;border-radius:18px;padding:14px 18px;display:flex;align-items:center;gap:16px;flex-wrap:wrap;">
+  <img src="assets/boton-bitacora.png" alt="Botón Bitácora del Campus CTC" style="height:54px;width:auto;flex:none;border-radius:12px;background:#FFFFFF;">
+  <div style="flex:1;min-width:220px;display:flex;flex-direction:column;gap:4px;">
+    <b style="font-size:13px;letter-spacing:.12em;text-transform:uppercase;color:#9A4310;">Es momento de abrir tu bitácora</b>
+    <span style="font-size:15px;line-height:1.55;color:#001F19;">Ingresa al <b>Campus CTC</b> y toca el botón <b>Bitácora</b>. Anota el <b>ajuste</b> que te pidió el Consejo. Lo aplicas en tu ficha antes de crear tu personaje.</span>
+  </div>
+</div>
+                <button type="button" onClick="{{ timerReset }}" style="align-self:flex-start;border:1px solid #2F6FE0;background:#FFFFFF;color:#1F4FB0;font-weight:700;font-size:15px;padding:9px 14px;border-radius:999px;cursor:pointer;">↺ Presentar otra vez</button>
+              </div>
+            </sc-if>
+          </div>
+        </sc-if>
+
+        
+        <sc-if value="{{ isFicha }}">
+          
+          <div style="display:flex;gap:6px;background:#F2F6FC;border-radius:999px;padding:4px;align-self:flex-start;">
+            <sc-if value="{{ fichaMine }}"><button type="button" onClick="{{ fichaShowMine }}" style="border:0;background:#001F19;color:#FFFFFF;font-weight:700;font-size:15px;padding:9px 16px;border-radius:999px;cursor:pointer;">Plantilla</button><button type="button" onClick="{{ fichaShowV }}" style="border:0;background:transparent;color:#001F19;font-weight:700;font-size:15px;padding:9px 16px;border-radius:999px;cursor:pointer;">La de Valentina</button></sc-if>
+            <sc-if value="{{ fichaV }}"><button type="button" onClick="{{ fichaShowMine }}" style="border:0;background:transparent;color:#001F19;font-weight:700;font-size:15px;padding:9px 16px;border-radius:999px;cursor:pointer;">Plantilla</button><button type="button" onClick="{{ fichaShowV }}" style="border:0;background:#001F19;color:#FFFFFF;font-weight:700;font-size:15px;padding:9px 16px;border-radius:999px;cursor:pointer;">La de Valentina</button></sc-if>
+          </div>
+          <div style="background:#F2F6FC;border-radius:20px;padding:clamp(14px,2.4vw,22px);">
+            <div style="background:#FFFFFF;border-radius:14px;max-width:760px;margin:0 auto;overflow:hidden;box-shadow:0 1px 2px rgba(0,31,25,.06);">
+              <div style="background:#001F19;color:#FFFFFF;padding:16px 20px;display:flex;flex-direction:column;gap:4px;">
+                <span style="font-size:13px;font-weight:700;letter-spacing:.14em;text-transform:uppercase;color:#6BE3D7;">Ficha de investigación</span>
+                <span style="font-family:'Roca One Light',serif;font-size:clamp(22px,3vw,28px);line-height:1.15;">{{ fichaTitle }}</span>
+              </div>
+              <div style="display:grid;grid-template-columns:repeat(auto-fit,minmax(min(100%,220px),1fr));gap:1px;background:#DCE6F5;">
+                <sc-for list="{{ ficha }}" as="fc" hint-placeholder-count="6">
+                  <div style="background:#FFFFFF;padding:14px 16px;display:flex;flex-direction:column;gap:4px;">
+                    <span style="font-size:13px;font-weight:700;letter-spacing:.12em;text-transform:uppercase;color:#1F4FB0;">{{ fc.k }}</span>
+                    <sc-if value="{{ fc.has }}"><span style="font-size:15px;line-height:1.45;">{{ fc.v }}</span></sc-if>
+                    <sc-if value="{{ fc.hint }}"><span style="font-size:15px;line-height:1.45;color:#6E7D96;">{{ fc.v }}</span></sc-if>
+                  </div>
+                </sc-for>
+              </div>
+            </div>
+          </div>
+          
+        </sc-if>
+
+        <sc-if value="{{ isAud }}">
+          <div style="display:flex;align-items:center;gap:12px;margin-top:6px;padding-top:18px;border-top:2px dashed #DCE6F5;"><span style="width:36px;height:36px;flex:none;border-radius:50%;background:#001F19;color:#6BE3D7;display:flex;align-items:center;justify-content:center;font-size:17px;">🎧</span><div style="display:flex;flex-direction:column;gap:2px;"><b style="font-size:13px;letter-spacing:.12em;text-transform:uppercase;color:#1F4FB0;">Un paso de tu ficha</b><span style="font-family:'Roca One Light',serif;font-size:clamp(20px,2.6vw,26px);line-height:1.2;">Audiencia y formato: el campo "para quién"</span></div></div>
+          <div style="display:flex;flex-direction:column;gap:12px;">
+            <div style="display:flex;justify-content:space-between;gap:10px;flex-wrap:wrap;align-items:center;"><b style="font-size:18px;">1 · La IA propuso esta audiencia. ¿Le sirve a Valentina?</b><span style="font-size:14px;color:#34405A;">Toca cada tarjeta</span></div>
+            <div style="display:grid;grid-template-columns:repeat(auto-fit,minmax(min(100%,210px),1fr));gap:12px;">
+              <sc-for list="{{ aud }}" as="a" hint-placeholder-count="3">
+                <sc-if value="{{ a.raw }}"><button type="button" onClick="{{ a.toggle }}" style="display:flex;flex-direction:column;text-align:left;border:1px solid #DCE6F5;background:#FFFFFF;border-radius:18px;padding:0;overflow:hidden;cursor:pointer;color:#001F19;min-height:170px;animation:proIn .3s ease-out;"><span style="background:#FFD9D3;padding:10px 14px;display:flex;justify-content:space-between;align-items:center;gap:8px;"><b style="font-size:13px;font-weight:700;letter-spacing:.12em;text-transform:uppercase;">{{ a.k }}</b><span style="font-size:12px;font-weight:700;background:#FFFFFF;border-radius:999px;padding:2px 8px;">🤖 IA</span></span><span style="padding:14px;font-size:16px;line-height:1.45;font-weight:700;flex:1;">{{ a.ia }}</span><span style="padding:0 14px 14px;font-size:14px;font-weight:700;color:#1F4FB0;">↻ Ver lo que corrigió Valentina</span></button></sc-if>
+                <sc-if value="{{ a.fixed }}"><button type="button" onClick="{{ a.toggle }}" style="display:flex;flex-direction:column;text-align:left;border:2px solid #6BE3D7;background:#FFFFFF;border-radius:18px;padding:0;overflow:hidden;cursor:pointer;color:#001F19;min-height:170px;animation:proIn .3s ease-out;"><span style="background:#6BE3D7;padding:10px 14px;display:flex;justify-content:space-between;align-items:center;gap:8px;"><b style="font-size:13px;font-weight:700;letter-spacing:.12em;text-transform:uppercase;">{{ a.k }}</b><span style="font-size:12px;font-weight:700;background:#FFFFFF;border-radius:999px;padding:2px 8px;">✓ Valentina</span></span><s style="padding:12px 14px 0;font-size:14px;line-height:1.4;color:#6E7D96;">{{ a.ia }}</s><span style="padding:6px 14px 14px;font-size:16px;line-height:1.45;font-weight:700;flex:1;">{{ a.v }}</span></button></sc-if>
+              </sc-for>
+            </div>
+          </div>
+          <div style="display:flex;flex-direction:column;gap:12px;">
+            <div style="display:flex;justify-content:space-between;gap:10px;flex-wrap:wrap;align-items:center;"><b style="font-size:18px;">2 · Elige tu formato</b><span style="font-size:13px;font-weight:700;background:#F2F6FC;border-radius:999px;padding:4px 10px;">Los 3 llevan audio</span></div>
+            <div style="display:grid;grid-template-columns:repeat(auto-fit,minmax(min(100%,200px),1fr));gap:12px;">
+              <sc-for list="{{ fmts }}" as="f" hint-placeholder-count="3">
+                <sc-if value="{{ f.on }}"><button type="button" onClick="{{ f.pick }}" aria-pressed="true" style="display:flex;flex-direction:column;gap:10px;text-align:left;border:2px solid #2F6FE0;background:#E1EEFF;border-radius:18px;padding:16px;cursor:pointer;color:#001F19;"><span style="width:54px;height:54px;border-radius:14px;background:#2F6FE0;display:flex;align-items:center;justify-content:center;font-size:28px;">{{ f.e }}</span><b style="font-size:17px;line-height:1.25;">{{ f.t }}</b><span style="font-size:14px;line-height:1.45;color:#34405A;">{{ f.d }}</span></button></sc-if>
+                <sc-if value="{{ f.off }}"><button type="button" onClick="{{ f.pick }}" aria-pressed="false" style="display:flex;flex-direction:column;gap:10px;text-align:left;border:1px solid #DCE6F5;background:#FFFFFF;border-radius:18px;padding:16px;cursor:pointer;color:#001F19;"><span style="width:54px;height:54px;border-radius:14px;background:#F2F6FC;display:flex;align-items:center;justify-content:center;font-size:28px;">{{ f.e }}</span><b style="font-size:17px;line-height:1.25;">{{ f.t }}</b><span style="font-size:14px;line-height:1.45;color:#34405A;">{{ f.d }}</span></button></sc-if>
+              </sc-for>
+            </div>
+            <span style="font-size:15px;line-height:1.5;"><b>Valentina:</b> podcast documental.</span>
+            <sc-if value="{{ fmtHas }}">
+                <div style="background:#001F19;color:#FFFFFF;border-radius:16px;padding:14px 16px;display:flex;flex-direction:column;gap:10px;">
+                  <div style="display:flex;justify-content:space-between;gap:8px;flex-wrap:wrap;align-items:baseline;"><b style="font-size:13px;letter-spacing:.12em;text-transform:uppercase;color:#6BE3D7;">Así se arma · {{ fmtName }}</b><span style="font-size:14px;color:#B6E2FF;">{{ fmtLen }}</span></div>
+                  <div data-fmtbar="1" style="display:flex;gap:3px;min-height:46px;border-radius:10px;overflow:hidden;">
+                    <sc-for list="{{ fmtSeg }}" as="g" hint-placeholder-count="4"><div style="flex:{{ g.w }} 1 0;min-width:0;transform-origin:left;background:{{ g.bg }};color:#001F19;display:flex;align-items:center;padding:6px 8px;font-size:13px;font-weight:700;line-height:1.15;overflow-wrap:anywhere;">{{ g.t }}</div></sc-for>
+                  </div>
+                  <span style="font-size:15px;line-height:1.5;">{{ fmtKey }}</span>
+                </div>
+              </sc-if>
+          </div>
+        </sc-if>
+
+        <sc-if value="{{ isRosa }}">
+          <div style="display:flex;align-items:center;gap:12px;">
+            <span style="width:36px;height:36px;flex:none;border-radius:50%;background:#001F19;color:#6BE3D7;display:flex;align-items:center;justify-content:center;font-weight:700;font-size:16px;">1</span>
+            <div style="display:flex;flex-direction:column;gap:2px;"><b style="font-size:13px;letter-spacing:.12em;text-transform:uppercase;color:#1F4FB0;">Parte 1 de 2</b><span style="font-family:'Roca One Light',serif;font-size:clamp(20px,2.6vw,26px);line-height:1.2;">Conoce a Doña Rosa</span></div>
+          </div>
+          <div style="display:grid;grid-template-columns:repeat(auto-fit,minmax(min(100%,320px),1fr));gap:14px;align-items:start;">
+            <div style="background:#F2F6FC;border-radius:18px;padding:16px;display:flex;flex-direction:column;gap:8px;">
+              <span style="font-size:13px;font-weight:700;letter-spacing:.12em;text-transform:uppercase;">Ficha de Doña Rosa · ¿de dónde salió cada dato?</span>
+              <sc-for list="{{ rosa }}" as="r" hint-placeholder-count="7">
+                <button type="button" onClick="{{ r.toggle }}" style="text-align:left;border:0;background:#FFFFFF;border-radius:12px;padding:10px 12px;cursor:pointer;color:#001F19;display:flex;flex-wrap:wrap;gap:6px 10px;align-items:center;">
+                  <b style="font-size:13px;letter-spacing:.08em;text-transform:uppercase;color:#1F4FB0;min-width:72px;">{{ r.k }}</b>
+                  <span style="flex:1;min-width:120px;font-size:15px;line-height:1.4;">{{ r.v }}</span>
+                  <sc-if value="{{ r.shown }}"><span data-rosa="{{ r.ri }}" style="font-size:13px;font-weight:700;padding:4px 10px;border-radius:999px;white-space:nowrap;background:{{ r.bg }};">{{ r.src }}</span></sc-if>
+                  <sc-if value="{{ r.hidden }}"><span style="font-size:13px;font-weight:700;padding:4px 10px;border-radius:999px;border:1px dashed #5691FF;color:#1F4FB0;white-space:nowrap;">¿Real o inventado?</span></sc-if>
+                </button>
+              </sc-for>
+            </div>
+            <div style="display:flex;flex-direction:column;gap:10px;">
+              <div style="background:#FDECEA;border-radius:16px;padding:14px 16px;display:flex;flex-direction:column;gap:6px;"><b style="font-size:13px;letter-spacing:.12em;text-transform:uppercase;color:#A42F27;">Su error</b><span style="font-size:15px;line-height:1.5;">Quiso usar la foto de una vendedora real. Regla 2: no copio caras ni voces reales. Hizo un avatar ilustrado.</span></div>
+              <div style="background:radial-gradient(70% 120% at 100% 0%,rgba(47,111,224,.5),transparent 60%),#001F19;color:#FFFFFF;border-radius:18px;padding:18px;display:flex;flex-direction:column;gap:10px;">
+                <span style="font-size:13px;font-weight:700;letter-spacing:.12em;text-transform:uppercase;color:#6BE3D7;">Crea tu personaje · en clase</span>
+                <div style="display:flex;flex-direction:column;gap:8px;font-size:15px;line-height:1.5;">
+                  <span style="display:flex;gap:10px;"><b style="color:#6BE3D7;">1</b>Piensa en alguien de tu historia que ya conoces o recuerdas. No tienes que salir ni grabar a nadie.</span>
+                  <span style="display:flex;gap:10px;"><b style="color:#6BE3D7;">2</b>Escribe su ficha en Mi bitácora: nombre, edad, oficio, rasgo, deseo, conflicto y 3 frases.</span>
+                  <span style="display:flex;gap:10px;"><b style="color:#6BE3D7;">3</b>Diseña su avatar en el Estudio de avatar, aquí abajo.</span>
+                </div>
+                <span style="font-size:15px;color:#B6E2FF;">¿Prefieres no basarte en nadie? Crea un narrador inspirado en ti.</span>
+              </div>
+            </div>
+          </div>
+          <div style="display:flex;align-items:center;gap:12px;margin-top:14px;padding-top:22px;border-top:2px dashed #DCE6F5;">
+            <span style="width:36px;height:36px;flex:none;border-radius:50%;background:#001F19;color:#6BE3D7;display:flex;align-items:center;justify-content:center;font-weight:700;font-size:16px;">2</span>
+            <div style="display:flex;flex-direction:column;gap:2px;"><b style="font-size:13px;letter-spacing:.12em;text-transform:uppercase;color:#1F4FB0;">Parte 2 de 2</b><span style="font-family:'Roca One Light',serif;font-size:clamp(20px,2.6vw,26px);line-height:1.2;">Crea tu avatar</span></div>
+          </div>
+          <div style="border:1px solid #DCE6F5;border-radius:20px;overflow:hidden;">
+            <div style="background:#001F19;color:#FFFFFF;padding:16px 18px;display:flex;flex-direction:column;gap:6px;">
+              <span style="font-size:13px;font-weight:700;letter-spacing:.12em;text-transform:uppercase;color:#6BE3D7;">Estudio de avatar</span>
+              <span style="font-family:'Roca One Light',serif;font-size:clamp(22px,3vw,28px);line-height:1.2;">Tu avatar es la cara de tu historia</span>
+              <div style="display:flex;gap:6px;flex-wrap:wrap;margin-top:4px;">
+                <span style="font-size:14px;color:#B6E2FF;">Lo vas a usar en:</span>
+                <span style="font-size:13px;font-weight:700;background:rgba(255,255,255,.12);padding:4px 10px;border-radius:999px;">Portada</span>
+                <span style="font-size:13px;font-weight:700;background:rgba(255,255,255,.12);padding:4px 10px;border-radius:999px;">Tráiler</span>
+                <span style="font-size:13px;font-weight:700;background:rgba(255,255,255,.12);padding:4px 10px;border-radius:999px;">Portafolio</span>
+                <span style="font-size:13px;font-weight:700;background:rgba(255,255,255,.12);padding:4px 10px;border-radius:999px;">Pitch</span>
+              </div>
+            </div>
+            <div style="padding:16px 18px;display:flex;flex-direction:column;gap:16px;">
+              <div style="display:flex;flex-direction:column;gap:8px;">
+                <span style="font-size:13px;font-weight:700;letter-spacing:.12em;text-transform:uppercase;">Así lo hizo Valentina</span>
+                <div style="display:grid;grid-template-columns:repeat(auto-fit,minmax(min(100%,240px),1fr));gap:12px;">
+                  <div style="display:flex;flex-direction:column;gap:8px;">
+                    <div style="position:relative;width:100%;aspect-ratio:1/1;border-radius:14px;overflow:hidden;background:#F2F6FC;"><image-slot alt="Avatar v1 · fotorrealista (error)" id="e2-avatar-v1" src="assets/e2/13-avatar-v1.jpg" shape="rect" placeholder="Avatar v1 · fotorrealista (error)"></image-slot><span aria-hidden="true" style="position:absolute;inset:0;pointer-events:none;background-image:url(assets/grano.png);background-size:180px;opacity:.12;mix-blend-mode:overlay;"></span></div>
+                    <b style="font-size:14px;color:#A42F27;">Versión 1</b>
+                    <del style="font-size:15px;line-height:1.5;color:#4F5F7A;text-decoration-color:#C93B31;">"Una señora vendiendo tinto en Bogotá."</del>
+                    <span style="font-size:14px;line-height:1.5;color:#34405A;">Salió una foto que parecía de una persona real, sin nada de su historia.</span>
+                  </div>
+                  <div style="display:flex;flex-direction:column;gap:8px;">
+                    <div style="position:relative;width:100%;aspect-ratio:1/1;border-radius:14px;overflow:hidden;background:#F2F6FC;"><image-slot alt="Avatar v2 · ilustrado (el que eligió)" id="e2-avatar-v2" src="assets/e2/14-avatar-v2.jpg" shape="rect" placeholder="Avatar v2 · ilustrado (el que eligió)"></image-slot><span aria-hidden="true" style="position:absolute;inset:0;pointer-events:none;background-image:url(assets/grano.png);background-size:180px;opacity:.12;mix-blend-mode:overlay;"></span></div>
+                    <b style="font-size:14px;color:#0E6B5E;">Versión 2</b>
+                    <span style="font-size:15px;line-height:1.5;"><mark style="background:#B9F0EA;color:#001F19;padding:0 3px;">"Ilustración de una señora de unos 60 años, sonrisa tranquila, delantal, sirviendo tinto de un termo en un paradero de bus de Bogotá al amanecer. Colores cálidos. Retrato de hombros. Que no se parezca a ninguna persona real."</mark></span>
+                    <span style="font-size:14px;line-height:1.5;color:#34405A;">Usó su ficha: edad, oficio, lugar y un rasgo.</span>
+                  </div>
+                </div>
+              </div>
+              <div style="display:grid;grid-template-columns:repeat(auto-fit,minmax(min(100%,320px),1fr));gap:16px;align-items:start;border-top:1px solid #EAF0F8;padding-top:16px;">
+                <div style="display:flex;flex-direction:column;gap:10px;">
+                  <b style="font-size:17px;">Arma el prompt de tu avatar</b>
+                  <sc-for list="{{ avParts }}" as="pp" hint-placeholder-count="5">
+                    <div style="display:flex;flex-direction:column;gap:6px;">
+                      <span style="font-size:13px;font-weight:700;letter-spacing:.1em;text-transform:uppercase;color:#1F4FB0;">{{ pp.k }}</span>
+                      <div style="display:flex;gap:6px;flex-wrap:wrap;"><sc-for list="{{ pp.opts }}" as="o" hint-placeholder-count="4"><sc-if value="{{ o.on }}"><button type="button" onClick="{{ o.pick }}" aria-pressed="true" style="border:0;background:#001F19;color:#FFFFFF;font-weight:700;font-size:14px;padding:7px 12px;border-radius:999px;cursor:pointer;white-space:nowrap;">{{ o.t }}</button></sc-if><sc-if value="{{ o.off }}"><button type="button" onClick="{{ o.pick }}" aria-pressed="false" style="border:1px solid #D3DEEF;background:#FFFFFF;color:#001F19;font-weight:700;font-size:14px;padding:7px 12px;border-radius:999px;cursor:pointer;white-space:nowrap;">{{ o.t }}</button></sc-if></sc-for></div>
+                    </div>
+                  </sc-for>
+                  <div style="background:#001F19;color:#FFFFFF;border-radius:12px;padding:12px 14px;font-size:15px;line-height:1.55;">{{ avTxt }}</div>
+                  <span style="font-size:14px;line-height:1.5;color:#34405A;">Es para probar: no se guarda. Cambia lo que va entre [corchetes] por datos de tu ficha y pégalo en ChatGPT o Gemini.</span>
+                </div>
+                <div style="display:flex;flex-direction:column;gap:12px;">
+                  <div style="display:flex;flex-direction:column;gap:8px;">
+                    <b style="font-size:17px;">Revisa tu avatar antes de guardarlo</b>
+                    <sc-for list="{{ avChk }}" as="c" hint-placeholder-count="4">
+                      <sc-if value="{{ c.on }}"><button type="button" onClick="{{ c.toggle }}" aria-pressed="true" style="text-align:left;display:flex;gap:10px;align-items:center;border:0;background:#EAF2FF;border-radius:12px;padding:10px 12px;font-size:15px;color:#001F19;cursor:pointer;"><span style="width:22px;height:22px;flex:none;border-radius:6px;background:#2F6FE0;color:#FFFFFF;display:inline-flex;align-items:center;justify-content:center;font-size:13px;">✓</span>{{ c.t }}</button></sc-if>
+                      <sc-if value="{{ c.off }}"><button type="button" onClick="{{ c.toggle }}" aria-pressed="false" style="text-align:left;display:flex;gap:10px;align-items:center;border:1px solid #DCE6F5;background:#FFFFFF;border-radius:12px;padding:10px 12px;font-size:15px;color:#001F19;cursor:pointer;"><span style="width:22px;height:22px;flex:none;border-radius:6px;border:2px solid #C5D3EA;box-sizing:border-box;"></span>{{ c.t }}</button></sc-if>
+                    </sc-for>
+                    <sc-if value="{{ avAll }}"><span style="font-size:15px;font-weight:700;color:#0E6B5E;">Tu avatar está listo para ser la cara de tu historia.</span></sc-if>
+                    <sc-if value="{{ avNot }}"><span style="font-size:14px;line-height:1.5;color:#34405A;">¿Falla alguno? Ajusta el prompt y pide otra versión. Cada intento cuenta: elige con cuidado.</span></sc-if>
+                  </div>
+                  <div style="background:#FDECEA;border:1px solid #F5B5AC;border-radius:14px;padding:12px 14px;font-size:15px;line-height:1.5;"><b>⚠️ No subas fotos de personas reales, ni siquiera la tuya.</b> Describe a tu personaje con palabras: la IA lo dibuja desde cero.</div><div style="background:#F2F6FC;border-radius:14px;padding:12px 14px;font-size:15px;line-height:1.5;"><b>¿Tu cuenta no genera imágenes o no tienes celular?</b> Dibújalo en Canva: toca Elementos y arma tu personaje con formas e ilustraciones. También puedes dibujarlo a mano. En clase, tu docente puede generarlo con tu prompt.</div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div style="border:1px dashed #2F6FE0;background:#F6F9FD;border-radius:16px;padding:14px 16px;display:flex;gap:12px;align-items:flex-start;"><span style="font-size:22px;line-height:1;">🎨</span><div style="display:flex;flex-direction:column;gap:4px;"><b style="font-size:13px;letter-spacing:.12em;text-transform:uppercase;color:#1F4FB0;">Esto sigue en el Episodio 5</b><span style="font-size:15px;line-height:1.55;">Hoy solo creas el <b>avatar base</b>. Las 5 expresiones y la animación las haces en el Episodio 5, cuando armes tu capítulo 1. Guarda tu avatar y el prompt con que lo creaste.</span></div></div>
+              <div style="background:#FFF3EA;border:2px solid #F47B20;border-radius:18px;padding:14px 18px;display:flex;align-items:center;gap:16px;flex-wrap:wrap;">
+  <img src="assets/boton-bitacora.png" alt="Botón Bitácora del Campus CTC" style="height:54px;width:auto;flex:none;border-radius:12px;background:#FFFFFF;">
+  <div style="flex:1;min-width:220px;display:flex;flex-direction:column;gap:4px;">
+    <b style="font-size:13px;letter-spacing:.12em;text-transform:uppercase;color:#9A4310;">Es momento de abrir tu bitácora</b>
+    <span style="font-size:15px;line-height:1.55;color:#001F19;">Ingresa al <b>Campus CTC</b> y toca el botón <b>Bitácora</b>. Registra tu personaje con 3 cosas: su <b>ficha</b> (nombre, edad, oficio, rasgo, deseo, conflicto y 3 frases), su <b>avatar</b> y <b>qué es real y qué es inventado</b>.</span>
+  </div>
+</div>
+        </sc-if>
+
+        <sc-if value="{{ isPro }}">
+          <div role="group" aria-label="Pasos de la escena" style="display:flex;gap:8px;flex-wrap:wrap;"><sc-for list="{{ pkSteps }}" as="t" hint-placeholder-count="3"><sc-if value="{{ t.on }}"><button type="button" aria-current="step" onClick="{{ t.pick }}" style="flex:none;white-space:nowrap;display:flex;gap:8px;align-items:center;border:0;background:#001F19;color:#FFFFFF;font-weight:700;font-size:14px;padding:6px 14px 6px 6px;border-radius:999px;cursor:pointer;"><b style="width:26px;height:26px;border-radius:50%;background:#6BE3D7;color:#001F19;display:inline-flex;align-items:center;justify-content:center;font-size:13px;">{{ t.n }}</b>{{ t.t }}</button></sc-if><sc-if value="{{ t.off }}"><button type="button" onClick="{{ t.pick }}" style="flex:none;white-space:nowrap;display:flex;gap:8px;align-items:center;border:1px solid #DCE6F5;background:#FFFFFF;color:#001F19;font-weight:700;font-size:14px;padding:5px 14px 5px 5px;border-radius:999px;cursor:pointer;"><b style="width:26px;height:26px;border-radius:50%;background:#EAF2FF;color:#1F4FB0;display:inline-flex;align-items:center;justify-content:center;font-size:13px;">{{ t.mark }}</b>{{ t.t }}</button></sc-if></sc-for></div>
+          <sc-if value="{{ pk0 }}" hint-placeholder-val="{{ true }}"><div style="display:flex;flex-direction:column;gap:16px;animation:proIn .3s ease-out;"><div style="display:flex;justify-content:space-between;align-items:center;gap:10px;flex-wrap:wrap;"><span style="font-size:17px;line-height:1.5;">Llegan 4 nombres al tribunal. Tú decides si pasan.</span><div style="display:flex;gap:6px;"><sc-for list="{{ p2Dots }}" as="d" hint-placeholder-count="4"><span style="width:12px;height:12px;border-radius:50%;background:{{ d.c }};"></span></sc-for></div></div>
+<sc-if value="{{ p2Playing }}" hint-placeholder-val="{{ true }}"><sc-if value="{{ p2n0 }}" hint-placeholder-val="{{ true }}"><div style="background:radial-gradient(60% 90% at 100% 0%,rgba(47,111,224,.5),transparent 60%),#001F19;color:#FFFFFF;border-radius:24px;padding:clamp(28px,5vw,48px) 24px;display:flex;flex-direction:column;align-items:center;gap:10px;text-align:center;animation:slideIn .35s ease-out;"><span style="font-size:13px;font-weight:700;letter-spacing:.12em;text-transform:uppercase;color:#6BE3D7;">Caso 1 de 4</span><span style="font-family:'Roca One Light',serif;font-size:clamp(28px,5vw,46px);line-height:1.1;">{{ p2Name }}</span><span style="font-size:15px;color:#B6E2FF;">¿Lo recordarías mañana?</span></div></sc-if><sc-if value="{{ p2n1 }}"><div style="background:radial-gradient(60% 90% at 100% 0%,rgba(47,111,224,.5),transparent 60%),#001F19;color:#FFFFFF;border-radius:24px;padding:clamp(28px,5vw,48px) 24px;display:flex;flex-direction:column;align-items:center;gap:10px;text-align:center;animation:slideIn .35s ease-out;"><span style="font-size:13px;font-weight:700;letter-spacing:.12em;text-transform:uppercase;color:#6BE3D7;">Caso 2 de 4</span><span style="font-family:'Roca One Light',serif;font-size:clamp(28px,5vw,46px);line-height:1.1;">{{ p2Name }}</span><span style="font-size:15px;color:#B6E2FF;">¿Lo recordarías mañana?</span></div></sc-if><sc-if value="{{ p2n2 }}"><div style="background:radial-gradient(60% 90% at 100% 0%,rgba(47,111,224,.5),transparent 60%),#001F19;color:#FFFFFF;border-radius:24px;padding:clamp(28px,5vw,48px) 24px;display:flex;flex-direction:column;align-items:center;gap:10px;text-align:center;animation:slideIn .35s ease-out;"><span style="font-size:13px;font-weight:700;letter-spacing:.12em;text-transform:uppercase;color:#6BE3D7;">Caso 3 de 4</span><span style="font-family:'Roca One Light',serif;font-size:clamp(28px,5vw,46px);line-height:1.1;">{{ p2Name }}</span><span style="font-size:15px;color:#B6E2FF;">¿Lo recordarías mañana?</span></div></sc-if><sc-if value="{{ p2n3 }}"><div style="background:radial-gradient(60% 90% at 100% 0%,rgba(47,111,224,.5),transparent 60%),#001F19;color:#FFFFFF;border-radius:24px;padding:clamp(28px,5vw,48px) 24px;display:flex;flex-direction:column;align-items:center;gap:10px;text-align:center;animation:slideIn .35s ease-out;"><span style="font-size:13px;font-weight:700;letter-spacing:.12em;text-transform:uppercase;color:#6BE3D7;">Caso 4 de 4</span><span style="font-family:'Roca One Light',serif;font-size:clamp(28px,5vw,46px);line-height:1.1;">{{ p2Name }}</span><span style="font-size:15px;color:#B6E2FF;">¿Lo recordarías mañana?</span></div></sc-if>
+<div style="display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:10px;"><button data-tap="1" type="button" onClick="{{ p2Yes }}" style="border:0;background:#6BE3D7;color:#001F19;font-weight:700;font-size:18px;padding:16px;border-radius:16px;cursor:pointer;">✓ Pasa</button><button type="button" onClick="{{ p2No }}" style="border:0;background:#FFD9D3;color:#001F19;font-weight:700;font-size:18px;padding:16px;border-radius:16px;cursor:pointer;">✗ No pasa</button></div></sc-if>
+<sc-if value="{{ p2Done }}"><div style="position:relative;background:#F2F6FC;border-radius:22px;padding:30px 24px;display:flex;flex-direction:column;gap:8px;align-items:center;text-align:center;overflow:hidden;"><span style="position:absolute;top:16px;right:14px;border:3px solid #C93B31;color:#C93B31;font-weight:700;padding:6px 10px;border-radius:8px;font-size:13px;font-weight:700;letter-spacing:.12em;text-transform:uppercase;animation:stamp .45s ease-out both;transform:rotate(-8deg);">Caso cerrado</span><span style="font-family:'Roca One Light',serif;font-size:64px;line-height:1;color:#2F6FE0;">{{ p2Score }}</span><span style="font-size:15px;font-weight:700;">de 4 veredictos correctos</span><button type="button" onClick="{{ p2Again }}" style="margin-top:6px;border:1px solid #C5D3EA;background:#FFFFFF;color:#001F19;font-weight:700;font-size:14px;padding:8px 14px;border-radius:999px;cursor:pointer;">Repetir</button></div></sc-if></div></sc-if><sc-if value="{{ pk1 }}"><div style="display:flex;flex-direction:column;gap:16px;animation:proIn .3s ease-out;"><div style="display:grid;grid-template-columns:repeat(auto-fit,minmax(min(100%,300px),1fr));gap:14px;">
+<div style="background:#001F19;color:#FFFFFF;border-radius:22px;padding:22px;display:flex;flex-direction:column;gap:10px;"><span style="font-size:13px;font-weight:700;letter-spacing:.12em;text-transform:uppercase;color:#6BE3D7;">Nombre del podcast · hoy</span><span style="font-family:'Roca One Light',serif;font-size:34px;line-height:1.1;">Voces del andén</span><span style="font-size:15px;line-height:1.5;color:#E3F0FF;">Se elige una vez. Va en la portada y en todos los capítulos.</span></div>
+<div style="background:#F2F6FC;border-radius:22px;padding:22px;display:flex;flex-direction:column;gap:8px;"><span style="font-size:13px;font-weight:700;letter-spacing:.12em;text-transform:uppercase;color:#1F4FB0;">Título de cada capítulo · Episodio 5</span><span style="background:#FFFFFF;border-radius:12px;padding:10px 12px;font-size:15px;font-weight:700;">Cap. 1 · Bienvenidos al andén</span><span style="background:#FFFFFF;border-radius:12px;padding:10px 12px;font-size:15px;font-weight:700;">Cap. 2 · La señora que despierta al paradero</span><span style="font-size:15px;line-height:1.5;">Cambia cada vez y cuenta de qué trata ese capítulo.</span></div></div>
+<div style="background:#F2F6FC;border-radius:22px;padding:18px;display:flex;flex-direction:column;gap:14px;"><div style="display:flex;justify-content:space-between;gap:10px;flex-wrap:wrap;align-items:center;"><b style="font-size:18px;">¿Nombre o título? Clasifica cada tarjeta</b><div style="display:flex;gap:6px;"><sc-for list="{{ p2SoDots }}" as="d" hint-placeholder-count="3"><span style="width:12px;height:12px;border-radius:50%;background:{{ d.c }};"></span></sc-for></div></div>
+<sc-if value="{{ p2SoPlay }}" hint-placeholder-val="{{ true }}"><sc-if value="{{ p2so0 }}" hint-placeholder-val="{{ true }}"><div style="background:#FFFFFF;border:1px solid #DCE6F5;border-radius:18px;padding:24px 20px;display:flex;flex-direction:column;align-items:center;gap:6px;text-align:center;box-shadow:0 8px 20px rgba(0,31,25,.08);animation:slideIn .35s ease-out;"><span style="font-size:13px;font-weight:700;letter-spacing:.12em;text-transform:uppercase;color:#4F5F7A;">Tarjeta 1 de 4</span><b style="font-size:clamp(20px,3vw,26px);line-height:1.25;">{{ p2SoTxt }}</b></div></sc-if><sc-if value="{{ p2so1 }}"><div style="background:#FFFFFF;border:1px solid #DCE6F5;border-radius:18px;padding:24px 20px;display:flex;flex-direction:column;align-items:center;gap:6px;text-align:center;box-shadow:0 8px 20px rgba(0,31,25,.08);animation:slideIn .35s ease-out;"><span style="font-size:13px;font-weight:700;letter-spacing:.12em;text-transform:uppercase;color:#4F5F7A;">Tarjeta 2 de 4</span><b style="font-size:clamp(20px,3vw,26px);line-height:1.25;">{{ p2SoTxt }}</b></div></sc-if><sc-if value="{{ p2so2 }}"><div style="background:#FFFFFF;border:1px solid #DCE6F5;border-radius:18px;padding:24px 20px;display:flex;flex-direction:column;align-items:center;gap:6px;text-align:center;box-shadow:0 8px 20px rgba(0,31,25,.08);animation:slideIn .35s ease-out;"><span style="font-size:13px;font-weight:700;letter-spacing:.12em;text-transform:uppercase;color:#4F5F7A;">Tarjeta 3 de 4</span><b style="font-size:clamp(20px,3vw,26px);line-height:1.25;">{{ p2SoTxt }}</b></div></sc-if><sc-if value="{{ p2so3 }}"><div style="background:#FFFFFF;border:1px solid #DCE6F5;border-radius:18px;padding:24px 20px;display:flex;flex-direction:column;align-items:center;gap:6px;text-align:center;box-shadow:0 8px 20px rgba(0,31,25,.08);animation:slideIn .35s ease-out;"><span style="font-size:13px;font-weight:700;letter-spacing:.12em;text-transform:uppercase;color:#4F5F7A;">Tarjeta 4 de 4</span><b style="font-size:clamp(20px,3vw,26px);line-height:1.25;">{{ p2SoTxt }}</b></div></sc-if>
+<div style="display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:10px;"><button data-tap="1" type="button" onClick="{{ p2SoName }}" style="border:0;background:#001F19;color:#FFFFFF;font-weight:700;font-size:16px;padding:14px;border-radius:14px;cursor:pointer;">🏷️ Nombre del podcast</button><button data-tap="1" type="button" onClick="{{ p2SoTitle }}" style="border:0;background:#2F6FE0;color:#FFFFFF;font-weight:700;font-size:16px;padding:14px;border-radius:14px;cursor:pointer;">🎧 Título de capítulo</button></div></sc-if>
+<sc-if value="{{ p2SoDone }}"><div style="display:flex;justify-content:space-between;gap:10px;flex-wrap:wrap;align-items:center;background:#FFFFFF;border-radius:14px;padding:12px 14px;"><b style="font-size:16px;">{{ p2SoScore }}</b><button type="button" onClick="{{ p2SoAgain }}" style="border:1px solid #C5D3EA;background:#FFFFFF;color:#001F19;font-weight:700;font-size:14px;padding:7px 12px;border-radius:999px;cursor:pointer;">Repetir</button></div></sc-if>
+<div style="display:grid;grid-template-columns:repeat(auto-fit,minmax(min(100%,220px),1fr));gap:10px;"><div style="background:#001F19;color:#FFFFFF;border-radius:16px;padding:14px;display:flex;flex-direction:column;gap:8px;min-height:90px;"><span style="font-size:13px;font-weight:700;letter-spacing:.12em;text-transform:uppercase;color:#6BE3D7;">🏷️ Nombres</span><sc-for list="{{ p2BkN }}" as="x" hint-placeholder-count="0"><span style="background:rgba(255,255,255,.1);border-radius:10px;padding:8px 10px;font-size:14px;font-weight:700;animation:proIn .3s ease-out;">{{ x.t }}</span></sc-for></div><div style="background:#2F6FE0;color:#FFFFFF;border-radius:16px;padding:14px;display:flex;flex-direction:column;gap:8px;min-height:90px;"><span style="font-size:13px;font-weight:700;letter-spacing:.12em;text-transform:uppercase;color:#FFFFFF;">🎧 Títulos</span><sc-for list="{{ p2BkT }}" as="x" hint-placeholder-count="0"><span style="background:rgba(255,255,255,.16);border-radius:10px;padding:8px 10px;font-size:14px;font-weight:700;animation:proIn .3s ease-out;">{{ x.t }}</span></sc-for></div></div></div>
+<div style="display:grid;grid-template-columns:repeat(auto-fit,minmax(min(100%,200px),1fr));gap:10px;"><div style="background:#FFFFFF;border:1px solid #DCE6F5;border-radius:18px;padding:16px;display:flex;flex-direction:column;gap:6px;"><span style="font-family:'Roca One Light',serif;font-size:36px;line-height:1;color:#2F6FE0;">1</span><b style="font-size:16px;">Corto</b><span style="font-size:14px;line-height:1.45;color:#34405A;">1 a 4 palabras.</span><span style="align-self:flex-start;background:#F2F6FC;border-radius:999px;padding:4px 10px;font-size:13px;font-weight:700;">✓ Voces del andén</span></div><div style="background:#FFFFFF;border:1px solid #DCE6F5;border-radius:18px;padding:16px;display:flex;flex-direction:column;gap:6px;"><span style="font-family:'Roca One Light',serif;font-size:36px;line-height:1;color:#2F6FE0;">2</span><b style="font-size:16px;">Fácil de decir</b><span style="font-size:14px;line-height:1.45;color:#34405A;">Dilo en voz alta 3 veces.</span><span style="align-self:flex-start;background:#F2F6FC;border-radius:999px;padding:4px 10px;font-size:13px;font-weight:700;">✗ Crónicas sonoras urbanas</span></div><div style="background:#FFFFFF;border:1px solid #DCE6F5;border-radius:18px;padding:16px;display:flex;flex-direction:column;gap:6px;"><span style="font-family:'Roca One Light',serif;font-size:36px;line-height:1;color:#2F6FE0;">3</span><b style="font-size:16px;">Dice de qué va o da curiosidad</b><span style="font-size:14px;line-height:1.45;color:#34405A;">Lugar, gente o un detalle raro.</span><span style="align-self:flex-start;background:#F2F6FC;border-radius:999px;padding:4px 10px;font-size:13px;font-weight:700;">✓ Tinto a las 5:40</span></div></div></div></sc-if><sc-if value="{{ pk2 }}"><div style="display:flex;flex-direction:column;gap:16px;animation:proIn .3s ease-out;"><div style="display:grid;grid-template-columns:repeat(auto-fit,minmax(min(100%,300px),1fr));gap:18px;align-items:start;">
+<div style="display:flex;flex-direction:column;gap:14px;"><div style="border:1px solid #DCE6F5;border-radius:20px;padding:18px;display:flex;flex-direction:column;gap:12px;background:#FFFFFF;"><div style="display:flex;justify-content:space-between;gap:10px;flex-wrap:wrap;align-items:center;"><b style="font-size:18px;">El nombre</b><span style="align-self:flex-start;font-size:13px;font-weight:700;color:#8A5A00;background:#FFF6D9;border:1px solid #F2D27A;border-radius:999px;padding:4px 10px;">Es para probar: no se guarda</span></div><input type="text" value="{{ p2Title }}" onChange="{{ p2Set }}" maxlength="60" aria-label="Nombre de tu podcast" style="font-family:inherit;font-size:17px;padding:12px 14px;border:1px solid #C5D3EA;border-radius:12px;color:#001F19;"><div style="display:flex;flex-direction:column;gap:4px;"><sc-for list="{{ p2Checks }}" as="x" hint-placeholder-count="3"><span style="font-size:15px;font-weight:700;color:{{ x.c }};">{{ x.t }}</span></sc-for></div></div>
+<div style="border:1px solid #DCE6F5;border-radius:20px;padding:18px;display:flex;flex-direction:column;gap:12px;background:#FFFFFF;"><b style="font-size:18px;">Tu promesa · propuesta de valor</b><span style="font-size:15px;line-height:1.5;">Tu promesa: para quién es y por qué escucharte.</span><sc-for list="{{ p2Parts }}" as="pp" hint-placeholder-count="3"><div style="display:flex;flex-direction:column;gap:6px;"><span style="font-size:13px;font-weight:700;letter-spacing:.12em;text-transform:uppercase;color:#1F4FB0;">{{ pp.k }}</span><div style="display:flex;flex-wrap:wrap;gap:6px;"><sc-for list="{{ pp.opts }}" as="o" hint-placeholder-count="3"><sc-if value="{{ o.on }}"><button type="button" onClick="{{ o.pick }}" aria-pressed="true" style="text-align:left;border:0;background:#001F19;color:#FFFFFF;font-weight:700;font-size:14px;line-height:1.4;padding:8px 12px;border-radius:12px;cursor:pointer;">{{ o.t }}</button></sc-if><sc-if value="{{ o.off }}"><button type="button" onClick="{{ o.pick }}" aria-pressed="false" style="text-align:left;border:1px solid #D3DEEF;background:#FFFFFF;color:#001F19;font-weight:700;font-size:14px;line-height:1.4;padding:8px 12px;border-radius:12px;cursor:pointer;">{{ o.t }}</button></sc-if></sc-for></div></div></sc-for></div></div>
+<div style="display:flex;flex-direction:column;gap:10px;"><div style="width:min(100%,300px);margin:0 auto;background:#0B100E;border-radius:36px;padding:10px;box-shadow:0 18px 40px rgba(0,31,25,.28);box-sizing:border-box;"><div style="background:#151B19;border-radius:28px;overflow:hidden;color:#FFFFFF;display:flex;flex-direction:column;min-height:440px;"><div style="display:flex;justify-content:space-between;align-items:center;padding:10px 20px 4px;font-size:12px;font-weight:700;color:#CFD8D5;"><span>9:41</span><span style="width:70px;height:18px;border-radius:999px;background:#0B100E;"></span><span>5G ▮</span></div><div style="padding:12px 18px 22px;display:flex;flex-direction:column;gap:12px;"><div style="width:62%;margin:0 auto;aspect-ratio:1/1;border-radius:14px;background:#2F6FE0;display:flex;align-items:flex-end;padding:12px;box-sizing:border-box;box-shadow:0 10px 24px rgba(0,0,0,.35);"><span style="font-weight:700;font-size:20px;line-height:1.02;overflow-wrap:anywhere;">{{ p2Title }}</span></div><b style="font-size:20px;line-height:1.15;overflow-wrap:anywhere;">{{ p2Title }}</b><span style="font-size:13px;color:#9FB0AA;">Podcast · Fuera del Feed</span><div style="display:flex;gap:8px;align-items:center;"><span style="border:1px solid #6B7B76;border-radius:999px;padding:5px 14px;font-size:13px;font-weight:700;">Seguir</span><span style="margin-left:auto;width:40px;height:40px;border-radius:50%;background:#6BE3D7;color:#001F19;display:flex;align-items:center;justify-content:center;font-size:15px;">▶</span></div><span style="font-size:13px;font-weight:700;letter-spacing:.12em;text-transform:uppercase;font-size:12px;color:#9FB0AA;">Acerca de</span><span style="font-size:14px;line-height:1.5;color:#E3E3E3;">{{ p2Prop }}</span></div></div></div><span style="font-size:13px;color:#4F5F7A;text-align:center;">Así se vería tu podcast en una app</span></div></div>
+<div style="background:#001F19;color:#FFFFFF;border-radius:16px;padding:14px 18px;display:flex;gap:14px;align-items:center;flex-wrap:wrap;"><span style="width:40px;height:40px;flex:none;border-radius:12px;background:#6BE3D7;color:#001F19;display:flex;align-items:center;justify-content:center;font-size:20px;">✎</span><div style="flex:1;min-width:200px;display:flex;flex-direction:column;gap:2px;"><span style="font-size:13px;font-weight:700;letter-spacing:.12em;text-transform:uppercase;color:#6BE3D7;">Va a Borradores, en Mi bitácora</span><span style="font-size:15px;line-height:1.55;">Tu nombre y tu promesa. Los usas en tu portada (Episodio 7) y en tu pitch (Episodio 10).</span></div></div></div></sc-if>
+          <div style="display:flex;justify-content:space-between;gap:10px;flex-wrap:wrap;border-top:1px solid #EAF0F8;padding-top:14px;"><sc-if value="{{ pkHasPrev }}"><button type="button" onClick="{{ pkPrev }}" style="border:1px solid #C5D3EA;background:#FFFFFF;color:#001F19;font-weight:700;font-size:15px;padding:10px 16px;border-radius:999px;cursor:pointer;">← Anterior</button></sc-if><span></span><sc-if value="{{ pkHasNext }}"><button data-tap="1" type="button" onClick="{{ pkNext }}" style="border:0;background:#2F6FE0;color:#FFFFFF;font-weight:700;font-size:15px;padding:11px 18px;border-radius:999px;cursor:pointer;">{{ pkNextL }}</button></sc-if></div>
+          
+        </sc-if>
+
+        <sc-if value="{{ hasLevels }}">
+          <div style="display:flex;flex-direction:column;gap:10px;">
+            <div style="background:#001F19;color:#FFFFFF;border-radius:16px;padding:16px 18px;display:flex;flex-wrap:wrap;gap:12px;align-items:center;justify-content:space-between;">
+              <div style="display:flex;flex-direction:column;gap:4px;flex:1;min-width:220px;">
+                <span style="font-size:13px;font-weight:700;letter-spacing:.12em;text-transform:uppercase;color:#6BE3D7;">Logro de la escena</span>
+                <span style="font-size:16px;line-height:1.5;">{{ goalD }}</span>
+              </div>
+              <sc-if value="{{ lvlNotDone }}"><button data-tap="1" type="button" onClick="{{ lvlToggle }}" style="border:0;background:#6BE3D7;color:#001F19;font-weight:700;font-size:15px;padding:10px 16px;border-radius:999px;cursor:pointer;white-space:nowrap;">✓ Lo logré</button></sc-if>
+              <sc-if value="{{ lvlIsDone }}"><button type="button" onClick="{{ lvlToggle }}" style="border:1px solid rgba(107,227,215,.5);background:transparent;color:#6BE3D7;font-weight:700;font-size:15px;padding:10px 16px;border-radius:999px;cursor:pointer;white-space:nowrap;">¡Logrado!</button></sc-if>
+            </div>
+            <div style="border:1px dashed #5691FF;border-radius:14px;overflow:hidden;">
+              <button type="button" onClick="{{ toggleExtra }}" style="width:100%;text-align:left;border:0;background:#FFFFFF;padding:13px 16px;font-size:15px;font-weight:700;color:#001F19;cursor:pointer;">⭐ Retos extra · opcional {{ extraArrow }}</button>
+              <sc-if value="{{ extra }}">
+                <div style="padding:0 16px 16px;display:flex;flex-direction:column;gap:10px;">
+                  <span style="font-size:15px;line-height:1.5;color:#34405A;">¿Terminaste antes? Elige uno.</span>
+                  <div style="display:grid;grid-template-columns:repeat(auto-fit,minmax(220px,1fr));gap:8px;">
+                    <sc-for list="{{ extras }}" as="x" hint-placeholder-count="2">
+                      <div style="background:#F2F6FC;border-radius:12px;padding:12px 14px;display:flex;flex-direction:column;gap:4px;"><b style="font-size:15px;">{{ x.e }} {{ x.name }}</b><span style="font-size:15px;line-height:1.5;">{{ x.d }}</span></div>
+                    </sc-for>
+                  </div>
+                </div>
+              </sc-if>
+            </div>
+          </div>
+        </sc-if>
+
+        <div style="display:grid;grid-template-columns:repeat(auto-fit,minmax(260px,1fr));gap:10px;">
+          <sc-if value="{{ hasBlock }}">
+            <div style="border:1px solid #DCE6F5;border-radius:14px;overflow:hidden;">
+              <button type="button" onClick="{{ toggleBlock }}" style="width:100%;text-align:left;border:0;background:#FFFFFF;padding:13px 16px;font-size:15px;font-weight:700;color:#001F19;cursor:pointer;">🧱 Si te bloqueas {{ blockArrow }}</button>
+              <sc-if value="{{ block }}"><div style="padding:0 16px 14px;font-size:15px;line-height:1.6;color:#34405A;">{{ blockTxt }}</div></sc-if>
+            </div>
+          </sc-if>
+          <sc-if value="{{ hasManual }}">
+            <div style="border:1px solid #DCE6F5;border-radius:14px;overflow:hidden;">
+              <button type="button" onClick="{{ toggleManual }}" style="width:100%;text-align:left;border:0;background:#FFFFFF;padding:13px 16px;font-size:15px;font-weight:700;color:#001F19;cursor:pointer;">📘 Paso a paso · {{ manualTitle }} {{ manualArrow }}</button>
+              <sc-if value="{{ manual }}"><ol style="margin:0;padding:0 16px 14px 34px;font-size:15px;line-height:1.7;color:#34405A;"><sc-for list="{{ manualItems }}" as="m" hint-placeholder-count="4"><li>{{ m }}</li></sc-for></ol></sc-if>
+            </div>
+          </sc-if>
+        </div>
+
+        <div style="display:flex;justify-content:space-between;gap:10px;flex-wrap:wrap;">
+          <button type="button" onClick="{{ scPrev }}" style="border:1px solid #DCE6F5;background:#FFFFFF;color:#001F19;font-weight:700;font-size:15px;padding:12px 18px;border-radius:999px;cursor:pointer;white-space:nowrap;">← Escena anterior</button>
+          <button data-tap="1" type="button" onClick="{{ scNext }}" style="border:0;background:#2F6FE0;color:#FFFFFF;font-weight:700;font-size:15px;padding:12px 20px;border-radius:999px;cursor:pointer;">{{ scNextLabel }}</button>
+        </div>
+      </div>
+    </section>
+  </sc-if>
+
+  <sc-if value="{{ s4 }}">
+    <section data-screen-label="05 Listo para salir al aire" style="border-radius:24px;background:radial-gradient(60% 90% at 100% 0%,rgba(47,111,224,.5),transparent 60%),radial-gradient(50% 70% at 0% 100%,rgba(107,227,215,.22),transparent 62%),#001F19;color:#FFFFFF;padding:clamp(22px,4vw,40px);display:flex;flex-direction:column;gap:18px;">
+      <div style="display:flex;justify-content:space-between;gap:10px;flex-wrap:wrap;align-items:baseline;"><span style="font-size:13px;font-weight:700;letter-spacing:.12em;text-transform:uppercase;color:#6BE3D7;">¿Listo para salir al aire? · Revisa la ficha</span><span style="font-size:14px;font-weight:700;color:#B6E2FF;">{{ ckCount }}</span></div>
+      <h2 style="font-family:'Roca One Light',serif;font-weight:300;font-size:clamp(24px,3.6vw,34px);line-height:1.15;margin:0;max-width:760px;">Valentina va a presentar la primera versión de su ficha al consejo. Tiene 3 errores. ¿Los encuentras?</h2>
+      <span style="font-size:15px;line-height:1.5;color:#FFFFFF;max-width:680px;">Toca las líneas que tienen un problema y después presiona <b>Revisar</b>.</span>
+      <div style="background:#FFFFFF;color:#001F19;border-radius:18px;overflow:hidden;display:flex;flex-direction:column;max-width:860px;">
+        <div style="display:flex;align-items:center;gap:10px;padding:12px 16px;background:#E1EEFF;border-bottom:1px solid #DCE6F5;"><span style="width:34px;height:34px;flex:none;border-radius:50%;background:#2F6FE0;color:#FFFFFF;display:flex;align-items:center;justify-content:center;font-weight:700;font-size:14px;">V</span><div style="display:flex;flex-direction:column;"><b style="font-size:15px;">Ficha de Valentina · 15 años</b><span style="font-size:13px;color:#34405A;">Borrador para el consejo editorial</span></div></div>
+        <sc-for list="{{ ckLines }}" as="l" hint-placeholder-count="7">
+          <div style="border-bottom:1px solid #EAF0F8;">
+            <sc-if value="{{ l.edit }}">
+              <button type="button" onClick="{{ l.tap }}" aria-pressed="{{ l.mk }}" style="width:100%;display:flex;gap:12px;align-items:flex-start;text-align:left;border:0;background:{{ l.bg }};padding:12px 16px;cursor:pointer;color:#001F19;">
+                <span style="width:24px;height:24px;flex:none;border-radius:6px;border:2px solid {{ l.bd }};background:{{ l.box }};color:#FFFFFF;display:flex;align-items:center;justify-content:center;font-size:14px;font-weight:700;margin-top:1px;">{{ l.mark }}</span>
+                <span style="display:flex;flex-direction:column;gap:2px;"><b style="font-size:13px;letter-spacing:.08em;text-transform:uppercase;color:#1F4FB0;">{{ l.k }}</b><span style="font-size:16px;line-height:1.45;">{{ l.v }}</span></span>
+              </button>
+            </sc-if>
+            <sc-if value="{{ l.rev }}">
+              <div style="display:flex;flex-direction:column;gap:4px;padding:12px 16px 12px 52px;background:{{ l.bg }};">
+                <span style="display:flex;align-items:center;gap:10px;flex-wrap:wrap;"><b style="font-size:13px;letter-spacing:.08em;text-transform:uppercase;color:#1F4FB0;">{{ l.k }}</b><span style="font-size:13px;font-weight:700;padding:2px 9px;border-radius:999px;background:{{ l.tagBg }};color:{{ l.tagC }};white-space:nowrap;">{{ l.tag }}</span></span>
+                <span style="display:flex;flex-direction:column;gap:4px;min-width:0;"><span style="font-size:16px;line-height:1.45;">{{ l.v }}</span>
+                  <sc-if value="{{ l.hasFb }}"><span style="font-size:15px;line-height:1.5;color:#34405A;">{{ l.fb }}</span></sc-if>
+                  <sc-if value="{{ l.hasEx }}"><button type="button" onClick="{{ l.goEx }}" style="align-self:flex-start;border:1px solid #2F6FE0;background:#FFFFFF;color:#1F4FB0;font-weight:700;font-size:14px;padding:6px 12px;border-radius:999px;cursor:pointer;white-space:nowrap;max-width:100%;">Repasar: {{ l.exName }} →</button></sc-if>
+                </span>
+              </div>
+            </sc-if>
+          </div>
+        </sc-for>
+      </div>
+      <div style="display:flex;justify-content:space-between;align-items:center;gap:14px;flex-wrap:wrap;">
+        <div style="display:flex;align-items:center;gap:12px;flex:1;min-width:240px;">
+          <span data-anim="edit" style="width:60px;height:60px;flex:none;border-radius:50%;border:3px solid #6BE3D7;background:#001F19;display:flex;align-items:center;justify-content:center;font-size:24px;box-sizing:border-box;">🎙️</span>
+          <div style="display:flex;flex-direction:column;gap:2px;background:#FFFFFF;color:#001F19;border-radius:16px 16px 16px 4px;padding:10px 14px;max-width:420px;"><b style="font-size:13px;color:#1F4FB0;">La Editora</b><span style="font-size:15px;line-height:1.45;">{{ eMsg }}</span></div>
+        </div>
+        <div style="display:flex;gap:10px;flex-wrap:wrap;">
+          <sc-if value="{{ ckCanRev }}"><button data-tap="1" type="button" onClick="{{ ckRev }}" style="border:0;background:#6BE3D7;color:#001F19;font-weight:700;font-size:15px;padding:12px 20px;border-radius:999px;cursor:pointer;">Revisar</button></sc-if>
+          <sc-if value="{{ ckDone }}"><button type="button" onClick="{{ ckReset }}" style="border:1px solid rgba(255,255,255,.5);background:transparent;color:#FFFFFF;font-weight:700;font-size:15px;padding:11px 18px;border-radius:999px;cursor:pointer;white-space:nowrap;flex:none;">Intentar de nuevo</button></sc-if>
+          <sc-if value="{{ ckDone }}"><button data-tap="1" type="button" onClick="{{ qNext }}" style="border:0;background:#6BE3D7;color:#001F19;font-weight:700;font-size:15px;padding:12px 20px;border-radius:999px;cursor:pointer;white-space:nowrap;flex:none;">Ir al cierre →</button></sc-if>
+        </div>
+      </div>
+    </section>
+  </sc-if>
+
+  <sc-if value="{{ s5 }}">
+    <section data-screen-label="06 Cierre" style="display:flex;flex-wrap:wrap;gap:14px;align-items:flex-start;">
+      <div style="flex:1 1 100%;min-width:0;border-radius:24px;background:#FFFFFF;border:1px solid #DCE6F5;padding:clamp(22px,4vw,36px);display:flex;flex-direction:column;gap:14px;">
+        <div style="display:flex;justify-content:space-between;align-items:flex-end;gap:10px;flex-wrap:wrap;">
+          <div style="display:flex;flex-direction:column;gap:6px;"><span style="font-size:13px;font-weight:700;letter-spacing:.12em;text-transform:uppercase;color:#1F4FB0;">Lo que te llevas</span><h2 style="font-family:'Roca One Light',serif;font-weight:300;font-size:clamp(26px,4vw,36px);line-height:1.08;margin:0;">Cierre: tu historia</h2></div>
+          <span style="font-family:'Roca One Light',serif;font-size:30px;color:#2F6FE0;">{{ nChk }}/{{ nTot }}</span>
+        </div>
+        <div style="display:flex;flex-direction:column;gap:6px;">
+          <sc-for list="{{ checks }}" as="c" hint-placeholder-count="5">
+            <sc-if value="{{ c.on }}"><button type="button" onClick="{{ c.toggle }}" style="text-align:left;display:flex;gap:12px;align-items:center;border:0;background:#EAF2FF;border-radius:12px;padding:12px 14px;font-size:16px;color:#001F19;cursor:pointer;"><span style="width:24px;height:24px;flex:none;border-radius:50%;background:#2F6FE0;color:#FFFFFF;display:inline-flex;align-items:center;justify-content:center;font-size:14px;">✓</span>{{ c.t }}</button></sc-if>
+            <sc-if value="{{ c.off }}"><button type="button" onClick="{{ c.toggle }}" style="text-align:left;display:flex;gap:12px;align-items:center;border:1px solid #DCE6F5;background:#FFFFFF;border-radius:12px;padding:12px 14px;font-size:16px;color:#001F19;cursor:pointer;"><span style="width:24px;height:24px;flex:none;border-radius:50%;border:2px solid #C5D3EA;box-sizing:border-box;"></span>{{ c.t }}</button></sc-if>
+          </sc-for>
+        </div>
+        <div style="border:1px dashed #F47B20;background:#FFFAF5;border-radius:16px;padding:12px 16px;display:flex;align-items:flex-start;gap:12px;flex-wrap:wrap;"><img src="assets/boton-bitacora.png" alt="" style="height:36px;width:auto;flex:none;border-radius:8px;background:#FFFFFF;"><div style="flex:1;min-width:200px;display:flex;flex-direction:column;gap:6px;"><b style="font-size:13px;font-weight:700;letter-spacing:.12em;text-transform:uppercase;color:#9A4310;">Revisa tu bitácora · hoy debe estar</b><div style="display:flex;flex-wrap:wrap;gap:6px;"><span style="background:#FFFFFF;border:1px solid #F4C7A6;border-radius:999px;padding:4px 12px;font-size:14px;font-weight:700;color:#001F19;">La historia que elegiste y por qué</span><span style="background:#FFFFFF;border:1px solid #F4C7A6;border-radius:999px;padding:4px 12px;font-size:14px;font-weight:700;color:#001F19;">El ajuste del Consejo</span><span style="background:#FFFFFF;border:1px solid #F4C7A6;border-radius:999px;padding:4px 12px;font-size:14px;font-weight:700;color:#001F19;">Tu personaje: ficha, avatar y qué es real o inventado</span></div><span style="font-size:14px;line-height:1.5;color:#34405A;">¿Te falta algo? Entra al Campus CTC y regístralo antes del próximo episodio.</span></div></div>
+        <sc-if value="{{ allChk }}"><div style="background:#001F19;color:#FFFFFF;border-radius:12px;padding:14px 16px;font-size:16px;line-height:1.5;">Listo. En el Episodio 3 tu personaje empieza a hablar y conviertes esta ficha en un guion.</div></sc-if>
+      </div>
+      <div role="group" aria-label="Tu ruta: episodio 2 de 10" style="flex:1 1 100%;min-width:0;background:#001F19;color:#FFFFFF;border-radius:24px;padding:clamp(18px,3vw,28px);display:flex;flex-direction:column;gap:18px;box-sizing:border-box;"><div style="display:flex;justify-content:space-between;align-items:flex-end;gap:12px;flex-wrap:wrap;"><div style="display:flex;flex-direction:column;gap:4px;"><span style="font-size:13px;font-weight:700;letter-spacing:.12em;text-transform:uppercase;color:#6BE3D7;">Tu ruta · 10 episodios</span><span style="font-family:'Roca One Light',serif;font-size:clamp(20px,2.6vw,26px);line-height:1.2;">Sigue: Episodio 3 · Cómo suena una historia</span><span style="font-size:15px;line-height:1.5;color:#CFE3FF;max-width:640px;">Valentina tenía una buena historia, pero sus primeros 7 segundos sonaban a tarea. ¿Cómo se empieza para que nadie se vaya?</span></div><div style="display:flex;align-items:baseline;gap:6px;"><span style="font-family:'Roca One Light',serif;font-size:46px;line-height:1;color:#6BE3D7;">2</span><span style="font-size:15px;color:#B6E2FF;">de 10</span></div></div><div style="overflow-x:auto;margin:0 -6px;padding:0 6px 6px;"><div style="display:flex;min-width:720px;"><div style="flex:1 1 0px;min-width:72px;display:flex;flex-direction:column;align-items:center;gap:8px;text-align:center;animation:routeIn .4s ease-out 0.00s both;"><div style="position:relative;width:100%;height:52px;display:flex;align-items:center;justify-content:center;"><span style="position:absolute;left:0;right:50%;top:50%;height:3px;margin-top:-1.5px;background:transparent;"></span><span style="position:absolute;left:50%;right:0;top:50%;height:3px;margin-top:-1.5px;background:#6BE3D7;"></span><span style="position:relative;width:42px;height:42px;border-radius:50%;background:#6BE3D7;border:2px solid #6BE3D7;display:flex;align-items:center;justify-content:center;font-size:19px;box-sizing:border-box;"><b style="color:#001F19;font-size:18px;">✓</b></span></div><span style="font-size:12px;font-weight:700;letter-spacing:.06em;color:#6BE3D7;">EP. 1</span><span style="font-size:12px;line-height:1.3;font-weight:700;color:#FFFFFF;padding:0 4px;">Lo que el feed no muestra</span></div><div style="flex:1 1 0px;min-width:72px;display:flex;flex-direction:column;align-items:center;gap:8px;text-align:center;animation:routeIn .4s ease-out 0.05s both;"><div style="position:relative;width:100%;height:52px;display:flex;align-items:center;justify-content:center;"><span style="position:absolute;left:0;right:50%;top:50%;height:3px;margin-top:-1.5px;background:#6BE3D7;"></span><span style="position:absolute;left:50%;right:0;top:50%;height:3px;margin-top:-1.5px;background:rgba(255,255,255,.18);"></span><span style="position:relative;width:52px;height:52px;border-radius:50%;background:#2F6FE0;border:2px solid #FFFFFF;animation:routePulse 1.8s ease-out infinite;display:flex;align-items:center;justify-content:center;font-size:24px;box-sizing:border-box;"><span style="">🧭</span></span></div><span style="font-size:12px;font-weight:700;letter-spacing:.06em;color:#FFFFFF;">HOY · EP. 2</span><span style="font-size:12px;line-height:1.3;font-weight:700;color:#FFFFFF;padding:0 4px;">La historia y su nombre</span></div><div style="flex:1 1 0px;min-width:72px;display:flex;flex-direction:column;align-items:center;gap:8px;text-align:center;animation:routeIn .4s ease-out 0.10s both;"><div style="position:relative;width:100%;height:52px;display:flex;align-items:center;justify-content:center;"><span style="position:absolute;left:0;right:50%;top:50%;height:3px;margin-top:-1.5px;background:rgba(255,255,255,.18);"></span><span style="position:absolute;left:50%;right:0;top:50%;height:3px;margin-top:-1.5px;background:rgba(255,255,255,.18);"></span><span style="position:relative;width:42px;height:42px;border-radius:50%;background:#0B2A24;border:2px dashed rgba(255,255,255,.3);display:flex;align-items:center;justify-content:center;font-size:19px;box-sizing:border-box;"><span style="opacity:.6;">✍️</span></span></div><span style="font-size:12px;font-weight:700;letter-spacing:.06em;color:#9FB0AA;">EP. 3</span><span style="font-size:12px;line-height:1.3;font-weight:700;color:#B6C4BF;padding:0 4px;">Cómo suena una historia</span></div><div style="flex:1 1 0px;min-width:72px;display:flex;flex-direction:column;align-items:center;gap:8px;text-align:center;animation:routeIn .4s ease-out 0.15s both;"><div style="position:relative;width:100%;height:52px;display:flex;align-items:center;justify-content:center;"><span style="position:absolute;left:0;right:50%;top:50%;height:3px;margin-top:-1.5px;background:rgba(255,255,255,.18);"></span><span style="position:absolute;left:50%;right:0;top:50%;height:3px;margin-top:-1.5px;background:rgba(255,255,255,.18);"></span><span style="position:relative;width:42px;height:42px;border-radius:50%;background:#0B2A24;border:2px dashed rgba(255,255,255,.3);display:flex;align-items:center;justify-content:center;font-size:19px;box-sizing:border-box;"><span style="opacity:.6;">🎙️</span></span></div><span style="font-size:12px;font-weight:700;letter-spacing:.06em;color:#9FB0AA;">EP. 4</span><span style="font-size:12px;line-height:1.3;font-weight:700;color:#B6C4BF;padding:0 4px;">Estudio de grabación</span></div><div style="flex:1 1 0px;min-width:72px;display:flex;flex-direction:column;align-items:center;gap:8px;text-align:center;animation:routeIn .4s ease-out 0.20s both;"><div style="position:relative;width:100%;height:52px;display:flex;align-items:center;justify-content:center;"><span style="position:absolute;left:0;right:50%;top:50%;height:3px;margin-top:-1.5px;background:rgba(255,255,255,.18);"></span><span style="position:absolute;left:50%;right:0;top:50%;height:3px;margin-top:-1.5px;background:rgba(255,255,255,.18);"></span><span style="position:relative;width:42px;height:42px;border-radius:50%;background:#0B2A24;border:2px dashed rgba(255,255,255,.3);display:flex;align-items:center;justify-content:center;font-size:19px;box-sizing:border-box;"><span style="opacity:.6;">🎧</span></span></div><span style="font-size:12px;font-weight:700;letter-spacing:.06em;color:#9FB0AA;">EP. 5</span><span style="font-size:12px;line-height:1.3;font-weight:700;color:#B6C4BF;padding:0 4px;">Edición: tu capítulo 1</span></div><div style="flex:1 1 0px;min-width:72px;display:flex;flex-direction:column;align-items:center;gap:8px;text-align:center;animation:routeIn .4s ease-out 0.25s both;"><div style="position:relative;width:100%;height:52px;display:flex;align-items:center;justify-content:center;"><span style="position:absolute;left:0;right:50%;top:50%;height:3px;margin-top:-1.5px;background:rgba(255,255,255,.18);"></span><span style="position:absolute;left:50%;right:0;top:50%;height:3px;margin-top:-1.5px;background:rgba(255,255,255,.18);"></span><span style="position:relative;width:42px;height:42px;border-radius:50%;background:#0B2A24;border:2px dashed rgba(255,255,255,.3);display:flex;align-items:center;justify-content:center;font-size:19px;box-sizing:border-box;"><span style="opacity:.6;">🎤</span></span></div><span style="font-size:12px;font-weight:700;letter-spacing:.06em;color:#9FB0AA;">EP. 6</span><span style="font-size:12px;line-height:1.3;font-weight:700;color:#B6C4BF;padding:0 4px;">Tu capítulo 2</span></div><div style="flex:1 1 0px;min-width:72px;display:flex;flex-direction:column;align-items:center;gap:8px;text-align:center;animation:routeIn .4s ease-out 0.30s both;"><div style="position:relative;width:100%;height:52px;display:flex;align-items:center;justify-content:center;"><span style="position:absolute;left:0;right:50%;top:50%;height:3px;margin-top:-1.5px;background:rgba(255,255,255,.18);"></span><span style="position:absolute;left:50%;right:0;top:50%;height:3px;margin-top:-1.5px;background:rgba(255,255,255,.18);"></span><span style="position:relative;width:42px;height:42px;border-radius:50%;background:#0B2A24;border:2px dashed rgba(255,255,255,.3);display:flex;align-items:center;justify-content:center;font-size:19px;box-sizing:border-box;"><span style="opacity:.6;">🎨</span></span></div><span style="font-size:12px;font-weight:700;letter-spacing:.06em;color:#9FB0AA;">EP. 7</span><span style="font-size:12px;line-height:1.3;font-weight:700;color:#B6C4BF;padding:0 4px;">La cara de tu historia</span></div><div style="flex:1 1 0px;min-width:72px;display:flex;flex-direction:column;align-items:center;gap:8px;text-align:center;animation:routeIn .4s ease-out 0.35s both;"><div style="position:relative;width:100%;height:52px;display:flex;align-items:center;justify-content:center;"><span style="position:absolute;left:0;right:50%;top:50%;height:3px;margin-top:-1.5px;background:rgba(255,255,255,.18);"></span><span style="position:absolute;left:50%;right:0;top:50%;height:3px;margin-top:-1.5px;background:rgba(255,255,255,.18);"></span><span style="position:relative;width:42px;height:42px;border-radius:50%;background:#0B2A24;border:2px dashed rgba(255,255,255,.3);display:flex;align-items:center;justify-content:center;font-size:19px;box-sizing:border-box;"><span style="opacity:.6;">📣</span></span></div><span style="font-size:12px;font-weight:700;letter-spacing:.06em;color:#9FB0AA;">EP. 8</span><span style="font-size:12px;line-height:1.3;font-weight:700;color:#B6C4BF;padding:0 4px;">Tráiler</span></div><div style="flex:1 1 0px;min-width:72px;display:flex;flex-direction:column;align-items:center;gap:8px;text-align:center;animation:routeIn .4s ease-out 0.40s both;"><div style="position:relative;width:100%;height:52px;display:flex;align-items:center;justify-content:center;"><span style="position:absolute;left:0;right:50%;top:50%;height:3px;margin-top:-1.5px;background:rgba(255,255,255,.18);"></span><span style="position:absolute;left:50%;right:0;top:50%;height:3px;margin-top:-1.5px;background:rgba(255,255,255,.18);"></span><span style="position:relative;width:42px;height:42px;border-radius:50%;background:#0B2A24;border:2px dashed rgba(255,255,255,.3);display:flex;align-items:center;justify-content:center;font-size:19px;box-sizing:border-box;"><span style="opacity:.6;">🚀</span></span></div><span style="font-size:12px;font-weight:700;letter-spacing:.06em;color:#9FB0AA;">EP. 9</span><span style="font-size:12px;line-height:1.3;font-weight:700;color:#B6C4BF;padding:0 4px;">Al aire</span></div><div style="flex:1 1 0px;min-width:72px;display:flex;flex-direction:column;align-items:center;gap:8px;text-align:center;animation:routeIn .4s ease-out 0.45s both;"><div style="position:relative;width:100%;height:52px;display:flex;align-items:center;justify-content:center;"><span style="position:absolute;left:0;right:50%;top:50%;height:3px;margin-top:-1.5px;background:rgba(255,255,255,.18);"></span><span style="position:absolute;left:50%;right:0;top:50%;height:3px;margin-top:-1.5px;background:transparent;"></span><span style="position:relative;width:42px;height:42px;border-radius:50%;background:#0B2A24;border:2px dashed rgba(255,255,255,.3);display:flex;align-items:center;justify-content:center;font-size:19px;box-sizing:border-box;"><span style="opacity:.6;">🏆</span></span></div><span style="font-size:12px;font-weight:700;letter-spacing:.06em;color:#9FB0AA;">EP. 10</span><span style="font-size:12px;line-height:1.3;font-weight:700;color:#B6C4BF;padding:0 4px;">Estreno</span></div></div></div></div>
+    </section>
+  </sc-if>
+  <sc-if value="{{ popOn }}"><div role="dialog" aria-modal="true" aria-label="{{ popT }}" style="position:fixed;inset:0;z-index:90;background:rgba(8,11,9,.5);backdrop-filter:blur(3px);-webkit-backdrop-filter:blur(3px);display:flex;align-items:center;justify-content:center;padding:20px;animation:scrim .2s ease-out;"><div style="width:min(100%,480px);max-height:calc(100vh - 40px);overflow:auto;background:#FFFFFF;border-radius:24px;box-shadow:0 20px 60px rgba(0,31,25,.35);animation:popIn .25s ease-out;display:flex;flex-direction:column;"><div style="background:{{ popBg }};padding:20px 22px;display:flex;gap:14px;align-items:center;"><span style="width:50px;height:50px;flex:none;border-radius:50%;background:#FFFFFF;color:#001F19;display:flex;align-items:center;justify-content:center;font-size:22px;font-weight:700;">{{ popE }}</span><b style="font-family:'Roca One Light',serif;font-weight:300;font-size:clamp(22px,3vw,26px);line-height:1.15;color:#001F19;">{{ popT }}</b></div><div style="padding:18px 22px 22px;display:flex;flex-direction:column;gap:14px;"><span style="font-size:16px;line-height:1.55;color:#001F19;">{{ popW }}</span><sc-if value="{{ popHasL }}"><div style="display:flex;flex-direction:column;gap:8px;"><sc-for list="{{ popL }}" as="x" hint-placeholder-count="3"><div style="display:flex;gap:10px;align-items:flex-start;font-size:15px;line-height:1.5;color:#001F19;"><b style="width:26px;height:26px;flex:none;border-radius:50%;background:#2F6FE0;color:#FFFFFF;display:inline-flex;align-items:center;justify-content:center;font-size:13px;">{{ x.n }}</b><span>{{ x.t }}</span></div></sc-for></div></sc-if><button data-tap="1" type="button" onClick="{{ popAct }}" style="align-self:flex-end;border:0;background:#001F19;color:#FFFFFF;font-weight:700;font-size:15px;padding:11px 20px;border-radius:999px;cursor:pointer;">{{ popBtnL }}</button></div></div></div></sc-if>
+  <sc-if value="{{ showIdxBtn }}">
+    <div data-idxwrap="1" style="position:fixed;right:16px;bottom:16px;z-index:45;display:flex;flex-direction:column;align-items:flex-end;gap:10px;">
+      <sc-if value="{{ idxOpen }}">
+        <div data-anim="idxpanel" style="background:#FFFFFF;border:1px solid #DCE6F5;border-radius:18px;box-shadow:0 16px 40px rgba(0,31,25,.22);padding:8px;display:flex;flex-direction:column;gap:2px;min-width:220px;">
+          <sc-for list="{{ idx }}" as="it" hint-placeholder-count="6">
+            <button type="button" onClick="{{ it.goIdx }}" style="display:flex;align-items:center;gap:10px;border:0;background:{{ it.bg }};border-radius:12px;padding:9px 12px;font-size:15px;font-weight:700;color:#001F19;cursor:pointer;text-align:left;"><span style="width:28px;height:28px;flex:none;border-radius:50%;background:{{ it.dot }};display:inline-flex;align-items:center;justify-content:center;font-size:14px;">{{ it.mark }}</span>{{ it.t }}</button>
+          </sc-for>
+        </div>
+      </sc-if>
+      <button type="button" data-anim="idxbtn" onClick="{{ toggleIdx }}" aria-expanded="{{ idxOpen }}" style="display:inline-flex;align-items:center;gap:8px;border:0;background:#001F19;color:#FFFFFF;font-weight:700;font-size:15px;padding:12px 18px;border-radius:999px;cursor:pointer;box-shadow:0 10px 28px rgba(0,31,25,.3);"><span style="width:8px;height:8px;border-radius:50%;background:#6BE3D7;"></span>{{ idxLabel }}</button>
+    </div>
+  </sc-if>
+  <div role="status" aria-live="polite" style="position:fixed;left:50%;top:16px;transform:translateX(-50%);z-index:50;width:max-content;max-width:min(380px,calc(100vw - 32px));pointer-events:none;">
+    <sc-if value="{{ hasToast }}"><div data-anim="toast" style="background:#001F19;color:#FFFFFF;border-radius:16px;padding:12px 16px 12px 12px;display:flex;gap:12px;align-items:center;box-shadow:0 14px 36px rgba(0,31,25,.32);border:1px solid rgba(107,227,215,.35);"><span style="width:42px;height:42px;flex:none;border-radius:12px;background:#6BE3D7;color:#001F19;display:flex;align-items:center;justify-content:center;font-size:20px;">{{ toastE }}</span><div style="display:flex;flex-direction:column;gap:2px;min-width:0;"><b style="font-size:15px;">{{ toastT }}</b><span style="font-size:14px;line-height:1.4;color:#B6E2FF;">{{ toastS }}</span></div></div></sc-if>
+  </div>
+</div>
+</x-dc>
+<script type="text/x-dc" data-dc-script data-props="{&quot;consejoModo&quot;:{&quot;editor&quot;:&quot;enum&quot;,&quot;options&quot;:[&quot;equipo&quot;,&quot;ia&quot;],&quot;default&quot;:&quot;equipo&quot;,&quot;tsType&quot;:&quot;'equipo' | 'ia'&quot;,&quot;section&quot;:&quot;Consejo editorial&quot;}}">
+class Component extends DCLogic {
+  state = { zoom: 2, menuOut: false, idxOpen: false, mute: false, toast: null, eo: 0, eoP: undefined, invI: 0, inv: {}, invFb: '', qf: {}, s: 0, sc: 0, flt: {}, cl: {}, roles: {}, mode: null, t: 90, run: false, verdict: null, aud: {}, fmt: null, pick: null, fichaV: false, rosa: {}, avp: {}, avc: {}, q: 0, qp: {}, chk: {}, lvDone: {}, extra: false, manual: false, block: false, oculta: false };
+  componentDidMount() {
+    this.prevSt = this.state;
+    this.onScr = () => { const m = document.querySelector('[data-menu="1"]'); if (!m) return; const out = m.getBoundingClientRect().bottom < 0; if (out !== this.state.menuOut) this.setState(out ? { menuOut: true } : { menuOut: false, idxOpen: false }); };
+    window.addEventListener('scroll', this.onScr, { passive: true });
+    this.onFs = () => this.setState({ full: !!(document.fullscreenElement || document.webkitFullscreenElement) });
+    document.addEventListener('fullscreenchange', this.onFs); document.addEventListener('webkitfullscreenchange', this.onFs);
+    this.onIdxPl = () => { if (this.state.menuOut) { cancelAnimationFrame(this.ipR); this.ipR = requestAnimationFrame(() => this.idxPlace()); } };
+    window.addEventListener('scroll', this.onIdxPl, { passive: true }); window.addEventListener('resize', this.onIdxPl);
+  }
+  componentWillUnmount() { document.removeEventListener('fullscreenchange', this.onFs); document.removeEventListener('webkitfullscreenchange', this.onFs); window.removeEventListener('scroll', this.onIdxPl); window.removeEventListener('resize', this.onIdxPl); window.removeEventListener('scroll', this.onScr); clearTimeout(this.tT); document.body.style.zoom = ''; clearInterval(this.iv); clearTimeout(this.tT); window.removeEventListener('scroll', this.onScr); }
+  reduce() { try { return window.matchMedia('(prefers-reduced-motion: reduce)').matches; } catch (e) { return false; } }
+  sfx(k) {
+    if (this.state.mute) return;
+    try {
+      const C = this.ac || (this.ac = new (window.AudioContext || window.webkitAudioContext)());
+      if (C.state === 'suspended' && C.resume) C.resume();
+      const t = C.currentTime;
+      const tone = (f, d, s, type, v) => { const o = C.createOscillator(), g = C.createGain(); o.type = type || 'sine'; o.frequency.setValueAtTime(f, t + s); g.gain.setValueAtTime(0.0001, t + s); g.gain.linearRampToValueAtTime(v || 0.05, t + s + 0.012); g.gain.exponentialRampToValueAtTime(0.0001, t + s + d); o.connect(g); g.connect(C.destination); o.start(t + s); o.stop(t + s + d + 0.03); };
+      if (k === 'ok') { tone(660, 0.16, 0, 'sine', 0.05); tone(990, 0.24, 0.08, 'sine', 0.045); }
+      else if (k === 'no') { tone(240, 0.2, 0, 'triangle', 0.045); tone(180, 0.22, 0.07, 'triangle', 0.035); }
+      else if (k === 'pop') tone(880, 0.07, 0, 'sine', 0.04);
+      else if (k === 'tick') tone(1300, 0.03, 0, 'square', 0.012);
+      else if (k === 'go') { tone(520, 0.1, 0, 'sine', 0.03); tone(780, 0.12, 0.05, 'sine', 0.025); }
+      else if (k === 'stamp') { tone(140, 0.18, 0, 'triangle', 0.08); tone(90, 0.2, 0.02, 'sine', 0.06); }
+      else if (k === 'win') [523, 659, 784, 1047].forEach((f, i) => tone(f, 0.26, i * 0.08, 'sine', 0.045));
+    } catch (e) {}
+  }
+  toast(t, s, e) { clearTimeout(this.tT); this.setState({ toast: { t, s, e: e || '✓', id: Date.now() } }); this.tT = setTimeout(() => this.setState({ toast: null }), 3600); }
+  pt(e) { const el = e && e.currentTarget; if (el && el.getBoundingClientRect) { const r = el.getBoundingClientRect(); return [r.left + r.width / 2, r.top + r.height / 2]; } return [innerWidth / 2, innerHeight / 2]; }
+  burst(e, n) {
+    if (this.reduce()) return; const [x, y] = this.pt(e); const cols = ['#6BE3D7', '#2F6FE0', '#B6E2FF', '#001F19'];
+    for (let i = 0; i < (n || 16); i++) { const d = document.createElement('span'); const s = 6 + Math.random() * 6; d.style.cssText = 'position:fixed;left:' + x + 'px;top:' + y + 'px;width:' + s + 'px;height:' + s + 'px;border-radius:' + (i % 2 ? '50%' : '2px') + ';background:' + cols[i % 4] + ';pointer-events:none;z-index:60;'; document.body.appendChild(d); const a = Math.random() * Math.PI * 2, r = 50 + Math.random() * 80; const an = d.animate([{ transform: 'translate(-50%,-50%)', opacity: 1 }, { transform: 'translate(calc(-50% + ' + Math.cos(a) * r + 'px), calc(-50% + ' + (Math.sin(a) * r + 40) + 'px)) rotate(' + Math.random() * 360 + 'deg) scale(.5)', opacity: 0 }], { duration: 750 + Math.random() * 350, easing: 'cubic-bezier(.2,.7,.2,1)' }); an.onfinish = () => d.remove(); }
+  }
+  invPick(j) {
+    const R = this.CLr || [], i = this.state.invI; if (i >= R.length) return;
+    const card = document.querySelector('[data-anim="invcard"]'), bin = document.querySelector('[data-bin="' + j + '"]');
+    if (j === R[i]) {
+      this.sfx('ok');
+      const done = () => this.setState(s => { const n = s.invI + 1; if (n >= R.length) { this.sfx('win'); setTimeout(() => this.toast('Clasificación lista', 'Solo los datos se verifican', '🔎'), 200); } return { inv: { ...s.inv, [i]: j }, invI: n, invFb: '' }; });
+      if (card && bin && card.animate && !this.reduce()) {
+        const a = card.getBoundingClientRect(), b = bin.getBoundingClientRect();
+        const dx = b.left + b.width / 2 - (a.left + a.width / 2), dy = b.top + b.height / 2 - (a.top + a.height / 2);
+        const an = card.animate([{ transform: 'none', opacity: 1 }, { transform: 'translate(' + dx + 'px,' + dy + 'px) scale(.2)', opacity: .15 }], { duration: 420, easing: 'cubic-bezier(.5,0,.3,1)', fill: 'forwards' });
+        an.onfinish = () => { done(); requestAnimationFrame(() => an.cancel()); };
+        setTimeout(() => bin.animate && bin.animate([{ transform: 'none' }, { transform: 'scale(1.06)' }, { transform: 'none' }], { duration: 260 }), 380);
+      } else done();
+    } else {
+      this.sfx('no');
+      if (card && card.animate && !this.reduce()) card.animate([{ transform: 'none' }, { transform: 'translateX(-8px)' }, { transform: 'translateX(8px)' }, { transform: 'translateX(-3px)' }, { transform: 'none' }], { duration: 340 });
+      this.setState({ invFb: 'No es ' + ['un dato', 'una opinión', 'una pregunta'][j] + '. ' + (this.CLh || [])[i] });
+    }
+  }
+  componentDidUpdate() {
+    if (this.state.menuOut) requestAnimationFrame(() => this.idxPlace());
+    const st = this.state; const p = this.prevSt || st; this.prevSt = st;
+    if (p.zoom !== st.zoom) document.body.style.zoom = (st.zoom ?? 2) === 2 ? '' : String([0.8, 0.9, 1, 1.1, 1.25, 1.4][st.zoom]); if (p === st) return;
+    if (this.reduce()) { this.flipI = null; this.popSel = null; return; }
+    const stag = (el, dx) => { if (!el || !el.animate) return; el.animate([{ opacity: 0, transform: 'translate(' + dx + 'px,10px)' }, { opacity: 1, transform: 'none' }], { duration: 320, easing: 'cubic-bezier(.2,.7,.2,1)' }); Array.from(el.children).slice(0, 10).forEach((c, i) => c.animate && c.animate([{ opacity: 0, transform: 'translateY(14px)' }, { opacity: 1, transform: 'none' }], { duration: 420, delay: 80 + i * 60, easing: 'cubic-bezier(.2,.7,.2,1)', fill: 'backwards' })); };
+    if (p.s !== st.s) stag(document.querySelector('section[data-screen-label]'), 0);
+    else if (p.sc !== st.sc) stag(document.querySelector('[data-anim="scene"]'), 16);
+    const q = s => document.querySelector(s);
+    if (p.fmt !== st.fmt && st.fmt != null) { const bar = q('[data-fmtbar="1"]'); if (bar) Array.from(bar.children).forEach((c, i) => c.animate && c.animate([{ transform: 'scaleX(0)', opacity: 0 }, { transform: 'none', opacity: 1 }], { duration: 380, delay: i * 110, easing: 'cubic-bezier(.2,.7,.2,1)', fill: 'backwards' })); }
+    if (p.menuOut !== st.menuOut && st.menuOut) { const b = q('[data-anim="idxbtn"]'); if (b && b.animate) b.animate([{ opacity: 0, transform: 'translateY(16px) scale(.9)' }, { opacity: 1, transform: 'none' }], { duration: 300, easing: 'cubic-bezier(.2,.9,.3,1.2)' }); }
+    if (p.idxOpen !== st.idxOpen && st.idxOpen) { const b = q('[data-anim="idxpanel"]'); if (b && b.animate) b.animate([{ opacity: 0, transform: 'translateY(10px)' }, { opacity: 1, transform: 'none' }], { duration: 240, easing: 'ease-out' }); }
+    if (p.toast !== st.toast && st.toast) { const t = q('[data-anim="toast"]'); if (t && t.animate) t.animate([{ opacity: 0, transform: 'translateY(-24px) scale(.96)' }, { opacity: 1, transform: 'none' }], { duration: 360, easing: 'cubic-bezier(.2,.9,.3,1.2)' }); }
+    if (this.flipI != null) { const el = q('[data-role="' + this.flipI + '"]'); this.flipI = null; if (el && el.animate) el.animate([{ transform: 'perspective(700px) rotateY(-90deg)', opacity: .4 }, { transform: 'perspective(700px) rotateY(0)', opacity: 1 }], { duration: 340, easing: 'cubic-bezier(.2,.7,.2,1)' }); }
+    if (this.popSel) { const el = q(this.popSel); this.popSel = null; if (el && el.animate) el.animate([{ transform: 'scale(.6)', opacity: .3 }, { transform: 'scale(1.12)' }, { transform: 'none', opacity: 1 }], { duration: 340, easing: 'ease-out' }); }
+    if (p.eo !== st.eo) { const el = q('[data-anim="eo"]'); if (el) Array.from(el.children).forEach((c, i) => c.animate && c.animate([{ opacity: 0, transform: 'translateY(12px) scale(.96)' }, { opacity: 1, transform: 'none' }], { duration: 340, delay: i * 70, easing: 'cubic-bezier(.2,.7,.2,1)', fill: 'backwards' })); }
+    if (p.verdict !== st.verdict && st.verdict) { const el = q('[data-anim="stamp"]'); if (el && el.animate) el.animate([{ transform: 'scale(2.2) rotate(-14deg)', opacity: 0 }, { transform: 'scale(.92) rotate(-6deg)', opacity: 1, offset: .7 }, { transform: 'rotate(-6deg)' }], { duration: 420, easing: 'cubic-bezier(.2,.7,.2,1)' }); }
+    
+    if (p.invI !== st.invI) { const el = q('[data-anim="invcard"]'); if (el && el.animate) el.animate([{ opacity: 0, transform: 'translateY(-14px) scale(.96)' }, { opacity: 1, transform: 'none' }], { duration: 320, easing: 'cubic-bezier(.2,.7,.2,1)' }); }
+    if (false) {
+      const v = q('[data-anim="edit"]'); if (!v || !v.animate) return;
+      const pick = st.qp[st.q];
+      if (pick === undefined) v.animate([{ transform: 'scale(.85)', opacity: .4 }, { transform: 'none', opacity: 1 }], { duration: 300, easing: 'ease-out' });
+      else if (this.lastOk) v.animate([{ transform: 'none' }, { transform: 'translateY(-12px) rotate(-4deg)' }, { transform: 'none' }, { transform: 'translateY(-5px)' }, { transform: 'none' }], { duration: 620, easing: 'ease-out' });
+      else v.animate([{ transform: 'none' }, { transform: 'rotate(-8deg)' }, { transform: 'rotate(6deg)' }, { transform: 'rotate(-3deg)' }, { transform: 'none' }], { duration: 520, easing: 'ease-out' });
+    }
+  }
+  infraVals() {
+    const st = this.state, z = st.zoom ?? 2;
+    return {
+      showIdxBtn: !!st.menuOut, idxOpen: !!st.idxOpen, idxLabel: st.idxOpen ? '✕ Cerrar' : 'Índice', toggleIdx: () => this.setState(s => ({ idxOpen: !s.idxOpen })),
+      mute: !!st.mute, muteLabel: st.mute ? '🔇 Sonido' : '🔊 Sonido', toggleMute: () => this.setState(s => ({ mute: !s.mute })),
+      hasToast: !!st.toast, toastT: st.toast ? st.toast.t : '', toastS: st.toast ? st.toast.s : '', toastE: st.toast ? st.toast.e : '',
+      zoomTxt: [80, 90, 100, 110, 125, 140][z] + '%', zoomIn: () => this.setState(s => ({ zoom: Math.min(5, (s.zoom ?? 2) + 1) })), zoomOut: () => this.setState(s => ({ zoom: Math.max(0, (s.zoom ?? 2) - 1) })), zoomReset: () => this.setState({ zoom: 2 }),
+    };
+  }
+  idxPlace() {
+    const w = document.querySelector('[data-idxwrap="1"]'); if (!w) return;
+    const busy = (x, y) => { const els = document.elementsFromPoint(x, y).filter(e => !w.contains(e)); const e = els[0]; if (!e || e === document.body || e === document.documentElement) return false; if (/^(IMG|BUTTON|A|INPUT|TEXTAREA|VIDEO|IMAGE-SLOT|LABEL|SPAN|B|P|H1|H2|H3|LI)$/.test(e.tagName)) return true; return Array.from(e.childNodes).some(n => n.nodeType === 3 && n.textContent.trim()); };
+    const H = innerHeight, Wd = innerWidth, ys = [H - 22, H - 40, H - 58];
+    const side = (xs) => xs.some(x => ys.some(y => busy(x, y)));
+    const rBusy = side([Wd - 30, Wd - 80, Wd - 130]);
+    const lBusy = side([30, 80, 130]);
+    const left = rBusy && !lBusy;
+    w.style.right = left ? 'auto' : '16px'; w.style.left = left ? '16px' : 'auto'; w.style.alignItems = left ? 'flex-start' : 'flex-end';
+  }
+  top() { try { window.scrollTo(0, 0); } catch (e) {} }
+  copy(text, key) {
+    const done = () => { this.setState({ copied: key }); clearTimeout(this.cpT); this.cpT = setTimeout(() => this.setState({ copied: '' }), 2500); };
+    const fb = () => { const ta = document.createElement('textarea'); ta.value = text; ta.style.position = 'fixed'; ta.style.opacity = '0'; document.body.appendChild(ta); ta.select(); try { document.execCommand('copy'); } catch (e) {} ta.remove(); done(); };
+    if (navigator.clipboard && window.isSecureContext) navigator.clipboard.writeText(text).then(done, fb); else fb();
+  }
+  go(i) { if (i !== this.state.s) this.sfx('go'); this.top(); this.setState({ s: i, ts: 0, block: false, manual: false, idxOpen: false }); }
+  goSc(i) { this.sfx('go'); this.top(); this.setState({ s: 3, sc: i, block: false, manual: false, extra: false }); }
+  toggleTimer() {
+    if (this.state.run) { clearInterval(this.iv); this.setState({ run: false }); return; }
+    this.sfx('go');
+    if (this.state.t <= 0) this.setState({ t: 90 });
+    this.setState({ run: true });
+    clearInterval(this.iv);
+    this.iv = setInterval(() => {
+      const t = this.state.t;
+      if (t <= 1) { clearInterval(this.iv); this.setState({ t: 0, run: false }); this.sfx('win'); this.toast('¡Tiempo!', 'Ahora vienen las preguntas del consejo', '⏱️'); return; }
+      if (t <= 6) this.sfx('tick');
+      this.setState({ t: t - 1 });
+    }, 1000);
+  }
+  proVals() {
+    const st = this.state, sf = k => { try { this.sfx(k); } catch (e) {} }, set = o => this.setState(o);
+    const prk = st.prk || 0, S = ["El tribunal","Nombre o título","Tu nombre"], goK = i => { sf('go'); set({ prk: i, ppop: null }); }, pp = st.ppop;
+    const openPop = (o, e) => { sf(o.ok === true ? 'ok' : o.ok === false ? 'no' : 'pop'); if (o.ok === true && e && this.burst) this.burst(e, 12); set({ ppop: o }); };
+    const B = { pk0: prk === 0, pk1: prk === 1, pk2: prk === 2, pkSteps: S.map((t, i) => ({ t, n: i + 1, mark: i < prk ? '✓' : i + 1, on: i === prk, off: i !== prk, pick: () => goK(i) })),
+      pkHasPrev: prk > 0, pkPrev: () => goK(prk - 1), pkHasNext: prk < 2, pkNext: () => goK(prk + 1), pkNextL: prk < 2 ? 'Siguiente: ' + S[prk + 1] + ' →' : '',
+      popOn: !!pp, popE: pp ? pp.e : '', popT: pp ? pp.t : '', popW: pp ? pp.w : '', popBg: pp ? (pp.ok === true ? '#6BE3D7' : pp.ok === false ? '#FFD9D3' : '#B6E2FF') : '#FFFFFF', popBtnL: pp ? (pp.btn || 'Entendido') : '',
+      popHasL: !!(pp && pp.list), popL: pp && pp.list ? pp.list.map((t, i) => ({ t, n: i + 1 })) : [], popCurves: !!(pp && pp.curves), popAct: () => { const a = pp && pp.act; set({ ppop: null }); if (a) a(); } };
+    const tg = (arr, cur, fn) => arr.map((t, i) => ({ t, on: cur === i, off: cur !== i, pick: () => { sf('pop'); fn(i); } }));
+    const NM = [['Historias', 0, 'Es tan general que hay miles con ese nombre. Nadie lo encuentra ni lo recuerda.'], ['Voces del andén', 1, 'Es corto, fácil de decir y dice dónde pasa y de quién son las voces.'], ['El podcast de Valentina sobre historias reales de Chapinero', 0, 'Es muy largo: no cabe en una portada y nadie lo recuerda completo.'], ['Tinto a las 5:40', 1, 'Es corto y despierta curiosidad: dan ganas de saber qué pasa a esa hora.']];
+    const i = st.p2i || 0, done = i >= NM.length, cur = NM[Math.min(i, NM.length - 1)], A2 = st.p2a || {};
+    const nOk = Object.keys(A2).filter(k => A2[k] === NM[k][1]).length;
+    const ans = v => e => { const ok = v === cur[1]; this.setState(s => ({ p2a: { ...(s.p2a || {}), [i]: v } })); openPop({ ok, e: ok ? '✓' : '✗', t: (ok ? 'Bien visto: ' : 'Revisa: ') + (cur[1] ? 'pasa' : 'no pasa'), w: cur[2], btn: i < 3 ? 'Siguiente caso →' : 'Ver el veredicto', act: () => set({ p2i: i + 1 }) }, e); };
+    const SO = [['Voces del andén', 0], ['Cap. 2 · La señora que despierta al paradero', 1], ['Manos del mercado', 0], ['Cap. 1 · Bienvenidos al andén', 1]], sv = st.p2s || {}, soI = Math.min(st.p2si || 0, SO.length), soCur = SO[Math.min(soI, SO.length - 1)];
+    const soAns = j => e => { const ok = j === soCur[1]; this.setState(s => ({ p2s: { ...(s.p2s || {}), [soI]: j } })); openPop({ ok, e: ok ? '✓' : '✗', t: soCur[1] === 0 ? 'Es un nombre' : 'Es un título', w: soCur[1] === 0 ? 'Sirve para todos los capítulos: no lleva número y no cambia.' : 'Cuenta un solo capítulo: lleva su número y cambia cada vez.', btn: soI < 3 ? 'Siguiente tarjeta →' : 'Ver resultado', act: () => set({ p2si: soI + 1 }) }, e); };
+    const ttl = st.p2t ?? 'Voces del andén', tt = ttl.trim(), w = tt.split(' ').filter(Boolean).length;
+    const PP = [['Para', ['jóvenes de mi barrio', 'quienes toman el bus temprano', 'mi familia y mis vecinos', 'compañeros del colegio']], ['que quieren', ['conocer historias reales de su barrio', 'reírse de lo que pasa todos los días', 'entender cómo cambia su ciudad']], ['contadas', ['en 3 minutos', 'por quienes las viven', 'con humor y sin prisa']]];
+    const pv = st.p2p || {}, g = k => pv[k] || '[' + k.toLowerCase() + ']';
+    const r = { p2Playing: !done, p2Done: done, p2Name: cur[0], p2Yes: ans(1), p2No: ans(0), p2Again: () => set({ p2i: 0, p2a: {} }), p2Score: nOk,
+      p2Dots: NM.map((x, k) => ({ c: A2[k] === undefined ? (k === i ? '#2F6FE0' : '#DCE6F5') : A2[k] === x[1] ? '#6BE3D7' : '#FF9C65' })),
+      p2SoPlay: soI < SO.length, p2SoDone: soI >= SO.length, p2SoTxt: soCur[0], p2SoName: soAns(0), p2SoTitle: soAns(1), p2SoAgain: () => set({ p2si: 0, p2s: {} }),
+      p2SoDots: SO.map((x, k) => ({ c: sv[k] === undefined ? (k === soI ? '#2F6FE0' : '#DCE6F5') : sv[k] === x[1] ? '#6BE3D7' : '#FF9C65' })),
+      p2BkN: SO.filter((x, k) => sv[k] !== undefined && x[1] === 0).map(x => ({ t: x[0] })), p2BkT: SO.filter((x, k) => sv[k] !== undefined && x[1] === 1).map(x => ({ t: x[0] })),
+      p2SoScore: 'Clasificaste bien ' + SO.filter((x, k) => sv[k] === x[1]).length + ' de 4.',
+      p2Title: ttl, p2Set: e => set({ p2t: e.target.value }),
+      p2Checks: [[w >= 1 && w <= 4, '1 a 4 palabras'], [tt.toLowerCase().indexOf('podcast') < 0, 'No dice "podcast"'], [tt.length > 0 && tt.length <= 28, 'Cabe en una portada']].map(([ok, t]) => ({ t: (ok ? '✓ ' : '✗ ') + t, c: ok ? '#0E6B5E' : '#A42F27' })),
+      p2Parts: PP.map(([k, o]) => ({ k, opts: o.map(t => ({ t, on: pv[k] === t, off: pv[k] !== t, pick: () => { sf('pop'); this.setState(s => ({ p2p: { ...(s.p2p || {}), [k]: (s.p2p || {})[k] === t ? undefined : t } })); } })) })),
+      p2Prop: 'Para ' + g('Para') + ' que quieren ' + g('que quieren') + ', ' + (tt || '[tu podcast]') + ' cuenta historias ' + g('contadas') + '.' };
+    [0, 1, 2, 3].forEach(k => { r['p2n' + k] = !done && i === k; r['p2so' + k] = soI === k; });
+    return { ...B, ...r };
+  }
+  renderVals() {
+    const st = this.state;
+    const mode = st.mode || this.props.consejoModo || 'equipo';
+    const LV = (a, b, c) => [{ name: 'Nota', e: '📝', d: a }, { name: 'Reportaje', e: '🔎', d: b }, { name: 'Exclusiva', e: '⭐', d: c }];
+    const MAN_AI = ['Entra a chatgpt.com o gemini.google.com con tu cuenta personal.', 'Abre una conversación nueva para tu historia.', 'Pega el prompt y presiona Enter.', 'Para mejorar: "Hazlo más corto" o "Dame solo datos con fuente".'];
+    const SC = [
+      { id: 'filtro', req: true, t: 'Filtro de la historia', short: 'Filtro', e: '🧲', tool: 'Selector aquí mismo',
+        st: ['Escribe tus 3 finalistas y pásalas por las 5 preguntas.', 'Mira cuál pasa más preguntas y cuál falla en cuál.', 'Toma tu decisión y escribe por qué.'],
+        lv: LV('Eliges 1 historia y explicas por qué.', 'Pides a la IA que pase tus 3 ideas por el filtro y comparas con tu puntaje.', 'Reescribes la idea perdedora hasta que pase las 5.'),
+        block: 'Si hay empate, gana la que tenga ✓ en Acceso y Respeto.' },
+      { id: 'inv', req: true, t: 'Investigación con IA', short: 'Investigación', e: '🔎', tool: 'Gemini o ChatGPT + buscador',
+        st: ['Pide contexto, datos y preguntas con el prompt de Valentina.', 'Separa lo que es dato, opinión o pregunta.', 'Verifica tus datos y márcalos: confirmado, pendiente o solo IA.'],
+        lv: LV('Tienes 1 dato confirmado con fuente.', 'Confirmas un segundo dato y descartas uno que la IA inventó.', 'Encuentras un dato que la IA no sabía.'),
+        block: 'Busca en sitios .gov.co, prensa reconocida o la página oficial del lugar.', manT: 'ChatGPT y Gemini', man: MAN_AI },
+      { id: 'ficha', req: true, t: 'Ficha de investigación', short: 'Ficha', e: '🗂️', tool: 'Borradores en Mi bitácora · ChatGPT o Gemini',
+        st: ['Mira la plantilla y la ficha de Valentina.', 'Define tu audiencia: pide a la IA un perfil, corrige lo que asumió mal y elige formato.', 'Completa los 6 campos en Borradores, en Mi bitácora: la llevarás al Consejo.'],
+        lv: LV('Tu ficha está completa, con audiencia y formato.', 'Destacas tu mejor dato verificado.', 'Explicas por qué ese formato sirve a esa audiencia.'),
+        block: 'Empieza por la frase de tu historia. Lo demás sale de ahí. Si la IA no carga, escribe tú el perfil: edad, dónde está y cuándo escucharía.', manT: 'Borradores y IA', man: ['Abre Borradores, en Mi bitácora.', 'Copia los 6 campos de la plantilla.', 'Pide a ChatGPT o Gemini un perfil de tu audiencia y corrige lo que asumió mal.', 'Escribe tu respuesta debajo de cada campo.', 'Junto a cada dato, anota dónde lo encontraste.'] },
+      { id: 'pausa', t: 'Descanso', short: 'Descanso', e: '☕', tool: 'Sin pantalla' },
+      { id: 'consejo', req: true, t: 'Consejo editorial', short: 'Consejo', e: '🗳️', tool: 'Compañeros o ChatGPT/Gemini', team: true,
+        st: ['Presenta tu historia en 90 segundos.', 'Responde las preguntas de los 4 roles.', 'Sal con luz verde o con un ajuste claro.'],
+        lv: LV('Sales con luz verde o con un ajuste claro.', 'Aplicas el ajuste y vuelves a presentar (reto extra).', 'Juegas un rol para un compañero y le das un ajuste útil.'),
+        block: 'Si te quedas en blanco: quién es, dónde está, qué le pasa, por qué importa.', manT: 'ChatGPT y Gemini', man: MAN_AI },
+      { id: 'rosa', req: true, t: 'Tu personaje y su avatar', short: 'Personaje', e: '👵', tool: 'ChatGPT o Gemini · Canva',
+        st: ['Descubre qué es real y qué inventó Valentina en Doña Rosa.', 'Mira cómo mejoró su avatar de la versión 1 a la 2.', 'Escribe la ficha de tu personaje y crea su avatar base.'],
+        lv: LV('Tu personaje tiene ficha, avatar base y dice qué es real y qué es inventado.', 'Haces 2 versiones del avatar y eliges la que más se parece a tu ficha.', 'Creas una expresión extra de tu personaje (por ejemplo, riendo), con el mismo estilo del avatar base.'),
+        block: 'Empieza por un objeto: ¿qué lleva o usa tu personaje siempre? Ponlo en el avatar.', manT: 'ChatGPT, Gemini o Canva', man: ['Entra a chatgpt.com o gemini.google.com con tu cuenta personal.', 'Pega el prompt de tu avatar y pide una sola imagen.', 'Revisa la lista: que no se parezca a ninguna persona real.', 'Descárgala y llévala a Mi bitácora con la ficha.', 'Sin IA de imágenes o sin celular: en canva.com, toca Elementos y arma tu personaje con formas e ilustraciones.'] },
+      { id: 'pro', req: true, t: 'El nombre de tu podcast', short: 'Nombre', e: '🏷️', tool: 'Esta cápsula · Borradores en Mi bitácora',
+        st: ['Decide si 4 nombres pasan o no la prueba.', 'Descubre qué tiene un buen nombre y una buena promesa.', 'Escribe el nombre y la promesa de tu podcast.'],
+        lv: LV('Tu podcast tiene nombre y una promesa de una frase, en Borradores, en Mi bitácora.', 'Pruebas tu nombre con 3 personas: ¿lo recuerdan al día siguiente?', 'Escribes un eslogan de 5 palabras o menos para tu portada.'),
+        block: 'Mezcla una palabra del lugar y una de la gente: "Voces del andén", "Manos del mercado".' },
+    ];
+    const C = ['Elegí mi historia y anoté en Mi bitácora por qué.', 'Mi ficha de investigación tiene 1 dato confirmado.', 'Mi personaje tiene ficha, avatar y qué es real o inventado en Mi bitácora.', 'Mi podcast tiene nombre y promesa.'];
+    const nChk = Object.values(st.chk).filter(Boolean).length;
+    const allChk = nChk === C.length;
+    const names = [['Inicio', '🎬'], ['Transmisión', '📡'], ['Valentina', '📓'], ['Escenas', '🧪'], ['Comprueba', '🎙️'], ['Cierre', '✂️']];
+    const idx = names.map(([t, e], i) => { const done = i < st.s || (i === 5 && allChk); return { t, e, done, on: st.s === i && !done, todo: i > st.s && !done, go: () => this.go(i), goIdx: () => { this.setState({ idxOpen: false }); this.go(i); }, bg: st.s === i ? '#EAF2FF' : '#FFFFFF', dot: done ? '#6BE3D7' : st.s === i ? '#2F6FE0' : '#F2F6FC', mark: done ? '✓' : e }; });
+    const sc = SC[st.sc];
+    const scPills = SC.map((x, i) => ({ ...x, on: i === st.sc, done: i < st.sc, todo: i > st.sc, go: () => this.goSc(i) }));
+    const HOOK = { pro: 'Un nombre que se recuerda y una promesa que se cumple.', filtro: 'Tres ideas entran. Una sale.', inv: 'Antes de contarla, averigua qué es verdad.', pausa: 'Un respiro lejos de la pantalla.', consejo: 'Cuatro preguntas difíciles. ¿Aguanta tu historia?', aud: '¿Para quién cuentas esto? La IA adivina. Tú decides.', ficha: 'Todo lo que sabes de tu historia, en una página.', rosa: 'Tu personaje toma forma… y se mueve.' };
+
+    // Filtro
+    const FQ = [['Acceso', '¿Puedo observarla o hablar con alguien cercano?'], ['Relevancia', '¿Le importa a alguien más que a mí?'], ['Originalidad', '¿No la he visto ya en redes o noticias?'], ['Viabilidad', '¿Cabe en 2 o 3 minutos de audio?'], ['Respeto', '¿La cuento sin exponer ni herir a nadie?']];
+    const filtro = FQ.map(([k, q], i) => ({ k, q, cells: [0, 1, 2].map(f => ({ ck: i + '-' + f, on: !!st.flt[i + '-' + f], off: !st.flt[i + '-' + f], toggle: () => { if (!st.flt[i + '-' + f]) { this.sfx('pop'); this.popSel = '[data-cell="' + i + '-' + f + '"]'; } this.setState(s => ({ flt: { ...s.flt, [i + '-' + f]: !s.flt[i + '-' + f] } })); } })) }));
+    const fTot = [0, 1, 2].map(f => FQ.reduce((a, _, i) => a + (st.flt[i + '-' + f] ? 1 : 0), 0));
+    const mx = Math.max(...fTot); const wins = fTot.map((v, i) => v === mx ? i + 1 : 0).filter(Boolean);
+    const fWinner = mx === 0 ? 'Marca las 5 preguntas para ver el puntaje' : wins.length > 1 ? 'Empate entre ideas ' + wins.join(' y ') + '. Desempata con Acceso y Respeto.' : 'Más ✓: Idea ' + wins[0] + (mx < 4 ? '. Ojo: tiene menos de 4; revisa en qué falla.' : '');
+    const fBars = fTot.map((v, i) => ({ v, w: (v / 5 * 100) + '%', crown: mx > 0 && wins.length === 1 && wins[0] === i + 1 ? '👑 ' : '' }));
+    const picks = [0, 1, 2].map(i => ({ t: 'Idea ' + (i + 1), on: st.pick === i, off: st.pick !== i, pick: () => { if (st.pick !== i) { this.sfx('ok'); this.toast('Historia elegida', 'La Idea ' + (i + 1) + ' sigue en carrera', '🧲'); } this.setState({ pick: i }); } }));
+    const pickDiff = st.pick !== null && mx > 0 && wins.length === 1 && wins[0] !== st.pick + 1;
+
+    // Clasificar
+    const CL = [
+      { t: 'El IPES lleva un registro de vendedores informales de Bogotá.', r: 0 },
+      { t: 'Los vendedores de tinto son el alma de la ciudad.', r: 1 },
+      { t: '¿Desde qué año está el puesto en esa esquina?', r: 2 },
+      { t: 'Chapinero es una de las localidades con más comercio informal.', r: 0 },
+    ];
+    this.CLr = CL.map(c => c.r);
+    this.CLh = ['Pista: ¿podrías buscarlo en una fuente oficial?', 'Pista: ¿se puede comprobar que algo es "el alma de la ciudad"?', 'Pista: mira cómo empieza y termina la frase.', 'Pista: es algo que se puede medir y verificar.'];
+    const invDone = st.invI >= CL.length;
+    const binL = [0, 1, 2].map(j => CL.filter((_, i) => st.inv[i] === j).map(c => c.t));
+    // Consejo
+    const RL = [
+      { t: 'La Editora', e: '🎙️', d: 'Cuida que valga la pena', q: '¿Por qué esta historia y no otra? ¿Por qué ahora?' },
+      { t: 'Abogada de derechos', e: '⚖️', d: 'Cuida a las personas', q: '¿A quién puedes afectar? ¿Esa persona querría que la cuentes?' },
+      { t: 'Audiencia escéptica', e: '🤨', d: 'Se aburre rápido', q: '¿Por qué me quedaría escuchando después de 7 segundos?' },
+      { t: 'Productor de presupuesto', e: '🧮', d: 'Cuida los recursos', q: '¿La puedes hacer con lo que tienes, sin grabar a nadie?' },
+    ];
+    const roles = RL.map((r, i) => ({ ...r, ri: String(i), open: !!st.roles[i], closed: !st.roles[i], flip: () => { this.sfx('pop'); this.flipI = String(i); this.setState(s => ({ roles: { ...s.roles, [i]: !s.roles[i] } })); } }));
+    const mm = Math.floor(st.t / 60), ss = String(st.t % 60).padStart(2, '0');
+
+    // Audiencia
+    const AU = [
+      { k: 'Quién', ia: 'Adultos de 35 a 55 años interesados en economía.', v: 'Estudiantes de mi colegio que pasan por el paradero.' },
+      { k: 'Dónde escucha', ia: 'En la radio del carro.', v: 'En el bus, con audífonos, camino al colegio.' },
+      { k: 'Qué busca', ia: 'Datos sobre el empleo informal.', v: 'Conocer a alguien que ve todos los días y no conoce.' },
+    ];
+    const aud = AU.map((a, i) => ({ ...a, fixed: !!st.aud[i], raw: !st.aud[i], toggle: () => { this.sfx('pop'); this.setState(s => ({ aud: { ...s.aud, [i]: !s.aud[i] } })); } }));
+    const FM = [
+      { t: 'Podcast piloto', e: '🎙️', d: 'Una conversación o un narrador que presenta la historia. Abre una serie.' },
+      { t: 'Cápsula documental sonora', e: '🎧', d: 'Voces, ambiente y narración. Te lleva al lugar.' },
+      { t: 'Primer capítulo de serie corta', e: '🎬', d: 'Ficción inspirada en lo real. Termina con un gancho.' },
+    ];
+    const FS = [
+      { len: '3–5 min · se escucha en orden', key: 'Lo clave: una voz que guía y deja ganas del próximo episodio.', seg: [['Presentación', 2, '#B6E2FF'], ['Conversación con tu personaje', 6, '#6BE3D7'], ['Lo que aprendiste', 2, '#9DC1FF'], ['Próximo', 1.4, '#5691FF']] },
+      { len: '2–3 min · te lleva al lugar', key: 'Lo clave: la voz de tu personaje y el ambiente cuentan casi todo. La narración solo une.', seg: [['Ambiente', 1.4, '#9DC1FF'], ['Voz del personaje', 3, '#6BE3D7'], ['Narración', 1.6, '#B6E2FF'], ['Voz del personaje', 3, '#6BE3D7'], ['Cierre', 1.2, '#5691FF']] },
+      { len: '2–4 min · ficción inspirada en lo real', key: 'Lo clave: termina justo cuando algo va a pasar, para que quieran el capítulo 2.', seg: [['Escena 1', 3, '#B6E2FF'], ['Conflicto', 3, '#9DC1FF'], ['Giro', 2, '#6BE3D7'], ['Continuará…', 1.6, '#5691FF']] },
+    ];
+    const fF = st.fmt == null ? null : FS[st.fmt];
+    const fmtVals = { fmtHas: !!fF, fmtName: fF ? FM[st.fmt].t : '', fmtLen: fF ? fF.len : '', fmtKey: fF ? fF.key : '', fmtSeg: fF ? fF.seg.map(([t, w, bg]) => ({ t, w, bg })) : [] };
+    const fmts = FM.map((f, i) => ({ ...f, on: st.fmt === i, off: st.fmt !== i, pick: () => { this.sfx('pop'); this.setState({ fmt: i }); } }));
+
+    // Ficha
+    const FK = ['Mi historia en una frase', 'Por qué importa', 'Para quién', 'Formato', '1 dato verificado', 'Qué hizo la IA · qué hice yo'];
+    const FT = ['Quién · dónde · qué le pasa', 'Una razón, no un adjetivo', 'Tu audiencia corregida', 'Uno de los 3 formatos', 'Cada dato con su fuente', 'Una línea para cada uno'];
+    const FV = ['Doña Rosa lleva 20 años vendiendo tintos en un paradero que van a reubicar.', 'Todos la vemos y nadie sabe su historia.', 'Estudiantes que pasan por el paradero, en el bus y con audífonos.', 'Cápsula documental sonora.', 'Registro de vendedores informales (IPES) · Plan de movilidad de la localidad (Alcaldía).', 'La IA dio contexto y preguntas. Yo elegí la historia y verifiqué los datos.'];
+    const ficha = FK.map((k, i) => ({ k, v: st.fichaV ? FV[i] : FT[i], has: st.fichaV, hint: !st.fichaV }));
+
+    // Doña Rosa
+    const RO = [
+      ['Nombre', 'Rosa', 'Inventado', '#E1EEFF'], ['Edad', '62 años', 'Inventado', '#E1EEFF'],
+      ['Oficio', 'Vende tintos en el paradero de la 45', 'Lo vi', '#DDF7F3'], ['Rasgo', 'Saluda a todos por su nombre', 'Lo vi', '#DDF7F3'],
+      ['Deseo', 'Que su nieta termine el colegio', 'De mi abuela', '#FFE3D3'], ['Conflicto', 'Van a mover el paradero', 'Inventado', '#E1EEFF'],
+      ['Frase', '"Mijo, el tinto no espera."', 'De mi abuela', '#FFE3D3'],
+    ];
+    const AVP = [['Estilo', ['ilustración plana', 'acuarela', 'recorte de papel', 'línea y color']], ['Expresión', ['sereno', 'sonriente', 'pensativo', 'decidido']], ['Encuadre', ['retrato de hombros', 'de cuerpo entero', 'de perfil']], ['Fondo', ['el lugar de su historia', 'un color sólido']], ['Colores', ['cálidos', 'fríos', 'morado y menta']]];
+    const avParts = AVP.map(([k, o]) => ({ k, opts: o.map(t => ({ t, on: st.avp[k] === t, off: st.avp[k] !== t, pick: () => this.setState(s => ({ avp: { ...s.avp, [k]: s.avp[k] === t ? undefined : t } })) })) }));
+    const ag = k => st.avp[k] || '[' + k.toLowerCase() + ']';
+    const avTxt = `${ag('Estilo')[0].toUpperCase() + ag('Estilo').slice(1)} de [quién es: edad y oficio], ${ag('Expresión')}, con [un objeto o rasgo de tu ficha], ${ag('Encuadre')}, fondo: ${ag('Fondo') === 'el lugar de su historia' ? '[el lugar de tu historia]' : ag('Fondo')}. Colores ${ag('Colores')}. Que no se parezca a ninguna persona real. Sin texto.`;
+    const AVC = ['Es una ilustración, no parece una foto.', 'No se parece a nadie real ni a un famoso.', 'Muestra algo de su historia: oficio, lugar u objeto.', 'Se entiende en pequeño, como portada de podcast.'];
+    const avChk = AVC.map((t, i) => ({ t, on: !!st.avc[i], off: !st.avc[i], toggle: () => { const will = !st.avc[i]; if (will && AVC.every((_, k) => k === i || st.avc[k])) { this.sfx('win'); this.toast('Avatar listo', 'Ya es la cara de tu historia', '🎨'); } else this.sfx('pop'); this.setState(s => ({ avc: { ...s.avc, [i]: !s.avc[i] } })); } }));
+    const avAll = AVC.every((_, i) => st.avc[i]);
+    
+    
+    const rT = st.rosaT || 0;
+    const rosaTabs = ['Conoce a Doña Rosa', 'Crea tu avatar', 'Dale vida en Canva'].map((t, i) => ({ t, n: i + 1, sep: i > 0, on: rT === i, off: rT !== i, dot: i < rT ? '#6BE3D7' : '#DCE6F5', mk: i < rT ? '✓' : i + 1, go: () => { this.sfx('pop'); this.setState({ rosaT: i }); } }));
+    const rosa = RO.map(([k, v, src, bg], i) => ({ k, v, src, bg, ri: String(i), shown: !!st.rosa[i], hidden: !st.rosa[i], toggle: () => { if (!st.rosa[i]) { this.sfx('pop'); this.popSel = '[data-rosa="' + i + '"]'; } this.setState(s => ({ rosa: { ...s.rosa, [i]: !s.rosa[i] } })); } }));
+
+    // Comprueba: revisa la ficha de Valentina
+    const CK = [
+      { k: 'Mi historia', v: 'La pobreza en Bogotá.', bad: 1, ex: 0, fb: 'Es un tema, no una historia: no tiene cara, lugar ni momento. ¿A quién le pasa, dónde y cuándo?' },
+      { k: 'Para quién', v: 'Jóvenes que toman el bus temprano en Chapinero.', bad: 0, fb: 'Está bien: es una audiencia concreta.' },
+      { k: 'Dato 1', v: 'Doña Rosa es la vendedora de tinto más antigua de Bogotá. (Me lo dijo ChatGPT.)', bad: 1, ex: 1, fb: 'Es un dato "Solo IA": no tiene fuente externa. No va a la ficha hasta verificarlo.' },
+      { k: 'Dato 2', v: 'El paradero de la 45 aparece en el mapa oficial de rutas de TransMilenio.', bad: 0, fb: 'Está bien: tiene fuente externa y se puede comprobar.' },
+      { k: 'Formato', v: 'Podcast documental sonoro: capítulo 1 de bienvenida y capítulo 2 con la historia.', bad: 0, fb: 'Está bien: es uno de los 3 formatos y dice cómo se organiza.' },
+      { k: 'Personaje', v: 'Doña Rosa. Para el avatar usé una foto que le tomé en el paradero.', bad: 1, ex: 5, fb: 'Regla 2: no copio caras reales. El avatar se crea con un prompt, sin fotos de personas.' },
+      { k: 'Qué hizo la IA y qué hice yo', v: 'La IA me hizo preguntas. Yo elegí la historia y busqué los datos.', bad: 0, fb: 'Está bien: deja claro quién decidió qué.' },
+    ];
+    const ckM = st.ck || {}, ckDone = !!st.ckDone;
+    const nMk = Object.values(ckM).filter(Boolean).length;
+    const hits = CK.filter((l, i) => l.bad && ckM[i]).length, falseA = CK.filter((l, i) => !l.bad && ckM[i]).length;
+    const ckLines = CK.map((l, i) => {
+      const mk = !!ckM[i];
+      const o = { k: l.k, v: l.v, mk, edit: !ckDone, rev: ckDone, fb: l.fb, hasFb: false, hasEx: false, exName: l.ex != null ? SC[l.ex].t : '', goEx: () => this.goSc(l.ex),
+        tap: () => { this.sfx('pop'); this.setState(s => ({ ck: { ...(s.ck || {}), [i]: !(s.ck || {})[i] } })); },
+        bg: mk ? '#E3F0FF' : '#FFFFFF', bd: mk ? '#2F6FE0' : '#C5D3EA', box: mk ? '#2F6FE0' : '#FFFFFF', mark: mk ? '✓' : '' };
+      if (ckDone) {
+        if (l.bad && mk) Object.assign(o, { tag: '✓ Bien visto', tagBg: '#6BE3D7', tagC: '#001F19', bg: '#E6FBF8', hasFb: true });
+        else if (l.bad) Object.assign(o, { tag: 'Se te pasó', tagBg: '#FF9C65', tagC: '#001F19', bg: '#FFF3EA', hasFb: true, hasEx: true });
+        else if (mk) Object.assign(o, { tag: 'Esta estaba bien', tagBg: '#DCE6F5', tagC: '#001F19', bg: '#F6F9FD', hasFb: true });
+        else Object.assign(o, { tag: 'Bien', tagBg: '#F2F6FC', tagC: '#4F5F7A', bg: '#FFFFFF' });
+      }
+      return o;
+    });
+    const eMsg = !ckDone ? (nMk ? 'Cuando tengas tus 3, presiona Revisar.' : 'Léela como si fueras el consejo. Busca 3 líneas que no aguantan.')
+      : hits === 3 && !falseA ? 'Los 3. Con este ojo, tu ficha sale al aire.' : hits === 3 ? 'Encontraste los 3. Ojo: marcaste líneas que sí estaban bien.' : 'Casi. Mira las que se te pasaron y repasa esa escena.';
+    const qFirst = hits;
+    const ckVals = { ckLines, ckDone, ckCanRev: !ckDone && nMk > 0, ckCount: ckDone ? 'Encontraste ' + hits + ' de 3' : nMk + ' marcadas',
+      ckRev: e => { const H = CK.filter((l, i) => l.bad && (st.ck || {})[i]).length; if (H === 3) { this.sfx('win'); this.burst(e, 22); } else this.sfx(H ? 'ok' : 'no'); this.setState({ ckDone: true }); },
+      ckReset: () => { this.sfx('go'); this.setState({ ck: {}, ckDone: false }); } };
+    const EO = [['Gaseosa', 'Jugo natural'], ['Bus', 'A pie'], ['Lluvia', 'Sol'], ['Arepa', 'Empanada'], ['Reggaetón', 'Rock'], ['Audífonos', 'Parlante'], ['Escuchar historias', 'Contarlas']];
+    const eoPair = EO[st.eo % EO.length];
+    const eoOpts = eoPair.map((t, i) => ({ t, idle: st.eoP === undefined, on: st.eoP === i, dim: st.eoP !== undefined && st.eoP !== i, pick: () => { this.sfx('pop'); this.popSel = '[data-eo="on"]'; this.setState({ eoP: i }); } }));
+    const checks = C.map((t, i) => ({ t, on: !!st.chk[i], off: !st.chk[i], toggle: e => { const will = !st.chk[i]; if (will && nChk + 1 === C.length) { this.sfx('win'); this.burst(e, 26); this.toast('Episodio 2 completo', 'Tu historia te espera en el Episodio 3', '🎉'); } else this.sfx('pop'); this.setState(s => ({ chk: { ...s.chk, [i]: !s.chk[i] } })); } }));
+    const r = {};
+    for (let i = 0; i < 6; i++) r['s' + i] = st.s === i;
+    const complete = allChk && st.s === 5;
+    return {
+      ...this.infraVals(), ...fmtVals, ...r, idx, status: complete ? 'Episodio 2 completo' : `Parada ${st.s + 1} de 6 · ${names[st.s][0]}`,
+      ...(() => { const ts = st.ts || 0; const goT = i => { this.sfx('go'); this.top(); this.setState({ ts: i }); };
+        const TS = ['Mensaje y misión', 'Antes de empezar'];
+        const VO = ['Sí, aguantó', 'No, se cayó', 'Depende de cómo la presente'], VF = ['A Valentina le pasó: creyó que una idea grande era una idea fuerte.', 'Bien visto: una idea tan grande no tiene a quién preguntarle nada.', 'Presentarla bien ayuda, pero un tema no tiene cara, lugar ni momento.'];
+        const PO = ['Idea 1', 'Idea 2', 'Idea 3'], PQ = p => p === undefined ? 'Antes de marcar: ¿cuál de tus finalistas crees que va a ganar?' : mx === 0 ? 'Votaste: ' + PO[p] + '. Ahora pásalas por las 5 preguntas.' : 'Votaste: ' + PO[p] + ' · Más ✓: ' + (wins.length > 1 ? 'empate' : 'Idea ' + wins[0]) + '. ' + (wins.length === 1 && wins[0] === p + 1 ? 'Tu intuición coincidió.' : '¿Qué viste en el filtro que no esperabas?');
+        return { full: !!st.full, fullLabel: st.full ? '⤡ Salir' : '⤢ Pantalla completa', fullAria: st.full ? 'Salir de pantalla completa' : 'Ver en pantalla completa',
+        toggleFull: () => { try { const d = document, el = d.documentElement; if (d.fullscreenElement || d.webkitFullscreenElement) (d.exitFullscreen || d.webkitExitFullscreen).call(d); else (el.requestFullscreen || el.webkitRequestFullscreen).call(el); } catch (e) {} },
+        ts0: ts === 0, ts1: ts === 1, tNext: () => goT(1),
+        tSteps: TS.map((t, i) => ({ t, n: i + 1, mark: i < ts ? '✓' : i + 1, on: i === ts, off: i !== ts, pick: () => goT(i) })),
+        vAsk: st.vErr === undefined, vShown: st.vErr !== undefined, vFb: st.vErr !== undefined ? VF[st.vErr] : '', vOpts: VO.map((t, i) => ({ t, pick: () => { this.sfx('pop'); this.setState({ vErr: i }); } })),
+        pOpen: st.pr === undefined, pOpts: PO.map((t, i) => ({ t, pick: () => { this.sfx('pop'); this.setState({ pr: i }); } })), pQ: PQ(st.pr), }; })(),
+      line: `calc((100% - 84px) * ${complete ? 1 : st.s / 5})`, next: () => this.go(Math.min(5, st.s + 1)),
+      goConsejo: () => this.goSc(4), goFiltro: () => this.goSc(0),
+      scPills, scReq: !!sc.req, scRec: !!sc.rec, scAI: /ChatGPT|Gemini/.test(sc.tool || ''), manAI: sc.man === MAN_AI,
+      picks, pickDiff, isAdj: st.verdict === 'a', scIsPausa: sc.id === 'pausa', scNotPausa: sc.id !== 'pausa', scTot: SC.filter(x => x.id !== 'pausa').length, scE: sc.e, scN: SC.slice(0, st.sc + 1).filter(x => x.id !== 'pausa').length, scT: sc.t, scTool: sc.tool, scTeam: !!sc.team, scHook: HOOK[sc.id],
+      scPct: Math.round(((st.sc + 1) / SC.length) * 100) + '%', scLeftTxt: st.sc === SC.length - 1 ? 'Última escena · después viene el quiz' : (sc.id === 'pausa' ? 'Pausa' : `Escena ${SC.slice(0, st.sc + 1).filter(x => x.id !== 'pausa').length} de ${SC.filter(x => x.id !== 'pausa').length}`),
+      hasSteps: !!sc.st, stP: sc.st ? sc.st[0] : '', stD: sc.st ? sc.st[1] : '', stA: sc.st ? sc.st[2] : '',
+      isFiltro: sc.id === 'filtro', isInv: sc.id === 'inv', isPausa: sc.id === 'pausa', isPro: sc.id === 'pro', ...this.proVals(), isConsejo: sc.id === 'consejo', isAud: sc.id === 'ficha', isFicha: sc.id === 'ficha', isRosa: sc.id === 'rosa',
+      filtro, fTot, fBars, fWinner,
+      invN: Math.min(st.invI + 1, 4), invPlaying: !invDone, invDone, invT: invDone ? '' : CL[st.invI].t, hasInvFb: !!st.invFb, invFb: st.invFb,
+      invPick0: () => this.invPick(0), invPick1: () => this.invPick(1), invPick2: () => this.invPick(2),
+      binN0: binL[0].length, binN1: binL[1].length, binN2: binL[2].length, binL0: binL[0], binL1: binL[1], binL2: binL[2],
+      invReset: () => this.setState({ invI: 0, inv: {}, invFb: '' }),
+      tPct: ((90 - st.t) / 90 * 100) + '%', stampTxt: st.verdict === 'g' ? 'Luz verde' : 'Con ajuste',
+      eoOpts, eoPicked: st.eoP !== undefined, eoMsg: st.eoP === undefined ? 'Toca una.' : 'Ahora di por qué, en una frase.', eoNext: () => { this.sfx('go'); this.setState(s => ({ eo: s.eo + 1, eoP: undefined })); },
+      showIdxBtn: st.menuOut, idxOpen: st.idxOpen, idxLabel: st.idxOpen ? '✕ Cerrar' : 'Índice', toggleIdx: () => this.setState(s => ({ idxOpen: !s.idxOpen })),
+      mute: st.mute, muteLabel: st.mute ? '🔇 Sonido' : '🔊 Sonido', toggleMute: () => this.setState(s => ({ mute: !s.mute })),
+      hasToast: !!st.toast, toastT: st.toast ? st.toast.t : '', toastS: st.toast ? st.toast.s : '', toastE: st.toast ? st.toast.e : '',
+      eMsg, qFirst,
+      modeTeam: mode === 'equipo', modeIA: mode === 'ia', setTeam: () => this.setState({ mode: 'equipo' }), setIA: () => this.setState({ mode: 'ia' }),
+      roles, timerTxt: mm + ':' + ss, timerLabel: st.run ? 'Pausar' : st.t === 0 ? 'Otra vez' : 'Empezar 90 s', timerToggle: () => this.toggleTimer(), timerReset: () => { clearInterval(this.iv); this.setState({ t: 90, run: false }); },
+      vGreenOn: st.verdict === 'g', vGreenOff: st.verdict !== 'g', vAdjOn: st.verdict === 'a', vAdjOff: st.verdict !== 'a',
+      vGreen: e => { if (st.verdict !== 'g') { this.sfx('stamp'); setTimeout(() => this.sfx('win'), 180); this.burst(e, 22); this.toast('Luz verde', 'Tu historia pasó el consejo', '🟢'); } this.setState({ verdict: 'g' }); }, vAdj: () => { if (st.verdict !== 'a') this.sfx('stamp'); this.setState({ verdict: 'a' }); }, hasVerdict: !!st.verdict,
+      verdictMsg: st.verdict === 'g' ? 'Tu historia pasó. Anota en una línea la pregunta que más te costó: te servirá en el pitch.' : 'Normal: a Valentina también le pasó. Escribe el ajuste y aplícalo en tu ficha.',
+      aud, fmts, fichaMine: !st.fichaV, fichaV: st.fichaV, fichaShowMine: () => this.setState({ fichaV: false }), fichaShowV: () => this.setState({ fichaV: true }),
+      fichaTitle: st.fichaV ? 'Voces del andén' : 'El título de tu historia', ficha, rosa, avParts, avTxt, avChk, avAll, avNot: !avAll,
+      hasLevels: !!sc.lv, goalD: sc.lv ? sc.lv[0].d : '', extras: sc.lv ? sc.lv.slice(1) : [], extra: st.extra, extraArrow: st.extra ? '▴' : '▾', toggleExtra: () => this.setState(s => ({ extra: !s.extra })),
+      lvlIsDone: !!st.lvDone[sc.id], lvlNotDone: !st.lvDone[sc.id], lvlToggle: e => { if (!st.lvDone[sc.id]) { this.sfx('ok'); this.burst(e); this.toast('Logro desbloqueado', sc.t, '🏅'); } this.setState(s => ({ lvDone: { ...s.lvDone, [sc.id]: !s.lvDone[sc.id] } })); },
+      hasBlock: !!sc.block, blockTxt: sc.block || '', block: st.block, blockArrow: st.block ? '▴' : '▾', toggleBlock: () => this.setState(s => ({ block: !s.block })),
+      hasManual: !!sc.man, manualTitle: sc.manT || '', manualItems: sc.man || [], manual: st.manual, manualArrow: st.manual ? '▴' : '▾', toggleManual: () => this.setState(s => ({ manual: !s.manual })),
+      scPrev: () => st.sc === 0 ? this.go(2) : this.goSc(st.sc - 1),
+      scNext: () => st.sc === SC.length - 1 ? this.go(4) : this.goSc(st.sc + 1),
+      scNextLabel: st.sc === SC.length - 1 ? '¿Listo para salir al aire? →' : `Siguiente: ${SC[st.sc + 1].t} →`,
+      ...ckVals, qNext: () => { this.toast('Comprobación lista', 'Encontraste ' + qFirst + ' de 3 errores', '🎙️'); this.go(5); },
+      checks, nChk, nTot: C.length, allChk,
+      oculta: st.oculta, toggleOculta: () => this.setState(s => ({ oculta: !s.oculta })),
+    };
+  }
+}
+</script>
+</body>
+</html>
